@@ -65,6 +65,11 @@
 - Processo di Norimberga 1945
 - Conferenza di PossDown 1945
 - Trattati di Parigi 1947
+	- Divisione Germania in 4
+	- 
+- Branduburg 1955
+	- creazione paesi del terzo mondo (non allineati)
 - Guerra Fredda
 - Muro di Berlino 1961
-- Cro
+- Crollo Muro di Berlino 1989
+- Unificazione tedesca 1940
