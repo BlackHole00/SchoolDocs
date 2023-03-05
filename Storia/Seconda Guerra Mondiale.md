@@ -60,6 +60,8 @@
 ## 1945
 - Guerra USA-JP
 - Eccidio di Porzuz
+	- Quasi guerra civile
+	- Tito vs Cosacchi
 - "Banalita'del male"
 
 ## Dopo Guerra
@@ -85,4 +87,4 @@
 - Conferenza di Yalta
 - Conferenza di PossDown
 - Trattati di Parigi
-- 
+- Eccidio di Portuz
