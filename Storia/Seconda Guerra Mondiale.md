@@ -87,4 +87,5 @@
 - Conferenza di Yalta
 - Conferenza di PossDown
 - Trattati di Parigi
+- Conferenza di Bandung
 - Eccidio di Portuz
