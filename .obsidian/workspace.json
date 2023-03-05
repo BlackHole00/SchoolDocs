@@ -20,16 +20,6 @@
             }
           },
           {
-            "id": "437fa3680e628eb3",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.16"
-              }
-            }
-          },
-          {
             "id": "04a6a0a39e10ee1d",
             "type": "leaf",
             "state": {
@@ -42,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -161,6 +151,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:Open format converter": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -169,13 +160,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4d1942c2513e25d",
+  "active": "04a6a0a39e10ee1d",
   "lastOpenFiles": [
+    "Sistemi/Iptables.md",
     "Storia/Seconda Guerra Mondiale.md",
     "Storia",
     "Untitled.canvas",
     "2023-03-02.md",
-    "Sistemi/Iptables.md",
     "Sistemi"
   ]
 }
