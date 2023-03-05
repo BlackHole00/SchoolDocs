@@ -75,4 +75,8 @@
 - Crollo Muro di Berlino 1989
 - Unificazione tedesca 1940
 
-## NO
+## Nomi
+- Repubblica di Vichy
+- Operazione Cavallo Marino
+- Operazione Barbarossa
+- Battaglia di El-Alamein
