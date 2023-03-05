@@ -77,6 +77,12 @@
 
 ## Nomi
 - Repubblica di Vichy
-- Operazione Cavallo Marino
+- Operazione Leone Marino
 - Operazione Barbarossa
 - Battaglia di El-Alamein
+- Conferenza di Casablanca
+- Conferenza di Teheran
+- Conferenza di Yalta
+- Conferenza di PossDown
+- Trattati di Parigi
+- 
