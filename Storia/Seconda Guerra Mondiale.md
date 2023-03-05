@@ -60,4 +60,7 @@
 ## 1945
 - Guerra USA-JP
 - Eccidio di Porzus
-- Test
+- Processo di Norimberga
+- Conferenza di PossDown
+- Trattati di Parigi
+- 
