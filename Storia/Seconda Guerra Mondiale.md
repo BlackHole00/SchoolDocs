@@ -59,8 +59,12 @@
 
 ## 1945
 - Guerra USA-JP
-- Eccidio di Porzus
-- Processo di Norimberga
-- Conferenza di PossDown
-- Trattati di Parigi
-- 
+- Eccidio di Porzuz
+
+## Dopo Guerra
+- Processo di Norimberga 1945
+- Conferenza di PossDown 1945
+- Trattati di Parigi 1947
+- Guerra Fredda
+- Muro di Berlino 1961
+- Cro
