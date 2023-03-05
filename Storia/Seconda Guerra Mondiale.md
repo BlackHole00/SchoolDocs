@@ -60,13 +60,14 @@
 ## 1945
 - Guerra USA-JP
 - Eccidio di Porzuz
+- "Banalita'del male"
 
 ## Dopo Guerra
 - Processo di Norimberga 1945
 - Conferenza di PossDown 1945
 - Trattati di Parigi 1947
 	- Divisione Germania in 4
-	- 
+	- RU perde territori antichi
 - Branduburg 1955
 	- creazione paesi del terzo mondo (non allineati)
 - Guerra Fredda
