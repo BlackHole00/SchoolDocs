@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "104d1207f9e1a59a",
+        "id": "28bdf5add4a771da",
         "type": "tabs",
         "children": [
           {
-            "id": "a47c0fd29ed9f2be",
+            "id": "b3a38dd5a47f4082",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemi/Iptables.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "04a6a0a39e10ee1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Storia/Seconda Guerra Mondiale.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Storia/Seconda Guerra Mondiale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Storia/Seconda Guerra Mondiale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Storia/Seconda Guerra Mondiale.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -160,10 +139,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "04a6a0a39e10ee1d",
+  "active": "b3a38dd5a47f4082",
   "lastOpenFiles": [
-    "Sistemi/Iptables.md",
     "Storia/Seconda Guerra Mondiale.md",
+    "Sistemi/Iptables.md",
     "Storia",
     "Untitled.canvas",
     "2023-03-02.md",
