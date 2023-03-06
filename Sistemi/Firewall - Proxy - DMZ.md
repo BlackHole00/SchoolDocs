@@ -31,7 +31,7 @@ Per capire quali pacchetti scartare, vengono analizzati gli header di ogni pacch
 Questi parametri vengono filtrati controllandoli con una serie di regole. Le quali sono eseguite secondo un ordine preciso e potranno decidere se effettuare una delle seguenti operazioni:
 - **DROP/DISCART**: scarta il pacchetto senza dire nulla al mittente
 - **ACCEPT/ALLOW**: accetta il pacchetto e permette la connessione
-- **DENY**: scarta il pacchetto e invia al mittente un messaggio ICMP per comunicare lo scarto celo
+- **DENY**: scarta il pacchetto e invia al mittente un messaggio ICMP per comunicare lo scarto
 
 Si nota che le regole possono essere divise in 2 categorie:
 - **inside**: provengono dall'interno della LAN e sono diretti verso l'esterno
@@ -44,7 +44,31 @@ Lo statefull firewall permette quindi di controllare solo i primi pacchetti di u
 
 Ovviamente per gestire i primi pacchetti di una comunicazione vengono sempre utilizzare le regole come nello `stateless firewall`. Lo stesso vale per le comunicazioni non TCP.
 
-Lo stato di una connessione viene salvato nella **SPI Table**.  La connessione si dice **ESTABLISHED** se e'presente nella SPI table, se quest'ultima e'accettata dal firewall e se il _three-way handshake_ e'avvenuto correttamente. Al termine di una connessione _(chiusura con pacchetti FIN)_ quest'ultima viene segnata come **CLOSED**.
+Lo stato di una connessione viene salvato nella **SPI Table**.  
+Le connessioni possono essere di 3 tipi:
+- **ESTABLISHED**: accettata dal firewall. Il _three-way handshake_ e'avvenuto correttamente 
+- **CLOSED**: a seguito del termine di una connessione _(chiusura con pacchetti FIN)_
+- **NEW**: una nuova connessione, generalmente ancora nello stato di _handshake_
+
+
+# Proxy
+Il proxy e'un servizio che labora a livello di **applicazione** o di **sessione/trasporto** a seconda del tipo. E'in grado di analizzare i pacchetti a livello del loro contenuto _(quindi non piu'solo di header)_.
+
+A livello di funzionamento un server proxy funziona in modalita'simile a quella di un firewall e quindi funziona come "middleware" tra sorgente e destinatario. Quindi ricevera'i pacchetti, ne controlla il contenuto e lo invia al destinatario.
+
+Il proxy viene utilizzato per motivi di:
+- **caching**: memorizza comuni dati remoti richiesti dagli utenti e ne tiene una copia in cache dopo la prima richiesta. Questo rende alcune connessioni non piu'necessarie e rende la rete quindi piu'veloce.
+- **controllo**: applicando piu'regole e'in grado di decidere se limitare o meno la comunicazione di un client a seconda della banda disponibile o delle limitazioni del client.
+- **monitoraggio**: tiene traccia delle operazioni effettuati da ogni indirizzo IP/account.
+
+## Application Proxy
+Questo tipo di firewall lavora a livello **applicazione**. Filtra i pacchetti a seconda del loro contenuto.
+
+Ha le seguenti caratteristiche:
+- Siccome lavora a livello applcativo questo tipo di proxy e'estremamente specifico e funziona solo per **una sola specifica applicazione**
+- Questo filtraggio e'pesante ed ha un **grande overhead ad ogni comunicazione**
+- Questo filtraggio e'**piu'sicuro**
+- 
 
 # Note varie
 - I pacchetti ICMP possono essere di piu'tipi:
