@@ -52,7 +52,7 @@ Le connessioni possono essere di 3 tipi:
 
 
 # Proxy
-Il proxy e'un servizio che labora a livello di **applicazione** o di **sessione/trasporto** a seconda del tipo. E'in grado di analizzare i pacchetti a livello del loro contenuto _(quindi non piu'solo di header)_.
+Il proxy e'un servizio che lavora a livello di **applicazione** o di **sessione/trasporto** a seconda del tipo. E'in grado di analizzare i pacchetti a livello del loro contenuto _(quindi non piu'solo di header)_.
 
 A livello di funzionamento un server proxy funziona in modalita'simile a quella di un firewall e quindi funziona come "middleware" tra sorgente e destinatario. Quindi ricevera'i pacchetti, ne controlla il contenuto e lo invia al destinatario.
 
@@ -65,12 +65,47 @@ Il proxy viene utilizzato per motivi di:
 Questo tipo di firewall lavora a livello **applicazione**. Filtra i pacchetti a seconda del loro contenuto.
 
 Ha le seguenti caratteristiche:
-- Siccome lavora a livello applcativo questo tipo di proxy e'estremamente specifico e funziona solo per **una sola specifica applicazione**
+- Siccome lavora a livello applicativo questo tipo di proxy e'estremamente specifico e funziona solo per **una sola specifica applicazione**
 - Questo filtraggio e'pesante ed ha un **grande overhead ad ogni comunicazione**
 - Questo filtraggio e'**piu'sicuro**
-- 
+- Utilizzando un proxy **non si ha una connessione diretta tra macchina interna e internet, bensi'avvengono due connessioni separate** _(una macchina interna - proxy e una proxy - server esterno)_. Questo ovviamente porta a ulteriori vantaggi:
+	- **controllo completo**
+	- **log dettagliati**
+	- **nessuna connessione diretta**
+	- **sicurezza anche in caso di crash**
+	- **supporto per connessioni multiple**
+	- **user-friendly**
+	- **filtraggio dei contenuti**
+	- **cache**
+
+Ovviamente questo firewall ha anche dei svantaggi:
+- **poco efficiente**
+- **specifico all'applicazione**
+- **poco trasparente**: ogni computer della LAN deve utilizzare il proxy
+
+## Circuit-Level proxy
+Questo tipo di proxy lavora a livello di **trasporto/sessione** e serve a inoltrare i pacchetti fra client e server utilizzando 2 connessioni (come l'`application proxy`). Diversamente da quest'ultimo tuttavia non effettua un controllo sul dato, ma effettua un controllo dei **segmenti**.
+
+Viene utilizzato come un firewall state full, ma ha i seguenti vantaggi:
+- permette di avere **due connessioni distinte**
+- nasconde e protegge gli altri host della rete (utilizzando un solo punto di connessione alla rete esterna).
+
+# DMZ
+Con DMZ _(de-militarized zone)_ si intende una **parte di rete** nella quale vendono installati servizi ad **alto rischio**, ma che devono essere accessibili dai clienti/utenti esterni. _Come per esempio i Web server, i DNS, i server FTP._ 
+
+Questa rete e'quindi piu'facile da accedere, ma non conterra'mai sistemi o dati sensibili, che sono piazzati in un'altra parte di rete con una maggiore sicurezza.
+
+Utilizzare una DMZ ha i seguenti vantaggi:
+- Provvedere accesso ai servizi senza problemi di sicurezza
+- Funge da "zona cuscinetto" nel caso di un attacco, quindi rende la difesa della zona protetta piu'semplice. Rende difficili gli spoofing degli indirizzi IP e le "ricognizioni del network".
+- La compromissione della DMZ non va a intaccare i sistemi interni.
+
+La DMZ puo'essere di due tipi:
+- **Single firewall**
+- **Double firewall**: uno per le connessioni esterne alla DMZ, uno per le connessioni dalla DMZ alla rete interna.
 
 # Note varie
+- Viene detto **bastion host** quel computer che fa da firewall/proxy e che quindi gestisce la sicurezza della rete. Ovviamente di tratta di un sistema altamente sicuro e protetto.
 - I pacchetti ICMP possono essere di piu'tipi:
 	- **0 - ECHO REPLY**: risposta a una richiesta _(tipo 8)_ - **PONG**
 	- **3 - DESTINATION UNREACHABLE**: la destinazione non e'raggiungibile

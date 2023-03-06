@@ -21,6 +21,25 @@
     "Proxy",
     "header",
     "inside",
-    "outside"
+    "outside",
+    "statefull",
+    "handshake",
+    "three-way",
+    "handshake",
+    "handshake",
+    "middleware",
+    "cache",
+    "caching",
+    "client",
+    "client",
+    "Application",
+    "overhead",
+    "crash",
+    "log",
+    "user-friendly",
+    "cache",
+    "client e",
+    "spoofing",
+    "bastion"
   ]
 }
