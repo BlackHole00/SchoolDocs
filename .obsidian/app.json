@@ -19,6 +19,8 @@
     "proxy",
     "vd",
     "Proxy",
-    "header"
+    "header",
+    "inside",
+    "outside"
   ]
 }
