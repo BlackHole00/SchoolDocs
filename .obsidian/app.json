@@ -5,5 +5,20 @@
     "landscape": false,
     "margin": "0",
     "downscalePercent": 75
-  }
+  },
+  "spellcheck": false,
+  "spellcheckDictionary": [
+    "ingress",
+    "egress",
+    "outgoing",
+    "incoming",
+    "personal",
+    "host",
+    "host",
+    "Stateless",
+    "proxy",
+    "vd",
+    "Proxy",
+    "header"
+  ]
 }

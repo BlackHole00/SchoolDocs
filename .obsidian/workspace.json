@@ -130,7 +130,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -151,6 +152,7 @@
   "active": "b3a38dd5a47f4082",
   "lastOpenFiles": [
     "Sistemi/Firewall - Iptables.md",
+    "Sistemi/Firewall - Proxy - DMZ.md",
     "Sistemi/Dns - Arp - Dhcp.md",
     "Inglese/Totalitarian Language.md",
     "Gestione/domande gestione impresa - 2.md",
@@ -163,7 +165,6 @@
     "Sistemi/Vlan commands.md",
     "Educazione Civica",
     "Italiano",
-    "Sistemi/Firewall - Proxy - DMZ.md",
     "Tecnologie/Sistemi informativi - note 2.md",
     "Gestione",
     "Tecnologie/Sistemi informativi - note 1.md",
