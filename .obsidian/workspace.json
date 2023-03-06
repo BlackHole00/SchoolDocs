@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inglese/Totalitarian Language.md",
+                "file": "Sistemi/Firewall - Proxy - DMZ.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6b658cb94900cbdb",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inglese/Totalitarian Language.md",
+                "file": "Sistemi/Firewall - Proxy - DMZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inglese/Totalitarian Language.md",
+                "file": "Sistemi/Firewall - Proxy - DMZ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inglese/Totalitarian Language.md"
+                "file": "Sistemi/Firewall - Proxy - DMZ.md"
               }
             }
           }
@@ -149,20 +150,20 @@
   },
   "active": "b3a38dd5a47f4082",
   "lastOpenFiles": [
+    "Sistemi/Firewall - Iptables.md",
+    "Sistemi/Dns - Arp - Dhcp.md",
     "Inglese/Totalitarian Language.md",
-    "Inglese",
-    "Italiano/italiano_svevo.md",
+    "Gestione/domande gestione impresa - 2.md",
+    "Gestione/domande gestione impresa - 1.md",
     "Educazione Civica/GDPR - Note.md",
     "Educazione Civica/UE - Punti Contro.md",
+    "Gestione/SEO.md",
+    "Inglese",
+    "Italiano/italiano_svevo.md",
     "Sistemi/Vlan commands.md",
     "Educazione Civica",
     "Italiano",
     "Sistemi/Firewall - Proxy - DMZ.md",
-    "Sistemi/Firewall - Iptables.md",
-    "Sistemi/Dns - Arp - Dhcp.md",
-    "Gestione/SEO.md",
-    "Gestione/domande gestione impresa - 2.md",
-    "Gestione/domande gestione impresa - 1.md",
     "Tecnologie/Sistemi informativi - note 2.md",
     "Gestione",
     "Tecnologie/Sistemi informativi - note 1.md",
