@@ -29,3 +29,19 @@ Una volta completato il WBS e'possibile cominciare a **schedulare nel tempo** il
 Per far cio'e'necessario adottare un modello di schedulazione. Il piu'diffuso e'il **CPM (Critical Path Method)**, ovvero un modello reticolare che usa in grafo nel quale i **nodi** rappresentano le **attivita'** e gli **archi** descrivono le **relazioni** tra di loro (anche dette **AON**, ovvero **Activity On Node**). Questo grafo e'anche caratterizzato da avere un **nodo iniziale** ed un **nodo finale**.
 
 Si nota che, ovviamente, il grafo deve contenere **tutte le attivita'** del progetto.
+
+Ogni attivita'e'caratterizzata da una o piu' **dipendenze** dalle altre attivita'a lei collegate, che possono essere di diversi tipi:
+- **FS (Finish to Start)**: l'attivita'puo'iniziare solo se la precedente e'stata terminata
+- **SS (Start to Start)**: l'attivita'puo'iniziare solo se la precedente e'gia'iniziata
+- **FF (Finish to Finish)**: l'attivita'puo'terminare solo se quella precedente e'gia'stata terminata
+- **SF (Start to Finish)**: l'attivita'puo'terminare solo se quella precedente e'gia'stata iniziata
+
+Utilizzando il grafo allo stato attuale e'possibile calcolare la durata totale del progetto. Cio'permettera'anche di deterninare le attivita'da terminare **al piu'presto** ed **al piu'tardi**, insieme alle attivita'dette **critiche**, ovvero quelle operazioni il quale **ritardo** porta a quello dell'**intero progetto**.
+
+Un altro strumento molto efficace per rappresentare l'evoluzione temporale del progetto e'il **diagramma di Gantt**, che e'un grafico strutturata in maniera simile ad un calendario utilizzando barre orizzontali, la cui lunghezza e'**proporzionale** alla durata della corrispondente attivita'nel tempo. Le barre possono essere "sovrapposte" nel tempo, cio'rappresenta piu'attivita'che vengono svolte nello stesso momento.
+
+# Risorse
+La **pianificazione delle risorse** e'un altro elemento importante da tener conto in fase di pianificazione, ma questa volta il processo generalmente adottato e'di difficile standardizzazione, in quanto va **reiterato piu'volte** durante la vita del progetto e si basa sull'analisi del progresso ed alla stima di esso.
+
+In generale pero'la pianificazione delle risorse si occupa di definire il **tipo**, la **quantita'**, le **persone**, le **attrezzature** e le **forniture** necessarie per **ciascuna attivita'** del progetto.
+
