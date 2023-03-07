@@ -85,3 +85,36 @@ Quest'ultimo opera sul tre valori visti come costo relativo ad una data prefissa
 - **AC - Actual Cost**: la somma di tutti i costi effettivamente sostenuti fino al tempo corrente. Anche detto _ACWP_
 - **EV - Earned Value**: il valore guadagnato riferito all rapporto tra l'AC ed il completamento del progetto in percentuale. Anche detto _BCWP_
 
+Una volta ottenuti questi valori e'possibile determinare se il progetto sta rientrando sul budget e se il progetto sta rispettando i tempi. E'anche possibile stimare il costo e la durata totale del progetto.
+
+Per rendere questa operazione piu'semplice vengono utilizzati diversi indici:
+- **CPI - Cost Performance Index**: Ottenuto da **EV/AC**. Un valore minore all'1 indica che il progetto sta uscendo da buget, mentre un valore superiore all'1 indica per quest'ultimo ne rientra.
+- **SPI - Schedule Performance Index**: Ottenuto da **EV/PV**. UN valore minore all'1 indica che il progetto e'in ritardo, mentre uno maggiore dell'1 indica che quest'ultimo e'in anticipo
+- **EAC - Estimated Cost At Completion**: Ottenuto da **AC + (BT-EV)/CPI)** Anche detto _BT - Budget totale_
+- **SAC - Schedule At Completion**: Indica il tempo necessario per il completamento del progetto. Ottenuto da **Durata pianificata / SPI**
+
+# Sigle e nomi notevoli
+- WBS
+- Work Package
+- Activity List
+- OBS
+- Tabella RACI
+- CPM
+- AOM
+- SF
+- FF
+- SS
+- FS
+- Diagramma di Gantt
+- RBS
+- Bellpack
+- Budget
+- Definitivo
+- Earned Value Method
+- PV
+- AC
+- EV
+- CPI
+- SPI
+- EAC
+- SAC
