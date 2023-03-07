@@ -10,3 +10,22 @@ Dal WBS e'possibile ottenere la lista ordinata dei Work Packages, detta **Activi
 
 Utilizzando l'OBS e'allora possibile creare la matrice di responsabilita'del progetto (**tabella RACI**).
 
+Nel dettaglio il work package riporta: _(copiati dal libro)_
+- un titolo dell'attivita ed un'eventuale descrizione
+- date di inizio e dine del lavoro
+- la responsabilita'
+- gli input necessari per effettuare il lavoro
+- la descrizione dei risultati attesi
+- le risorse necessarie
+- il livello di qualita' e dettaglio delle prestazioni
+- gli output del lavoro
+- il budget assegnato
+
+# Tempi
+I **tempi** del progetto sono un importante parametro da tenere in considerazione durante la progettazione di un'attivita'.
+
+Una volta completato il WBS e'possibile cominciare a **schedulare nel tempo** il progetto. 
+
+Per far cio'e'necessario adottare un modello di schedulazione. Il piu'diffuso e'il **CPM (Critical Path Method)**, ovvero un modello reticolare che usa in grafo nel quale i **nodi** rappresentano le **attivita'** e gli **archi** descrivono le **relazioni** tra di loro (anche dette **AON**, ovvero **Activity On Node**). Questo grafo e'anche caratterizzato da avere un **nodo iniziale** ed un **nodo finale**.
+
+Si nota che, ovviamente, il grafo deve contenere **tutte le attivita'** del progetto.
