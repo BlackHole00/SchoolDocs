@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "34a462c3f07dd004",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gestione/Progettazione d'Impresa.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi/Firewall - Proxy - DMZ.md",
+                "file": "Gestione/Progettazione d'Impresa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi/Firewall - Proxy - DMZ.md",
+                "file": "Gestione/Progettazione d'Impresa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi/Firewall - Proxy - DMZ.md"
+                "file": "Gestione/Progettazione d'Impresa.md"
               }
             }
           }
@@ -149,17 +162,19 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "c6350c161465e046",
+  "active": "34a462c3f07dd004",
   "lastOpenFiles": [
-    "Sistemi/Firewall - Iptables.md",
-    "2023-03-06.md",
-    "Sistemi/Vlan commands.md",
-    "Sistemi/Firewall - Proxy - DMZ.md",
-    "Sistemi/Dns - Arp - Dhcp.md",
-    "Inglese/Totalitarian Language.md",
     "Gestione/domande gestione impresa - 2.md",
     "Gestione/domande gestione impresa - 1.md",
     "Educazione Civica/GDPR - Note.md",
+    "Storia/Seconda Guerra Mondiale.md",
+    "Sistemi/Vlan commands.md",
+    "Sistemi/Firewall - Proxy - DMZ.md",
+    "Sistemi/Firewall - Iptables.md",
+    "Gestione/Progettazione d'Impresa.md",
+    "2023-03-06.md",
+    "Sistemi/Dns - Arp - Dhcp.md",
+    "Inglese/Totalitarian Language.md",
     "Educazione Civica/UE - Punti Contro.md",
     "Gestione/SEO.md",
     "Inglese",
@@ -170,7 +185,6 @@
     "Gestione",
     "Tecnologie/Sistemi informativi - note 1.md",
     "Tecnologie",
-    "Storia/Seconda Guerra Mondiale.md",
     "Storia",
     "Untitled.canvas",
     "2023-03-02.md",
