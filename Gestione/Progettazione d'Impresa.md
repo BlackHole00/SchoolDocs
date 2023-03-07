@@ -47,7 +47,7 @@ In generale pero'la pianificazione delle risorse si occupa di definire il **tipo
 
 Per definire questi parametri viene effettuata un'**analisi** sul WBS e sui singoli Work Package per ottenere il tempo richiesto in unita'**ore/uomo**, **ore/macchina** e **materiale** requisito. Questi dati vengono immessi in un documento detto **Requirement Breakdown Structure (RBS)**, che e'simile ad un WBS, ma riporta anche la stima delle risorse.
 
-Le risorse vengono intoltre classificate nelle segenti categorie:
+Le risorse vengono inoltre classificate nelle seguenti categorie:
 - **lavoro**: diviso in **diretto** (utilizzato per la produzione) **indiretto** (a supporto della produzione) ed **amministrativo** (per la contabilita'e l'amministrazione, che sono comunque richieste al progetto).
 - **materiali**: tutti gli elementi che fanno parte del prodotto finito
 - **attrezzature**: tutti gli elementi che servono per il prodotto finito.
@@ -59,6 +59,29 @@ Per eseguire la **stima della risorsa** vengono utilizzate le seguenti tecniche:
 - **a tre punti**: utilizzo di un calcolo probabilistico basato sul costo **minimo**, **massimo** e **probabile**
 
 # Costi
-L'**analisi dei costi** e'l'ultimo elemnto che bisogna tenere in considerazione durante la progettazione. Quest'ultima e'altamente **correlata** all'analisi dei tempi e delle risorse ed e'la fase piu'critica della pianificazione.
+L'**analisi dei costi** e'l'ultimo elemento che bisogna tenere in considerazione durante la progettazione. Quest'ultima e'altamente **correlata** all'analisi dei tempi e delle risorse ed e'la fase piu'critica della pianificazione.
 
-L'intera analisi e'basata in relazione al **budget di progetto**, ovvero la previsione di spesa dell'intero progetto.
+L'intera analisi e'basata in relazione al **budget di progetto**, ovvero la previsione di spesa dell'intero progetto, come l'analisi delle risorse anche l'analisi dei costi va **reiterata** piu'volte durante la realizzazione del progetto, spesso a seguito di predeterminate **scadenze temporali** dette **timenow**.
+
+La previsione dei costi avviene **riutilizzando le stime** dell'analisi delle risorse, ottenendo i costi delle singole operazioni ed ottenendo quindi i costi delle fasi di livello superiore. Questo tipo di stima viene detto **Bottom-Up**.
+
+Un altro tipo meno utilizzato viene detto **Top-Bottom**, nella quale si predispone un budget per ogni livello superiore che viene diviso tra le singole operazioni attraverso molteplici stime.
+
+Queste stime, sia nel modello bottom-up che top-bottom sono divise in categoria a seconda del livello di approssimazione:
+- **Ballpack**: si hanno poche certezze e la stima va approfondita. Accuratezza tra il -25% ed il +75%  del valore reale
+- **Budget**: accuratezza tra il -10% ed il +25%
+- **Definitivo**: precisa, ottenuta alla fine del progetto
+
+Utilizzando tutte le stime infine e'possibile determinare per ogni risorsa iesima la **stima delle quantita'** ($q_i$) ed il **prezzo unitario** ($pu_i$). Da qui sara'possibile ottenere il **costo unitario** ($c_i$).
+Quindi: $c_i=q_i*pu_i$
+
+La somma di tutti i **costi unitari** di ogni risorsa $c_i$ dara'il **costo totale** dell'attivita'.
+
+# Earned Value
+I tempi ed i costi durante la realizzazione di un progetto si discostano spesso da quelli previsti durante la fase di progettazione. Per controllare lo **stato** di un progetto in **esecuzione** viene quindi utilizzato un modello denominato **Earned Value Method**.
+
+Quest'ultimo opera sul tre valori visti come costo relativo ad una data prefissata:
+- **PV - Planned Value**: valore pianificato, la somma di tutti i costi stimati fino al tempo corrente. Anche detto _BCWS_
+- **AC - Actual Cost**: la somma di tutti i costi effettivamente sostenuti fino al tempo corrente. Anche detto _ACWP_
+- **EV - Earned Value**: il valore guadagnato riferito all rapporto tra l'AC ed il completamento del progetto in percentuale. Anche detto _BCWP_
+
