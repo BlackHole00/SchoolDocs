@@ -6,4 +6,7 @@ Spesso la WBS e'composta in un modello ad albero, dove la **radice** indica l'in
 Per creare il WBS vengono utilizzate piu'regole, una delle quali e'la regola del **100%**, la quale indica che il WBS deve contenere **tutto il lavoro** necessario al completamento del progetto.
 E'anche buona norma creare un WBS in modo **strutturato**, creando una gerarchia accurata.
 
-Dal WBS e'possibile ottenere la lista ordinata dei Work Packages, detta **Activity list**. Grazie a quest'ultima si riorganizza il progetto utilizzando una nuova struttura: l'OBS **(Organization Breakdown Structure)**
+Dal WBS e'possibile ottenere la lista ordinata dei Work Packages, detta **Activity list**. Grazie a quest'ultima si riorganizza il progetto utilizzando una nuova struttura: l'**OBS (Organization Breakdown Structure)**, una simile rappresentazione gerarchia ad albero che definisce la gerarchia dei lavoratori (ovvero quindi chi comanda chi) ed il ruolo nel progetto.
+
+Utilizzando l'OBS e'allora possibile creare la matrice di responsabilita'del progetto (**tabella RACI**).
+
