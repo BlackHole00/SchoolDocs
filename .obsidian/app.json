@@ -41,5 +41,6 @@
     "client e",
     "spoofing",
     "bastion"
-  ]
+  ],
+  "vimMode": true
 }
