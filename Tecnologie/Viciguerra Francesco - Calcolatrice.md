@@ -33,4 +33,24 @@ Android studio è l'IDE utilizzato per l'applicazione, la quale è nativa Androi
 La spiegazione nel preciso dell'intero funzionamento della programmazione Android è oltre lo scopo di questo documento. Verranno spiegate, qualora opportuno, specifici funzionamenti aggiuntivi.
 
 ## Kotlin
-Kotlin è un linguaggio nuovo che sta prendendo piede negli ultimi anni. E'retrocompatibile con codice Java precedentemente scritto, in quanto non è in grado di interfacciarsi con esso, ma 
+Kotlin è un linguaggio nuovo che sta prendendo piede negli ultimi anni. E'retrocompatibile con codice Java precedentemente scritto, in quanto non è in grado di interfacciarsi con esso, ma Kotlin può essere compilato direttamente in bytecode JVM.
+Grazie a queste caratteristiche, il linguaggio sta quindi lentamente sostituendo Java ed è già il linguaggio ufficialmente raccomandato per la creazione di nuove applicazioni Android.
+
+Dal punto di vista delle features Kotlin fornisce:
+- una sintassi più moderna e flessibile
+- i tipi primitivi sono classi 
+- null-safety
+- migliori strutture per l'astrazione come:
+	- `sealed classes`: migliori classi astratte
+	- `getters, setters e properties`
+	- `data class`: equivalente al `record` di Java 14
+	- `objects e companion objects`: equivalente a `static`
+	- `extensions`: la possibilità di aggiungere metodi a tipi o classi già precedentemente definite
+
+Il motivo della scelta dell'utilizzo di Kotlin è puramente didattico, in quanto è stato voluto imparare un nuovo linguaggio.
+
+## GraphView
+GraphView è una libreria Java per Android sviluppata da Jjoe64 ed è la più utilizzata per la creazione di schemi e grafici. 
+Sebbene sia tecnicamente possibile implementare una propria versione utilizzando una view Android custom e sovrascrivendo il metodo virtuale `onDraw`, questo metodo non è stato utilizzato perché la libreria è adeguatamente flessibile per le esigenze del progetto e la 
+
+# Tecniche utilizzate
