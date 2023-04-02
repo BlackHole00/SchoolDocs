@@ -75,3 +75,22 @@ La notazione polacca è facilmente calcolabile da un computer utilizzando una se
 L'applicazione quindi dovrà convertire l'espressione infissa in postfissa per calcolare il risultato in modo semplice. Entrambi gli algoritmi verranno successivamente spiegati ed analizzati.
 
 Si nota che la notazione polacca viene anche utilizzata nello studio della funzione.
+
+# Struttura logica
+L'applicazione è divisa in due parti fondamentali indipendenti le une dalle altre: un _frontend_ ed un _backend_.
+## Frontend
+Questa parte è dedicata all'interfaccia grafica e codice strettamente correlato con Android.
+
+In Android ogni "schermata" con il quale l'utente può interagire viene detta _Activity_. Ogni activity può utilizzare un _intent_ per richiedere al sistema operativo di mostrare un nuova attività, la quale verrà logicamente piazzata "al di supra" di quella corrente, in una modalità simile ad uno stack.
+La terminazione dell'attività chiamata dall'intent (attraverso l'utilizzo del pulsante _indietro_ o attraverso il metodo `finish`) porterà alla riapparizione della precedente activity (quindi avviene effettivamente un "pop" dello stack delle activity).
+
+### MainActivity
+Questa activity è la principale e permette di inserire l'espressione utilizzando i pulsanti, che verranno disabilitati a seconda dello stato dell'espressione attuale, per evitare che l'utente possa fare molti errori.
+Come è possibile notare non sono presenti le parentesi graffe e quadre. Questo perché la parentesi nell'espressione sono automaticamente convertite nel corretto formato a seconda del numero di parentesi utilizzate dall'utente.
+![[MainActivity.png]]
+### GraphViewActivity
+Questa activity mostra lo studio della funzione mostrando il grafico di quest'ultima. Viene chiamata  dalla MainActivity a seguito della pressione del pulsante _uguale_ nel caso nell'espressione sia presente il simbolo _x_. 
+L'utente può ulteriormente specificare l'intervallo di suo interesse ed il grafico verrà automaticamente aggiornato.
+![[GraphViewActivity.png]]
+
+## Backe
