@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "29c5428ed15e51c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6b658cb94900cbdb",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gestione/Progettazione d'Impresa.md",
+                "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gestione/Progettazione d'Impresa.md",
+                "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gestione/Progettazione d'Impresa.md"
+                "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md"
               }
             }
           }
@@ -149,10 +161,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "34a462c3f07dd004",
+  "active": "29c5428ed15e51c8",
   "lastOpenFiles": [
-    "Sistemi/Vlan commands.md",
     "Gestione/Progettazione d'Impresa.md",
+    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
+    "Sistemi/Vlan commands.md",
     "Sistemi/Firewall - Proxy - DMZ.md",
     "Gestione/domande gestione impresa - 2.md",
     "Gestione/domande gestione impresa - 1.md",
