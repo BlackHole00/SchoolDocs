@@ -6,7 +6,7 @@
     "margin": "0",
     "downscalePercent": 75
   },
-  "spellcheck": false,
+  "spellcheck": true,
   "spellcheckDictionary": [
     "ingress",
     "egress",
@@ -42,5 +42,9 @@
     "spoofing",
     "bastion"
   ],
-  "vimMode": true
+  "vimMode": false,
+  "spellcheckLanguages": [
+    "en-US",
+    "it"
+  ]
 }
