@@ -10,7 +10,7 @@ Durante la creazione del progetto sono stati ipotizzatati i seguenti punti:
 - l'espressione analizzata deve essere matematicamente valida. Le seguenti espressioni, che possono essere considerate casi limite. devono essere gestibili e calcolabili senza errori:
 	- mancanza dell'operatore di moltiplicazione:
 		- `8(3 + 2)`
-		- `(2 + 3)(3 + 2)
+		- `(2 + 3)(3 + 2)`
 		- `8x`
 		- `(3 + 2)x2`
 	- casi particolari di precedenza:
@@ -51,6 +51,27 @@ Il motivo della scelta dell'utilizzo di Kotlin è puramente didattico, in quanto
 
 ## GraphView
 GraphView è una libreria Java per Android sviluppata da Jjoe64 ed è la più utilizzata per la creazione di schemi e grafici. 
-Sebbene sia tecnicamente possibile implementare una propria versione utilizzando una view Android custom e sovrascrivendo il metodo virtuale `onDraw`, questo metodo non è stato utilizzato perché la libreria è adeguatamente flessibile per le esigenze del progetto e la 
+Sebbene sia tecnicamente possibile implementare una propria versione utilizzando una view Android custom e sovrascrivendo il metodo virtuale `onDraw`, questo metodo non è stato utilizzato perché la libreria è adeguatamente flessibile per le esigenze del progetto e la parte di analisi della funzione è di importanza secondaria.
+E'stato comunque necessario imparare ad utilizzare la libreria, utilizzando la [documentazione ufficiale](https://github.com/jjoe64/GraphView/wiki/Documentation).
 
 # Tecniche utilizzate
+## Reverse Polish Notation
+La reverse polish notation (abbreviazione RPM), anche detta _notazione postfissa_, è un metodo di rappresentazione di una espressione matematica che permette le rimozione delle parentesi ed è facilmente calcolabile da un computer.
+La notazione normalmente utilizzata in matematica viene detta invece _notazione infissa_.
+Quando nella notazione infissa l'operatore (quindi _più, meno, per, diviso_...) viene posto tra i due operandi, in quella postfissa, l'operatore viene posto dopo gli operatori, facendo riferimento agli ultimi _n_.
+> Per esempio _(infissa -> postfissa)_:
+> - `3 + 2` -> `3 2 +`:
+> 	Nella notazione postfissa, l'operatore _più_ fa riferimento agli ultimi due numeri, quindi 3 e 2
+> - `3 + 2 * 4` -> `3 2 4 * +`:
+> 	Nella notazione postfissa, l'operatore _per_ fa riferimento agli operatori 2 e 4, mentre l'operatore _più_, non potendo far più riferimento a 2 e 4, farà riferimento al risultato dell'operatore _per_ e a 3.
+
+Come anche accennato in precedenza, la notazione postfissa rende possibile rimuovere le parentesi.
+> Per esempio _(infissa -> postfissa)_:
+> - `(3 + 2) * 4` -> `3 2 + 4 *`:
+> 	Nella notazione postfissa, l'operatore _più_ fa riferimento a 3 e 2, mentre l'operatore _per_ fa riferimento al risultato dell'operazione _più_ e a 4.
+
+La notazione polacca è facilmente calcolabile da un computer utilizzando una semplice struttura a stack, in quanto, diversamente dalla notazione infissa, le operazioni vengono eseguite a seconda del loro ordine nell'espressione, indipendentemente dalla normale priorità di questi ultimi.
+
+L'applicazione quindi dovrà convertire l'espressione infissa in postfissa per calcolare il risultato in modo semplice. Entrambi gli algoritmi verranno successivamente spiegati ed analizzati.
+
+Si nota che la notazione polacca viene anche utilizzata nello studio della funzione.
