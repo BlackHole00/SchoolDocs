@@ -7,5 +7,15 @@ Ulteriori punti da considerare:
 
 # Ipotesi
 Durante la creazione del progetto sono stati ipotetizzati i seguenti punti:
-- l'espressione analizzata deve essere matematicamente valida. Le seguenti espressioni, che possono essere considerate casi limite devono essere gestibili e calcolabili senza errori:
-	- `8(3 + 2)`:  mancanza dell'operatore di moltiplicazione tra numero e parentesi
+- l'espressione analizzata deve essere matematicamente valida. Le seguenti espressioni, che possono essere considerate casi limite. devono essere gestibili e calcolabili senza errori:
+	- mancanza dell'operatore di moltiplicazione:
+		- `8(3 + 2)`
+		- `(2 + 3)(3 + 2)
+		- `8x`
+		- `(3 + 2)x2`
+	- casi particolari di precedenza:
+		- `-3^2`, _risultato: -9_
+		- `(-3)^2`, _risultato: 9_
+		- `-x^2`, _valutato come: -(x^2)_
+		- `(-x)^2`
+- l'espressione analizzata è in 
