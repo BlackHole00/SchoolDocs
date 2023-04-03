@@ -95,13 +95,13 @@ Questa activity è la principale e permette di inserire l'espressione utilizzand
 
 Come è possibile notare non sono presenti le parentesi graffe e quadre. Questo perché la parentesi nell'espressione sono automaticamente convertite nel corretto formato a seconda del numero di parentesi utilizzate dall'utente.
 
-![[MainActivity.png]]
+![MainActivity.png](res/MainActivity.png)
 ### GraphViewActivity
 Questa activity mostra lo studio della funzione mostrando il grafico di quest'ultima. Viene chiamata  dalla MainActivity a seguito della pressione del pulsante _uguale_ nel caso nell'espressione sia presente il simbolo _x_. 
 
 L'utente può ulteriormente specificare l'intervallo di suo interesse ed il grafico verrà automaticamente aggiornato.
 
-![[GraphViewActivity.png]]
+![GraphViewActivity.png](res/GraphViewActivity.png)
 
 ## Backend
 Il backend è la parte di software strettamente dedicata alla logica interna dell'applicazione. 
@@ -207,7 +207,7 @@ Si nota che il tokenizer è anche utilizzato per aggiungere eventuali token che 
 - `3x` -> `Value(3, None) OperatorMultiplication VariableX(false, None)`
 - `3(6 - 2)` -> `Value(3, None) OperatorMultiplication OpenParenthesis Value(6, None) OperatorMinus Value(2, None) CloseParenthesis`
 
-Il funzionamento di questa classe è al quanto triviale e non contiene codice rilevante, se non per alcuni casi limiti, quindi non viene spiegata in questo documento. Se si desidera è comunque possibile leggere il file sorgente, che è appropriatamente commentato.
+Il funzionamento di questa classe è al quanto triviale e non contiene codice rilevante, se non per alcuni casi limiti, quindi non viene spiegato in questo documento. Se si desidera è comunque possibile leggere il file sorgente.
 
 ### ExpressionParser
 L'ExpressionParser è una classe che permette di convertire una lista di token nell'equivalente forma postfissa. In questo passaggio non vengono creati nuovi token, ma vengono solo spostati o rimossi (nel caso delle parentesi) quelli esistenti.
@@ -285,20 +285,117 @@ Infine, ogni singolo token rimasto nello stack viene posto nel result _(005)_.
 
 > Si riporta l'ulteriore esempio della conversione dell'espressione `3 * 2 + 4`, che deve diventare `3 2 * 4 +`
 > - Token _Value(3, None)_:
-> 	stack:
-> 	result: _Value(3, None)_
+> 	- stack:
+> 	- result: _Value(3, None)_
 > - Token _OperatorMultiplication_:
-> 	stack: _OperatorMultiplication_
-> 	result: _Value(3, None)_
+> 	- stack: _OperatorMultiplication_
+> 	- result: _Value(3, None)_
 > - Token _Value(2, None)_
-> 	stack: _OperatorMultiplication_
-> 	result: _Value(3, None), Value(2, None)_
+> 	- stack: _OperatorMultiplication_
+> 	- result: _Value(3, None), Value(2, None)_
 > - Token _OperatorPlus_
-> 	stack: _OperatorPlus_
-> 	result: _Value(3, None), Value(2, None), OperatorMultiplication_
+> 	- stack: _OperatorPlus_
+> 	- result: _Value(3, None), Value(2, None), OperatorMultiplication_
 > - Token _Value(4, None)_
-> 	stack: _OperatorPlus_
-> 	result: _Value(3, None), Value(2, None), OperatorMultiplication, Value(4, None)_
+> 	- stack: _OperatorPlus_
+> 	- result: _Value(3, None), Value(2, None), OperatorMultiplication, Value(4, None)_
 > - Result: _Value(3, None), Value(2, None), OperatorMultiplication, Value(4, None), OperatorPlus_
+
+### ExpressionResolver
+Questa classe ha il compito di, data un'espressione in notazione polacca, computarne il risultato. Questa classe permette anche di calcolare una funzione per un determinato valore di X fornito in input.
+
+Segue il codice della classe e la spiegazione dell'algoritmo di conversione.
+```kotlin
+class ExpressionResolver(private val parsedTokens: ArrayList<ExpressionToken>) {  
+    fun resolve(xValue: Double? = null): Double {  
+        val tokens = ArrayList(parsedTokens)  
+
+		// 001
+        if (xValue == null && 
+            parsedTokens.find { t -> t is ExpressionToken.VariableX } != null
+        ) {  
+            throw IllegalStateException()  
+        }  
+        if (xValue != null) {  
+            tokens.replaceAll { t ->  
+                if (t is ExpressionToken.VariableX) {  
+                    if (t.negative) {  
+                        ExpressionToken.Value(-xValue, t.nComp)  
+                    } else {  
+                        ExpressionToken.Value(xValue, NegativeComputationType.None)  
+                    }  
+                } else {  
+                    t  
+                }  
+            }  
+        }  
+  
+        val stack = Stack<ExpressionToken.Value>()  
+  
+        for (token in tokens) {  
+	        // 002
+            if (token is ExpressionToken.Value) {  
+                stack.addLast(token)  
+  
+                continue  
+            }  
+  
+            val second = stack.removeLast()  
+            val first = stack.removeLast()  
+
+			// 003
+            when (token) {  
+                is ExpressionToken.OperatorPlus -> {  
+                    stack.addLast(ExpressionToken.Value(first.value + second.value))  
+                }  
+                is ExpressionToken.OperatorMinus -> {  
+                    stack.addLast(ExpressionToken.Value(first.value - second.value))  
+                }  
+                is ExpressionToken.OperatorMultiplication -> {  
+                    stack.addLast(ExpressionToken.Value(first.value * second.value))  
+                }  
+                is ExpressionToken.OperatorDivision -> {  
+	                // 004
+                    if (second.value == 0.0) {  
+                        if (first.value == 0.0) {  
+                            throw UndefinedDivisionException()  
+                        }  
+                        throw DivisionByZeroException()  
+                    }  
+  
+                    stack.addLast(ExpressionToken.Value(first.value / second.value))  
+                }  
+                is ExpressionToken.OperatorPower -> {  
+                    var actualFirst = first.value  
+  
+                    var res = actualFirst.pow(second.value)  
+
+					// 005
+                    if (first.nComp == NegativeComputationType.PostNegate) {  
+                        res = -abs(res)  
+                    }  
+  
+                    stack.addLast(ExpressionToken.Value(res))  
+                }  
+                else -> {}  
+            }  
+
+			// 006
+            if (stack.last().value.isInfinite()) {  
+                throw OverflowCalculationException()  
+            }  
+            if (stack.last().value.isNaN()) {  
+                throw OverflowCalculationException()  
+            }  
+        }  
+
+        if (stack.size > 1) {  
+            throw IllegalStateException()  
+        }  
+  
+        return stack.removeLast().value  
+    }  
+}
+```
 
 # Algoritmi e Logica di Implementazione
