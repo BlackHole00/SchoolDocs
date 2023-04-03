@@ -44,7 +44,7 @@ Dal punto di vista delle features Kotlin fornisce:
 - migliori strutture per l'astrazione come:
 	- `sealed classes`: migliori classi astratte
 	- `getters, setters e properties`
-	- `data class`: equivalente al `record` di Java 14
+	- `data class`: simile al `record` di Java 14
 	- `objects e companion objects`: equivalente a `static`
 	- `extensions`: la possibilità di aggiungere metodi a tipi o classi già precedentemente definite
 
@@ -122,14 +122,14 @@ Un ExpressionToken può assumere quindi i seguenti valori:
 - _OperatorePotenza_
 - _ParentesiAperta_
 - _ParentesiChiusa_
-- _VariabileX_, contenente il segno di quest'ultima e la modalità di computazione per casi particolari
+- _Variabile X_, contenente il segno di quest'ultima e la modalità di computazione per casi particolari
 - _Numero_, contenente il numero stesso e la modalità di computazione per casi particolari
 
 Nella pratica la stringa di testo verrà convertita in una lista di token, come nel seguente esempio:
-`(2 + 3) * 4` -> `OpenParenthesis Value(2, None) OperatorPlus Value(3, None) CloseParenthesis OperatorMultiplication Value(4, None)`
+> `(2 + 3) * 4` -> `OpenParenthesis Value(2, None) OperatorPlus Value(3, None) CloseParenthesis OperatorMultiplication Value(4, None)`
 
 Tale lista di token verrà poi convertita nella sua variante in notazione polacca per poi essere calcolata. In riferimento all'esempio precedente, la lista di token in notazione postfissa diventa:
-`2 3 + 4 *` -> `Value(2, None) Value(3, None) OperatorPlus Value(4, None) OperatorMultiplication`
+> `2 3 + 4 *` -> `Value(2, None) Value(3, None) OperatorPlus Value(4, None) OperatorMultiplication`
 
 Questa classe, dal punto di vista dell'implementazione e della stretta definizione teorica è un cosiddetto [_Tipo di dato algebrico (algebraic data type)_](https://en.wikipedia.org/wiki/Algebraic_data_type). Un dato algebrico è una tipo composto che è formato dalla combinazione di più tipi diversi.
 Logicamente, comparandolo con il linguaggio C, è possibile considerarlo come una variante di un enumerato che, oltre al valore dell'enum contiene anche ulteriori dati, a modo simile di un union. Si nota tuttavia che il linguaggio C (e CPP) non supporta direttamente questi tipi di dato. 
@@ -169,13 +169,47 @@ sealed class ExpressionToken {
 
 Si nota che in kotlin una `sealed class` è una speciale classe astratta che non permette l'aggiunta di nuovi metodi nelle sue classi derivate. In questo caso viene creata una classe sealed senza metodi, dalla quale derivano tutte le varianti dell'ExpressionToken.
 Un `object` è l'equivalente delle classi statiche di java. In questo caso non ha senso creare più istanze di un token senza valori salvati all'interno di esso.
-Infine una `data class` è simile al `record` di Java 14, ulteriormente causa il trattamento della classe come se fosse una struttura e quest'ultima venisse sempre passata come valore.
+Infine una `data class` è simile al `record` di Java 14, ulteriormente causando il trattamento della classe come se fosse una struttura e quest'ultima venisse sempre passata come valore.
+
+#### NegativeComputationType
+Questo enum è un tipo di supporto all'ExpressionToken e indica la modalità di computazione nel caso un valore negativo venga elevato.
+
+Si consideri l'espressione `-3^2`. Normalmente quest'ultima dovrebbe venir convertita nei token `Value(-3, None) OperatorPower Value(2, None)`, per poi essere calcolata nel valore 9, dato dall'elevazione dal quadrato nel numero -3. Questo risultato non è tuttavia corretto, in quanto l'operatore potenza dovrebbe avere precedenza sul meno del numero elevato.
+
+Una semplice soluzione può sembrare negare il risultato ottenuto se la base è negativa. Questo porta tuttavia ulteriori problemi nel caso dell'espressione `(-3)^2`, che perderà le sue parentesi durante il processo della conversione in notazione postfissa.
+
+E'necessario allora salvare la modalità di calcolo nel caso di un'elevazione. Quest'ultima è definita utilizzando il seguente enumerato, in combinazione con l'ExpressionToken.
+
+```kotlin
+enum class NegativeComputationType {  
+    PostNegate,  
+    None,  
+}
+```
+
+I casi d'esempio precedenti vengono quindi modificati in:
+- `-3^2` -> `Value(-3, PostNegate) OperatorPower Value(2, None)`
+- `(-3)^2` -> `Value(-3, None) OperatorPower Value(2, None)`, _nota: le parentesi sono state rimosse a scopo esemplificativo_
+
+Entrambe adesso daranno i giusti risultati _(-9 e 9)_.
+
+Si nota che la stessa modifica è stata apportata anche al token _VariableX_, che deve prevedere i casi `-x^2` e `(-x)^2`.
 
 ### ExpressionTokenizer
+L'ExpressionTokenizer è una classe che permette di convertire un'espressione sotto forma di stringa nella sua corrispondente sequenza di token in modalità sempre infissa.
 ```kotlin
 class ExpressionTokenizer(private val expression: String) {  
     fun tokenize(): ArrayList<ExpressionToken> { ... }
 }
 ```
+
+Si nota che il tokenizer è anche utilizzato per aggiungere eventuali token che l'utente ha tralasciato, ma che sono necessari per la valutazione corretta di una certa espressione, come dimostrato nei seguenti esempi:
+- `3x` -> `Value(3, None) OperatorMultiplication VariableX(false, None)`
+- `3(6 - 2)` -> `Value(3, None) OperatorMultiplication OpenParenthesis Value(6, None) OperatorMinus Value(2, None) CloseParenthesis`
+
+Il funzionamento di questa classe è al quanto triviale e non contiene codice rilevante, se non per alcuni casi limiti, quindi non viene spiegata in questo documento. Se si desidera è comunque possibile leggere il file sorgente, che è appropriatamente commentato.
+
+### ExpressionParser
+L'ExpressionParser è una classe che permette di convertire una lista di token nell'equivalente forma postfissa
 
 # Algoritmi e Logica di Implementazione
