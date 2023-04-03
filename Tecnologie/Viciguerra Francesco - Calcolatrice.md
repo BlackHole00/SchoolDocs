@@ -392,10 +392,32 @@ class ExpressionResolver(private val parsedTokens: ArrayList<ExpressionToken>) {
         if (stack.size > 1) {  
             throw IllegalStateException()  
         }  
-  
+
+		// 007
         return stack.removeLast().value  
     }  
 }
 ```
 
+Come l'algoritmo di conversione, anche quello di risoluzione utilizza uno stack, ma questa volta per il salvataggio dei valori calcolati.
+
+Prima di eseguire il calcolo, vengono sostituite tutte le occorrenze del token _VariableX_ nell'espressione con il valore specificato in input, facendo attenzione ad utilizzare la giusta modalità di computazione _(001)_.
+Per ogni token quindi, se è un valore, viene posto nello stack _(002)_, mentre se è un'operazione quest'ultima verrà risolta prendendo i primi due valori dello stack ed utilizzandoli come operatori dell'operazione che si desidera calcolare. Il risultato viene rimesso nello stack _(003)_.
+Vengono fatti alcuni ulteriori controlli nel caso della divisione (che può essere impossibile o indeterminata) _(004)_, nel caso della potenza (dove bisogna seguire le regole di eccezione elencate prima) _(005)_ o nel caso di overflow _(006)_.
+Alla fine dell'algoritmo, l'ultimo valore rimasto nello stack è il risultato dell'espressione e viene ritornato _(007)_.
+
+> Si riporta l'esempio correlato all'espressione in notazione postfissa `3 2 * 4 +`:
+> - Token _Value(3, None)_:
+> 	- Stack: _Value(3, None)_
+> - Token _Value(2, None)_:
+> 	- Stack: _Value(3, None), Value(2, None)_
+> - Token _OperatorMultiplication_
+> 	- Stack: _Value(6, None)_
+> - Token _Value(4, None)_:
+> 	- Stack: _Value(6, None), Value(4, None)_
+> - Token _OperatorPlus_:
+> 	- Stack: _Value(10, None)_
+> - Risultato: 10
+
+### 
 # Algoritmi e Logica di Implementazione
