@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6b658cb94900cbdb",

@@ -141,7 +141,14 @@ Si nota che è necessario associare un listener ad un determinato pulsante per f
 findViewById<Button>(R.id.btnNum0).setOnClickListener(CalculatorOnClickListener(this))
 ```
 
-Segue la lista degli OnClickListener presenti nel progetto. Si nota che questi ultimi sono simili gli uni agli altri, quindi solo uno di essi verrà mostrato nella sua interità.
+Si nota che nel GraphViewActivity è stato anche utilizzato il callback `OnTextChanged` in modalità inline con una lambda. Il codice completo non viene riportato perché di scarsa rilevanza, ma segue un semplice esempio.
+```kotlin
+findViewById<EditText>(R.id.txbStartValue).doOnTextChanged { text, _, _, _ ->  
+    ...
+}
+```
+
+Segue la lista degli OnClickListener presenti nel progetto. Si nota che questi ultimi sono simili gli uni agli altri, quindi solo uno di essi verrà mostrato nella sua interità. 
 
 #### CalculatorOnClickListener
 Questo listener viene utilizzato per la maggior parte dei pulsanti della calcolatrice. Quando eseguito inserisce un carattere nella calcolatrice equivalente al primo carattere del testo del pulsante, per poi aggiornare il testo e aggiornare i pulsanti, per disabilitare quelli non più utilizzabili ed abilitare quelli adesso validi.
@@ -202,6 +209,21 @@ Fornisce quindi classi per la conversione di un'eventuale espressione nella corr
 Inoltre il backend fornisce varie classi ed estensioni di supporto che vengono utilizzate anche nel frontend.
 
 Il backend fornisce le varie classi e tipi presentati in seguito.
+
+Segue un esempio di capacità del backend.
+```kotlin
+// Esempio senza incognita
+val tokens = ExpressionTokenizer("3 + 2 * 4").tokenize()  
+val parsedTokens = ExpressionParser(tokens).parse()  
+result = ExpressionResolver(parsedTokens).resolve()
+// result = 11
+
+// Esempio con incognita
+val tokens = ExpressionTokenizer("2x + 3").tokenize()  
+val parsedTokens = ExpressionParser(tokens).parse()  
+result = ExpressionResolver(parsedTokens).resolve(6) // x = 7
+// result = 15
+```
 
 ### ExpressionToken
 ExpressionToken è un costrutto utilizzato nella codebase per identificare un singolo elemento dell'espressione, senza dover quindi lavorare con una stringa per la trasformazione di quest'ultima in notazione polacca e per la sua computazione.
@@ -532,3 +554,15 @@ fun Char.isCalculatorSign(): Boolean { ... }
 ```
 
 Entrambe hanno algoritmi triviali, che sono stati omessi da questo documento.
+
+# Possibili miglioramenti
+La struttura dell'applicazione è decisamente solida, ma alcuni miglioramenti possono comunque essere applicati nel caso si voglia continuare a lavorare nel progetto.
+
+In primo luogo sarebbe molto utile la divisione della classe ExpressionTokenizer, spostando la parte di aggiunta di token extra a parte in un ExpressionPreProcessor, che lavorerebbe sulla lista di token generata dal tokenizer. Questo migliorerebbe sia la struttura che l'espandibilità del progetto.
+
+Successivamente la gestione degli errori potrebbe essere migliorabile. Seguendo la pura preferenza personale, sarebbe utile diminuire il numero di errori risultanti da eccezioni, effettuando una migliore gestione di queste ultime ed utilizzando con più efficacia i valori opzionali. Personalmente il metodo della gestione degli errori attraverso le eccezioni non è il mio preferito e preferirei farne a meno totalmente (sostituendole con valori opzionali e, se si stesse utilizzando un altro linguaggio, valori multipli ritornati), ma sia in Java che in Kotlin queste ultime sono costrutto fondamentale e non eliminabile o rimpiazzabile.
+
+# Conclusioni
+E'stata creata una calcolatrice android che è in grado di calcolare semplici espressioni matematiche dando la gusta precedenza agli operatori ed alle parentesi. Per far ciò è stata utilizzato un sistema con architettura divisa tra frontend (per interfacciarsi con l'interfaccia android e l'utente) e backend (fornendo strutture e servizi per eseguire il calcolo dell'espressione) ed è stata utilizzata la notazione polacca postfissa.
+
+L'applicazione è anche in grado, qualora sia presente una variabile X nell'espressione, di visualizzarne il dominio.
