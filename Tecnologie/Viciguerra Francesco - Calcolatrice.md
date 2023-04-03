@@ -1,3 +1,6 @@
+### Nota alla lettura da PDF
+Il documento è stato scritto in formato Markdown. Per una migliore versione di questo file è consigliabile consultarne un copia in formato web a [questo link](https://github.com/BlackHole00/PublicDocs/blob/main/Viciguerra%20Francesco%20-%20Calcolatrice.md).
+
 # Consegna
 Creare un'applicazione android che consenta di:
 - Risolvere un'espressione matematica con operazioni elementari e parentesi.
@@ -23,7 +26,7 @@ Durante la creazione del progetto sono stati ipotizzatati i seguenti punti:
 	- `{[(3 * 4) ^ 2] - 2}`
 - lo studio della funzione con l'incognita avviene attraverso la visualizzazione sul grafico della funzione che permette quindi di mostrare il dominio della funzione. L'utente ha il controllo anche sull'intervallo che vuole visualizzare.
 - L'applicazione deve essere in grado di riconoscere divisioni per zero (quindi sia _impossibili_ che _indeterminate_) e fornire un adeguato messaggio d'errore.
-- Per motivi legati alla logica computazionale dei computer alcune operazioni possono causare un overflow nella computazione (ovvero l'ottenimento di un numero double _infinity_). L'applicazione deve tenere conto di questo e fornire adeguati messaggi d'errore.
+- Per motivi legati alla logica computazionale dei computer alcune operazioni possono causare un overflow nella computazione (ovvero l'ottenimento di un numero double con valore _infinity_). L'applicazione deve tenere conto di questo e fornire adeguati messaggi d'errore.
 
 # Tecnologie utilizzate
 ## Android studio
@@ -31,15 +34,15 @@ Android studio è l'IDE utilizzato per l'applicazione, la quale è nativa Androi
 - file di configurazione XML: per descrivere l'applicazione e crearne l'interfaccia in modo statico
 - codice Java: per creare la logica e dare funzionalità all'applicativo.
 
-La spiegazione nel preciso dell'intero funzionamento della programmazione Android è oltre lo scopo di questo documento. Verranno spiegate, qualora opportuno, specifici funzionamenti aggiuntivi.
+La spiegazione nel preciso dell'intero funzionamento della programmazione Android è oltre lo scopo di questo documento. Verranno spiegate, qualora opportuno, specifici funzionamenti aggiuntivi e necessari.
 
 ## Kotlin
-Kotlin è un linguaggio nuovo che sta prendendo piede negli ultimi anni. E'retrocompatibile con codice Java precedentemente scritto, in quanto non è in grado di interfacciarsi con esso, ma Kotlin può essere compilato direttamente in bytecode JVM.
+Kotlin è un linguaggio nuovo che sta prendendo piede negli ultimi anni. E'retrocompatibile con codice Java precedentemente scritto, in quanto non è solo in grado di interfacciarsi con esso, ma Kotlin può anche essere compilato direttamente in bytecode JVM.
 Grazie a queste caratteristiche, il linguaggio sta quindi lentamente sostituendo Java ed è già il linguaggio ufficialmente raccomandato per la creazione di nuove applicazioni Android.
 
 Dal punto di vista delle features Kotlin fornisce:
 - una sintassi più moderna e flessibile
-- i tipi primitivi sono classi 
+- i tipi primitivi come classi 
 - null-safety
 - migliori strutture per l'astrazione come:
 	- `sealed classes`: migliori classi astratte
@@ -50,12 +53,12 @@ Dal punto di vista delle features Kotlin fornisce:
 
 Il motivo della scelta dell'utilizzo di Kotlin è puramente didattico, in quanto è stato voluto imparare un nuovo linguaggio.
 
-Si nota tuttavia che in questo documento non verrà spiegato nel dettaglio il linguaggio. Verranno tuttavia resi note alcune features che non hanno un equivalente java qualora necessario alla comprensione del codice.
+Si nota tuttavia che in questo documento non verrà spiegato nel dettaglio il linguaggio. Verranno tuttavia rese note alcune features che non hanno un equivalente java qualora necessario alla comprensione del codice.
 
 ## GraphView
 GraphView è una libreria Java per Android sviluppata da Jjoe64 ed è la più utilizzata per la creazione di schemi e grafici. 
 
-Sebbene sia tecnicamente possibile implementare una propria versione utilizzando una view Android custom e sovrascrivendo il metodo virtuale `onDraw`, questo metodo non è stato utilizzato perché la libreria è adeguatamente flessibile per le esigenze del progetto e la parte di analisi della funzione è di importanza secondaria.
+Sebbene sia tecnicamente possibile implementare una propria versione utilizzando una view Android custom e sovrascrivendo il metodo virtuale `onDraw`, questa tecnica non è stata utilizzata perché la libreria è adeguatamente flessibile per le esigenze del progetto e la parte di analisi della funzione è di importanza secondaria.
 
 E'stato comunque necessario imparare ad utilizzare la libreria, utilizzando la [documentazione ufficiale](https://github.com/jjoe64/GraphView/wiki/Documentation).
 
@@ -64,7 +67,7 @@ E'stato comunque necessario imparare ad utilizzare la libreria, utilizzando la [
 La reverse polish notation (abbreviazione RPM), anche detta _notazione postfissa_, è un metodo di rappresentazione di una espressione matematica che permette le rimozione delle parentesi ed è facilmente calcolabile da un computer.
 
 La notazione normalmente utilizzata in matematica viene detta invece _notazione infissa_.
-Quando nella notazione infissa l'operatore (quindi _più, meno, per, diviso_...) viene posto tra i due operandi, in quella postfissa, l'operatore viene posto dopo gli operatori, facendo riferimento agli ultimi _n_.
+Quando nella notazione infissa l'operatore (quindi _più, meno, per, diviso_...) viene posto tra i due operandi, in quella postfissa, l'operatore viene posto questi ultimi.
 > Per esempio _(infissa -> postfissa)_:
 > - `3 + 2` -> `3 2 +`:
 > 	Nella notazione postfissa, l'operatore _più_ fa riferimento agli ultimi due numeri, quindi 3 e 2
@@ -76,7 +79,7 @@ Come anche accennato in precedenza, la notazione postfissa rende possibile rimuo
 > - `(3 + 2) * 4` -> `3 2 + 4 *`:
 > 	Nella notazione postfissa, l'operatore _più_ fa riferimento a 3 e 2, mentre l'operatore _per_ fa riferimento al risultato dell'operazione _più_ e a 4.
 
-La notazione polacca è facilmente calcolabile da un computer utilizzando una semplice struttura a stack, in quanto, diversamente dalla notazione infissa, le operazioni vengono eseguite a seconda del loro ordine nell'espressione, indipendentemente dalla normale priorità di questi ultimi.
+La notazione polacca è facilmente calcolabile da un computer utilizzando una semplice struttura a stack, in quanto, diversamente dalla notazione infissa, le operazioni vengono eseguite a seconda del loro ordine nell'espressione, indipendentemente dalla normale priorità di queste ultime.
 
 L'applicazione quindi dovrà convertire l'espressione infissa in postfissa per calcolare il risultato in modo semplice. Entrambi gli algoritmi verranno successivamente spiegati ed analizzati.
 
@@ -84,14 +87,15 @@ Si nota che la notazione polacca viene anche utilizzata nello studio della funzi
 
 # Struttura logica
 L'applicazione è divisa in due parti fondamentali indipendenti le une dalle altre: un _frontend_ ed un _backend_.
+
 ## Frontend
 Questa parte è dedicata all'interfaccia grafica e codice strettamente correlato con Android.
 
-In Android ogni "schermata" con il quale l'utente può interagire viene detta _Activity_. Ogni activity può utilizzare un _intent_ per richiedere al sistema operativo di mostrare un nuova attività, la quale verrà logicamente piazzata "al di supra" di quella corrente, in una modalità simile ad uno stack.
+In Android ogni "schermata" con il quale l'utente può interagire viene detta _Activity_. Ogni activity può utilizzare un _intent_ per richiedere al sistema operativo di mostrare un nuova attività, la quale verrà logicamente piazzata "al di sopra" di quella corrente, in una modalità simile ad uno stack.
 La terminazione dell'attività chiamata dall'intent (attraverso l'utilizzo del pulsante _indietro_ o attraverso il metodo `finish`) porterà alla riapparizione della precedente activity (quindi avviene effettivamente un "pop" dello stack delle activity).
 
 ### MainActivity
-Questa activity è la principale e permette di inserire l'espressione utilizzando i pulsanti, che verranno disabilitati a seconda dello stato dell'espressione attuale, per evitare che l'utente possa fare molti errori.
+Questa activity è la principale e permette di inserire l'espressione utilizzando i pulsanti, che verranno disabilitati o abilitati a seconda dello stato dell'espressione attuale, per evitare che l'utente possa fare molti errori.
 
 Come è possibile notare non sono presenti le parentesi graffe e quadre. Questo perché la parentesi nell'espressione sono automaticamente convertite nel corretto formato a seconda del numero di parentesi utilizzate dall'utente.
 
@@ -99,7 +103,7 @@ Dal punto di vista del codice, MainActivity contiene anche una funzione helper c
 
 ![MainActivity.png](res/MainActivity.png)
 ### GraphViewActivity
-Questa activity mostra lo studio della funzione mostrando il grafico di quest'ultima. Viene chiamata  dalla MainActivity a seguito della pressione del pulsante _uguale_ nel caso nell'espressione sia presente il simbolo _x_. 
+Questa activity mostra lo studio della funzione disegnando il grafico di quest'ultima. Viene chiamata dalla MainActivity a seguito della pressione del pulsante _uguale_ nel caso nell'espressione sia presente il simbolo _x_. 
 
 L'utente può ulteriormente specificare l'intervallo di suo interesse ed il grafico verrà automaticamente aggiornato.
 
@@ -136,12 +140,12 @@ Gli algoritmi specifici di questa classe non vengono riportati in quanto trivial
 ### OnClickListeners
 Queste classi sono derivate dalla classe android `OnClickListener` e specificano, attraverso l'override di una funzione virtuale, il comportamento dell'applicazione a seguito del click di un pulsante.
 
-Si nota che è necessario associare un listener ad un determinato pulsante per fare in modo che questo funzioni. Per far ciò viene utilizzato `findViewById`, per ottenere il riferimento ad bottone desiderato e `setOnClickListener` per associare un listener, come nel seguente esempio:
+Si nota che è necessario associare un listener ad un determinato pulsante per fare in modo che questo funzioni. Per far ciò viene utilizzato `findViewById`, per ottenere il riferimento al bottone desiderato, e `setOnClickListener` per associare un listener, come nel seguente esempio:
 ```kotlin
 findViewById<Button>(R.id.btnNum0).setOnClickListener(CalculatorOnClickListener(this))
 ```
 
-Si nota che nel GraphViewActivity è stato anche utilizzato il callback `OnTextChanged` in modalità inline con una lambda. Il codice completo non viene riportato perché di scarsa rilevanza, ma segue un semplice esempio.
+Si nota che nel GraphViewActivity è stato anche utilizzato il callback `OnTextChanged` in modalità inline con una lambda. Il codice completo non viene riportato perché di scarsa rilevanza, ma viene mostrato un semplice esempio.
 ```kotlin
 findViewById<EditText>(R.id.txbStartValue).doOnTextChanged { text, _, _, _ ->  
     ...
@@ -208,9 +212,7 @@ Il backend è la parte di software strettamente dedicata alla logica interna del
 Fornisce quindi classi per la conversione di un'eventuale espressione nella corrispondente notazione polacca e per il calcolo di quest'ultima, supportando anche la sostituzione dell'incognita.
 Inoltre il backend fornisce varie classi ed estensioni di supporto che vengono utilizzate anche nel frontend.
 
-Il backend fornisce le varie classi e tipi presentati in seguito.
-
-Segue un esempio di capacità del backend.
+Segue un esempio di capacità del backend, utilizzando le classi che verranno esposte in seguito.
 ```kotlin
 // Esempio senza incognita
 val tokens = ExpressionTokenizer("3 + 2 * 4").tokenize()  
@@ -226,7 +228,7 @@ result = ExpressionResolver(parsedTokens).resolve(6) // x = 7
 ```
 
 ### ExpressionToken
-ExpressionToken è un costrutto utilizzato nella codebase per identificare un singolo elemento dell'espressione, senza dover quindi lavorare con una stringa per la trasformazione di quest'ultima in notazione polacca e per la sua computazione.
+ExpressionToken è un costrutto utilizzato nel codebase per identificare un singolo elemento dell'espressione, senza dover quindi lavorare con una stringa per la trasformazione di quest'ultima in notazione polacca e per la sua computazione.
 
 Un ExpressionToken può assumere quindi i seguenti valori:
 - _OperatorePiù_
@@ -239,7 +241,7 @@ Un ExpressionToken può assumere quindi i seguenti valori:
 - _Variabile X_, contenente il segno di quest'ultima e la modalità di computazione per casi particolari
 - _Numero_, contenente il numero stesso e la modalità di computazione per casi particolari
 
-Nella pratica la stringa di testo verrà convertita in una lista di token, come nel seguente esempio:
+In pratica la stringa di testo verrà convertita in una lista di token, come nel seguente esempio:
 > `(2 + 3) * 4` -> `OpenParenthesis Value(2, None) OperatorPlus Value(3, None) CloseParenthesis OperatorMultiplication Value(4, None)`
 
 Tale lista di token verrà poi convertita nella sua variante in notazione polacca per poi essere calcolata. In riferimento all'esempio precedente, la lista di token in notazione postfissa diventa:
@@ -258,7 +260,7 @@ enum IpAddr {
 }
 ```
 
-Kotlin di per se'non supporta direttamente i tipi di dati algebrici, ma è possibile, ed è anche l'alternativa consigliata, utilizzando una combinazione di `sealed class`, di `data class` e di `object`, sfruttando il polimorfismo, in modo da creare un funzionamento simile a quello desiderato.
+Kotlin di per se'non supporta direttamente i tipi di dati algebrici, ma è possibile, ed è anche l'alternativa consigliata, utilizzare una combinazione di `sealed class`, di `data class` e di `object`, sfruttando il polimorfismo, per da creare un funzionamento simile a quello desiderato.
 
 L'ExpressionToken è quindi definito nel seguente metodo:
 ```kotlin
@@ -283,7 +285,7 @@ sealed class ExpressionToken {
 
 Si nota che in kotlin una `sealed class` è una speciale classe astratta che non permette l'aggiunta di nuovi metodi nelle sue classi derivate. In questo caso viene creata una classe sealed senza metodi, dalla quale derivano tutte le varianti dell'ExpressionToken.
 Un `object` è l'equivalente delle classi statiche di java. In questo caso non ha senso creare più istanze di un token senza valori salvati all'interno di esso.
-Infine una `data class` è simile al `record` di Java 14, ulteriormente causando il trattamento della classe come se fosse una struttura e quest'ultima venisse sempre passata come valore.
+Infine una `data class` è simile al `record` di Java 14, ma causa anche il trattamento della classe come se fosse una struttura, quindi come se quest'ultima venisse sempre passata come valore.
 
 #### NegativeComputationType
 Questo enum è un tipo di supporto all'ExpressionToken e indica la modalità di computazione nel caso un valore negativo venga elevato.
@@ -534,7 +536,7 @@ Alla fine dell'algoritmo, l'ultimo valore rimasto nello stack è il risultato de
 > - Risultato: 10
 
 ### ExpressionHelper e CharExtensions
-L-oggetto ExpressionHelper e le estensioni al tipo Char sono aggiunte di utility utilizzate sia dal backend che dal frontend.
+L'oggetto ExpressionHelper e le estensioni al tipo Char sono aggiunte di utility utilizzate sia dal backend che dal frontend.
 
 ExpressionHelper fornisce un metodo per correggere le parentesi di una espressione. Quindi trasformerà un'espressione che utilizza solo parentesi tonde con una che utilizza sia quadre che graffe.
 ```kotlin
@@ -555,10 +557,36 @@ fun Char.isCalculatorSign(): Boolean { ... }
 
 Entrambe hanno algoritmi triviali, che sono stati omessi da questo documento.
 
+## Stack
+Per puro scopo didattico non è stata utilizzata nessuna classe stack già implementata, bensì ne è stata implementata una custom utilizzando una lista linkata.
+
+Il codice inerente all'implementazione dello stack non viene riportato nella sua forma completa in quanto non è strettamente inerente col progetto.
+
+```kotlin
+class Stack<T> {  
+    private class StackCell<T>(val value: T) {  
+        var next: StackCell<T>? = null  
+        var prev: StackCell<T>? = null  
+    }  
+  
+    private var first: StackCell<T>? = null  
+    private var last: StackCell<T>? = null  
+  
+    var size: Int = 0  
+        private set  
+  
+    fun removeLast(): T { ... }  
+    fun addLast(value: T) { ... }  
+    fun last(): T { ... }  
+    fun isEmpty(): Boolean = ...
+    fun isNotEmpty(): Boolean = ...
+}
+```
+
 # Possibili miglioramenti
 La struttura dell'applicazione è decisamente solida, ma alcuni miglioramenti possono comunque essere applicati nel caso si voglia continuare a lavorare nel progetto.
 
-In primo luogo sarebbe molto utile la divisione della classe ExpressionTokenizer, spostando la parte di aggiunta di token extra a parte in un ExpressionPreProcessor, che lavorerebbe sulla lista di token generata dal tokenizer. Questo migliorerebbe sia la struttura che l'espandibilità del progetto.
+In primo luogo sarebbe molto utile la divisione della classe ExpressionTokenizer, spostando la parte di aggiunta di token extra in una nuova classe ExpressionPreProcessor, che lavorerebbe sulla lista di token generata dal tokenizer. Questo migliorerebbe sia la struttura che l'espandibilità del progetto.
 
 Successivamente la gestione degli errori potrebbe essere migliorabile. Seguendo la pura preferenza personale, sarebbe utile diminuire il numero di errori risultanti da eccezioni, effettuando una migliore gestione di queste ultime ed utilizzando con più efficacia i valori opzionali. Personalmente il metodo della gestione degli errori attraverso le eccezioni non è il mio preferito e preferirei farne a meno totalmente (sostituendole con valori opzionali e, se si stesse utilizzando un altro linguaggio, valori multipli ritornati), ma sia in Java che in Kotlin queste ultime sono costrutto fondamentale e non eliminabile o rimpiazzabile.
 
