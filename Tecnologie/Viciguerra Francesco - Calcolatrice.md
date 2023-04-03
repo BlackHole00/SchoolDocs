@@ -93,4 +93,33 @@ Questa activity mostra lo studio della funzione mostrando il grafico di quest'ul
 L'utente può ulteriormente specificare l'intervallo di suo interesse ed il grafico verrà automaticamente aggiornato.
 ![[GraphViewActivity.png]]
 
-## Backe
+## Backend
+Il backend è la parte di software strettamente dedicata alla logica interna dell'applicazione. 
+Fornisce quindi classi per la conversione di un'eventuale espressione nella corrispondente notazione polacca e per il calcolo di quest'ultima, supportando anche la sostituzione dell'incognita.
+Inoltre il backend fornisce varie classi ed estensioni di supporto che vengono utilizzate anche nel frontend.
+Il backend fornisce le varie classi e tipi presentati in seguito.
+
+### ExpressionToken
+Questa classe, seconda la stretta definizione teorica, è un cosiddetto [_Tipo di dato algebrico (algebraic data type)_](https://en.wikipedia.org/wiki/Algebraic_data_type). Un dato algebrico è una tipo composto che è formato dalla combinazione di più tipi diversi.
+Logicamente, comparandolo con il linguaggio C, è possibile considerarlo come una variante di un enumerato che, oltre al valore dell'enum contiene anche ulteriori dati, a modo simile di un union. Si nota tuttavia che il linguaggio C (e CPP) non supporta direttamente questi tipi di dato. 
+Per avere un semplice esempio è possibile vedere il linguaggio di programmazione rust, che implementa questi tipi [direttamente nei suoi enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html).
+
+Segue l'esempio di un tipo di dato algebrico. Ogni variabile di tipo `IpAddr` potrà essere di tipo `V4` (e contenere 4 valori unsigned ad 8 bit), di tipo `V6` (contenendo una stringa) oppure di tipo `None` (non contenendo nulla).
+```rust
+enum IpAddr {
+	None,
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+```
+
+Kotlin di per se'non supporta direttamente i tipi di dati algebrici, ma è possibile, ed è anche l'alternativa consigliata, utilizzando una combinazione di `sealed class` e di `data class`, in modo da creare un 
+
+### ExpressionTokenizer
+```kotlin
+class ExpressionTokenizer(private val expression: String) {  
+    fun tokenize(): ArrayList<ExpressionToken> { ... }
+}
+```
+
+# Algoritmi e Logica di Implementazione
