@@ -103,6 +103,43 @@ L'utente può ulteriormente specificare l'intervallo di suo interesse ed il graf
 
 ![GraphViewActivity.png](res/GraphViewActivity.png)
 
+### Kalculator
+Kalculator è un oggetto che fa da "colla" tra il frontend ed il backend. Si occupa di salvare l'espressione attuale sotto forma di stringa, di controllare gli operatori inseriti, di definire quali segni o valori possano essere inseriti al momento attuale, di gestire gli errori dell'utente e di eventuali espressioni errate e di offrire un risultato, sotto forma di numero, stampato al posto dell'espressione, o sotto forma di grafico, utilizzando la GraphViewActivity.
+
+```kotlin
+object Kalculator {  
+    var expression = ""  
+        private set  
+  
+    val isExpression: Boolean  
+        get() = !expression.contains('x')  
+  
+    fun pushCharacter(char: Char) { ... }  
+    fun canPushCharacter(char: Char): Boolean { ... }  
+    fun clearAll() { ... }  
+    fun deleteCharacter(): Char? { ... }  
+    fun canDeleteCharacter(): Boolean { ... }  
+    fun evaluateExpression() { ... }  
+    fun evaluateFunction(start: Double, end: Double, interval: Double):
+        ArrayList<Pair<Double, Double>>? { ... }  
+}
+```
+
+Si nota che le funzioni di quest'oggetto vengono chiamate dai vari listener custom implementati nell'interfaccia.
+
+Il nome è un'unione di Calculator e Kotlin.
+
+Gli algoritmi specifici di questa classe non vengono riportati in quanto triviali, ad eccezione di qualche caso limite.
+
+### OnClickListeners
+Queste classi sono derivate dalla classe android `OnClickListener` e specificano, attraverso l'override di una funzione virtuale, il comportamento dell'applicazione a seguito del click di un pulsante.
+
+Si nota che è necessario associare un listener ad un determinato pulsante per fare in modo che questo funzioni. Per far ciò viene utilizzato `findViewById`, per ottenere il riferimento ad bottone desiderato e `setOnClickListener` per associare un listener, come nel seguente esempio:
+
+```kotlin
+findViewById<Button>(R.id.btnNum0).setOnClickListener(CalculatorOnClickListener(this))
+```
+
 ## Backend
 Il backend è la parte di software strettamente dedicata alla logica interna dell'applicazione. 
 
@@ -419,5 +456,24 @@ Alla fine dell'algoritmo, l'ultimo valore rimasto nello stack è il risultato de
 > 	- Stack: _Value(10, None)_
 > - Risultato: 10
 
-### 
-# Algoritmi e Logica di Implementazione
+### ExpressionHelper e CharExtensions
+L-oggetto ExpressionHelper e le estensioni al tipo Char sono aggiunte di utility utilizzate sia dal backend che dal frontend.
+
+ExpressionHelper fornisce un metodo per correggere le parentesi di una espressione. Quindi trasformerà un'espressione che utilizza solo parentesi tonde con una che utilizza sia quadre che graffe.
+```kotlin
+object ExpressionHelper {  
+    fun getCorrectParenthesisExpression(str: String): String { ... }  
+}
+```
+
+Le estensioni al tipo Char forniscono metodi per facilmente definire se il carattere appartiene alla calcolatrice e che ruolo ha in essa.
+```kotlin
+fun Char.isOpeningParenthesis(): Boolean { ... }  
+fun Char.isClosingParenthesis(): Boolean { ... }  
+fun Char.isParenthesis(): Boolean { ... }  
+fun Char.isValidCalculatorCharacter(): Boolean { ... }  
+fun Char.isCalculatorOperator(): Boolean { ... }  
+fun Char.isCalculatorSign(): Boolean { ... }
+```
+
+Entrambe hanno algoritmi triviali, che sono stati omessi da questo documento.
