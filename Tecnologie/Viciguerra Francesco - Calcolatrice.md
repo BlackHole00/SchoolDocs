@@ -138,7 +138,7 @@ Per avere un semplice esempio è possibile vedere il linguaggio di programmazion
 Segue l'esempio di un tipo di dato algebrico. Ogni variabile di tipo `IpAddr` potrà essere di tipo `V4` (e contenere 4 valori unsigned ad 8 bit), di tipo `V6` (contenendo una stringa) oppure di tipo `None` (non contenendo nulla).
 ```rust
 enum IpAddr {
-	None,
+    None,
     V4(u8, u8, u8, u8),
     V6(String),
 }
@@ -163,7 +163,7 @@ sealed class ExpressionToken {
     data class Value(
 	    val value: Double, 
 	    val nComp: NegativeComputationType = NegativeComputationType.None
-	): ExpressionToken()  
+    ): ExpressionToken()  
 }
 ```
 
@@ -210,6 +210,95 @@ Si nota che il tokenizer è anche utilizzato per aggiungere eventuali token che 
 Il funzionamento di questa classe è al quanto triviale e non contiene codice rilevante, se non per alcuni casi limiti, quindi non viene spiegata in questo documento. Se si desidera è comunque possibile leggere il file sorgente, che è appropriatamente commentato.
 
 ### ExpressionParser
-L'ExpressionParser è una classe che permette di convertire una lista di token nell'equivalente forma postfissa
+L'ExpressionParser è una classe che permette di convertire una lista di token nell'equivalente forma postfissa. In questo passaggio non vengono creati nuovi token, ma vengono solo spostati o rimossi (nel caso delle parentesi) quelli esistenti.
+
+Segue il codice della classe e la spiegazione dell'algoritmo di conversione.
+```kotlin
+class ExpressionParser(private val tokens: ArrayList<ExpressionToken>) {  
+    private fun operatorImportance(token: ExpressionToken): Int {  
+        return when (token) {  
+            is ExpressionToken.OperatorPlus, is ExpressionToken.OperatorMinus -> 1  
+            is ExpressionToken.OperatorMultiplication, 
+	            is ExpressionToken.OperatorDivision -> 2  
+            is ExpressionToken.OperatorPower -> 3  
+            else -> 0  
+        }  
+    }  
+  
+    fun parse(): ArrayList<ExpressionToken> {  
+        val result = ArrayList<ExpressionToken>()  
+        val stack = Stack<ExpressionToken>()  
+  
+        for (token in tokens) {  
+            // 001:
+            if (token is ExpressionToken.Value || 
+	            token is ExpressionToken.VariableX
+            ) {  
+                result.add(token)
+                continue  
+            }  
+
+            // 002:  
+            if (token is ExpressionToken.OpenParenthesis) {  
+                stack.addLast(token)
+                continue  
+            }  
+
+			// 003:
+            if (token is ExpressionToken.CloseParenthesis) {  
+                while (stack.last() !is ExpressionToken.OpenParenthesis) {  
+                    result.add(stack.removeLast())  
+                }  
+
+                stack.removeLast()  
+  
+                continue  
+            }  
+
+            // 004:
+            while (stack.isNotEmpty() &&  
+                stack.last() !is ExpressionToken.OpenParenthesis &&  
+                operatorImportance(stack.last()) >= operatorImportance(token)  
+            ) {  
+                result.add(stack.removeLast())  
+            }  
+            stack.addLast(token)  
+        }  
+
+		// 005:
+        while (stack.isNotEmpty()) {  
+            result.add(stack.removeLast())  
+        }  
+  
+        return result  
+    }  
+}
+```
+L'algoritmo si basa sull'utilizzo di una classe stack, in combinazione con una funzione helper che definisce l'importanza/precedenza degli operatori (in questo caso `operatorImportance`). Lo stack viene utilizzato come storage temporaneo per i segni che vanno spostati.
+
+Si consideri _result_ la lista di output.
+Per ogni token iterato nella lista di input, se quest'ultimo è un numero o una variabile X, esso viene aggiunto a result _(001)_.
+Se invece si tratta di una parentesi aperta, quest'ultima verrà posta nello stack _(002)_.
+Ulteriormente se viene tratta in considerazione una parentesi chiusa, verranno posti in result tutti gli operatori presenti nello stack, fino alla prima parentesi aperta, sempre presenta in esso _(003)_.
+Nell'ulteriore caso che il token sia un operatore, verranno posti in result tutti gli operatori nello stack fino al primo con minore importanza, per poi inserire l'operatore analizzato nello stack. Questa parte è quella che permette il giusto cambio di precedenza degli operatori _(004)_.
+Infine, ogni singolo token rimasto nello stack viene posto nel result _(005)_.
+
+> Si riporta l'ulteriore esempio della conversione dell'espressione `3 * 2 + 4`, che deve diventare `3 2 * 4 +`
+> - Token _Value(3, None)_:
+> 	stack:
+> 	result: _Value(3, None)_
+> - Token _OperatorMultiplication_:
+> 	stack: _OperatorMultiplication_
+> 	result: _Value(3, None)_
+> - Token _Value(2, None)_
+> 	stack: _OperatorMultiplication_
+> 	result: _Value(3, None), Value(2, None)_
+> - Token _OperatorPlus_
+> 	stack: _OperatorPlus_
+> 	result: _Value(3, None), Value(2, None), OperatorMultiplication_
+> - Token _Value(4, None)_
+> 	stack: _OperatorPlus_
+> 	result: _Value(3, None), Value(2, None), OperatorMultiplication, Value(4, None)_
+> - Result: _Value(3, None), Value(2, None), OperatorMultiplication, Value(4, None), OperatorPlus_
 
 # Algoritmi e Logica di Implementazione
