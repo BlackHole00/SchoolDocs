@@ -95,6 +95,8 @@ Questa activity è la principale e permette di inserire l'espressione utilizzand
 
 Come è possibile notare non sono presenti le parentesi graffe e quadre. Questo perché la parentesi nell'espressione sono automaticamente convertite nel corretto formato a seconda del numero di parentesi utilizzate dall'utente.
 
+Dal punto di vista del codice, MainActivity contiene anche una funzione helper condivisa con tutti i listener, che, facendo riferimento a Kalculator, analizza l'espressione corrente ed abilita o disabilita i  pulsanti dell'interfaccia, come accennato in precedenza.
+
 ![MainActivity.png](res/MainActivity.png)
 ### GraphViewActivity
 Questa activity mostra lo studio della funzione mostrando il grafico di quest'ultima. Viene chiamata  dalla MainActivity a seguito della pressione del pulsante _uguale_ nel caso nell'espressione sia presente il simbolo _x_. 
@@ -135,9 +137,62 @@ Gli algoritmi specifici di questa classe non vengono riportati in quanto trivial
 Queste classi sono derivate dalla classe android `OnClickListener` e specificano, attraverso l'override di una funzione virtuale, il comportamento dell'applicazione a seguito del click di un pulsante.
 
 Si nota che è necessario associare un listener ad un determinato pulsante per fare in modo che questo funzioni. Per far ciò viene utilizzato `findViewById`, per ottenere il riferimento ad bottone desiderato e `setOnClickListener` per associare un listener, come nel seguente esempio:
-
 ```kotlin
 findViewById<Button>(R.id.btnNum0).setOnClickListener(CalculatorOnClickListener(this))
+```
+
+Segue la lista degli OnClickListener presenti nel progetto. Si nota che questi ultimi sono simili gli uni agli altri, quindi solo uno di essi verrà mostrato nella sua interità.
+
+#### CalculatorOnClickListener
+Questo listener viene utilizzato per la maggior parte dei pulsanti della calcolatrice. Quando eseguito inserisce un carattere nella calcolatrice equivalente al primo carattere del testo del pulsante, per poi aggiornare il testo e aggiornare i pulsanti, per disabilitare quelli non più utilizzabili ed abilitare quelli adesso validi.
+```kotlin
+class CalculatorOnClickListener(private var activity: MainActivity) 
+: View.OnClickListener {  
+    override fun onClick(v: View) {  
+        val sender = v as Button  
+  
+        Kalculator.pushCharacter(sender.text[0])  
+  
+        activity.findViewById<TextView>(R.id.lblResult).text = Kalculator.expression  
+  
+        activity.updateButtons()  
+    }  
+}
+```
+
+#### CEOnClickListener
+Utilizzato per il pulsante di pulizia.
+```kotlin
+class CEOnClickListener(private var activity: MainActivity) : View.OnClickListener {  
+    override fun onClick(v: View) { ... }  
+}
+```
+
+#### DelOnClickListener
+Utilizzato per la rimozione dell'ultimo carattere della stringa.
+```kotlin
+class DelOnClickListener(private var activity: MainActivity) : View.OnClickListener {  
+    override fun onClick(v: View) { ... }  
+}
+```
+
+#### EqualsOnClickListener
+Utilizzato per il pulsante uguale.
+```kotlin
+class EqualsOnClickListener(private var activity: MainActivity) : View.OnClickListener {  
+    override fun onClick(v: View) { ... }  
+}
+```
+
+#### ParenthesisOnClickListener
+Utilizzato per i pulsanti delle parentesi.
+```kotlin
+class ParenthesisOnClickListener(  
+    private var activity: MainActivity,  
+    private val opening: Boolean,  
+) : View.OnClickListener {  
+    override fun onClick(v: View) { ... }  
+}
 ```
 
 ## Backend
