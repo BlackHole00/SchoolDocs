@@ -30,6 +30,7 @@ Durante la creazione del progetto sono stati ipotizzatati i seguenti punti:
 Android studio è l'IDE utilizzato per l'applicazione, la quale è nativa Android. La tecnologia android si basa prevalentemente sull'utilizzo di:
 - file di configurazione XML: per descrivere l'applicazione e crearne l'interfaccia in modo statico
 - codice Java: per creare la logica e dare funzionalità all'applicativo.
+
 La spiegazione nel preciso dell'intero funzionamento della programmazione Android è oltre lo scopo di questo documento. Verranno spiegate, qualora opportuno, specifici funzionamenti aggiuntivi.
 
 ## Kotlin
@@ -49,14 +50,19 @@ Dal punto di vista delle features Kotlin fornisce:
 
 Il motivo della scelta dell'utilizzo di Kotlin è puramente didattico, in quanto è stato voluto imparare un nuovo linguaggio.
 
+Si nota tuttavia che in questo documento non verrà spiegato nel dettaglio il linguaggio. Verranno tuttavia resi note alcune features che non hanno un equivalente java qualora necessario alla comprensione del codice.
+
 ## GraphView
 GraphView è una libreria Java per Android sviluppata da Jjoe64 ed è la più utilizzata per la creazione di schemi e grafici. 
+
 Sebbene sia tecnicamente possibile implementare una propria versione utilizzando una view Android custom e sovrascrivendo il metodo virtuale `onDraw`, questo metodo non è stato utilizzato perché la libreria è adeguatamente flessibile per le esigenze del progetto e la parte di analisi della funzione è di importanza secondaria.
+
 E'stato comunque necessario imparare ad utilizzare la libreria, utilizzando la [documentazione ufficiale](https://github.com/jjoe64/GraphView/wiki/Documentation).
 
 # Tecniche utilizzate
 ## Reverse Polish Notation
 La reverse polish notation (abbreviazione RPM), anche detta _notazione postfissa_, è un metodo di rappresentazione di una espressione matematica che permette le rimozione delle parentesi ed è facilmente calcolabile da un computer.
+
 La notazione normalmente utilizzata in matematica viene detta invece _notazione infissa_.
 Quando nella notazione infissa l'operatore (quindi _più, meno, per, diviso_...) viene posto tra i due operandi, in quella postfissa, l'operatore viene posto dopo gli operatori, facendo riferimento agli ultimi _n_.
 > Per esempio _(infissa -> postfissa)_:
@@ -86,21 +92,46 @@ La terminazione dell'attività chiamata dall'intent (attraverso l'utilizzo del p
 
 ### MainActivity
 Questa activity è la principale e permette di inserire l'espressione utilizzando i pulsanti, che verranno disabilitati a seconda dello stato dell'espressione attuale, per evitare che l'utente possa fare molti errori.
+
 Come è possibile notare non sono presenti le parentesi graffe e quadre. Questo perché la parentesi nell'espressione sono automaticamente convertite nel corretto formato a seconda del numero di parentesi utilizzate dall'utente.
+
 ![[MainActivity.png]]
 ### GraphViewActivity
 Questa activity mostra lo studio della funzione mostrando il grafico di quest'ultima. Viene chiamata  dalla MainActivity a seguito della pressione del pulsante _uguale_ nel caso nell'espressione sia presente il simbolo _x_. 
+
 L'utente può ulteriormente specificare l'intervallo di suo interesse ed il grafico verrà automaticamente aggiornato.
+
 ![[GraphViewActivity.png]]
 
 ## Backend
 Il backend è la parte di software strettamente dedicata alla logica interna dell'applicazione. 
+
 Fornisce quindi classi per la conversione di un'eventuale espressione nella corrispondente notazione polacca e per il calcolo di quest'ultima, supportando anche la sostituzione dell'incognita.
 Inoltre il backend fornisce varie classi ed estensioni di supporto che vengono utilizzate anche nel frontend.
+
 Il backend fornisce le varie classi e tipi presentati in seguito.
 
 ### ExpressionToken
-Questa classe, seconda la stretta definizione teorica, è un cosiddetto [_Tipo di dato algebrico (algebraic data type)_](https://en.wikipedia.org/wiki/Algebraic_data_type). Un dato algebrico è una tipo composto che è formato dalla combinazione di più tipi diversi.
+ExpressionToken è un costrutto utilizzato nella codebase per identificare un singolo elemento dell'espressione, senza dover quindi lavorare con una stringa per la trasformazione di quest'ultima in notazione polacca e per la sua computazione.
+
+Un ExpressionToken può assumere quindi i seguenti valori:
+- _OperatorePiù_
+- _OperatoreMeno_
+- _OperatorePer_
+- _OperatoreDiviso_
+- _OperatorePotenza_
+- _ParentesiAperta_
+- _ParentesiChiusa_
+- _VariabileX_, contenente il segno di quest'ultima e la modalità di computazione per casi particolari
+- _Numero_, contenente il numero stesso e la modalità di computazione per casi particolari
+
+Nella pratica la stringa di testo verrà convertita in una lista di token, come nel seguente esempio:
+`(2 + 3) * 4` -> `OpenParenthesis Value(2, None) OperatorPlus Value(3, None) CloseParenthesis OperatorMultiplication Value(4, None)`
+
+Tale lista di token verrà poi convertita nella sua variante in notazione polacca per poi essere calcolata. In riferimento all'esempio precedente, la lista di token in notazione postfissa diventa:
+`2 3 + 4 *` -> `Value(2, None) Value(3, None) OperatorPlus Value(4, None) OperatorMultiplication`
+
+Questa classe, dal punto di vista dell'implementazione e della stretta definizione teorica è un cosiddetto [_Tipo di dato algebrico (algebraic data type)_](https://en.wikipedia.org/wiki/Algebraic_data_type). Un dato algebrico è una tipo composto che è formato dalla combinazione di più tipi diversi.
 Logicamente, comparandolo con il linguaggio C, è possibile considerarlo come una variante di un enumerato che, oltre al valore dell'enum contiene anche ulteriori dati, a modo simile di un union. Si nota tuttavia che il linguaggio C (e CPP) non supporta direttamente questi tipi di dato. 
 Per avere un semplice esempio è possibile vedere il linguaggio di programmazione rust, che implementa questi tipi [direttamente nei suoi enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html).
 
@@ -113,7 +144,32 @@ enum IpAddr {
 }
 ```
 
-Kotlin di per se'non supporta direttamente i tipi di dati algebrici, ma è possibile, ed è anche l'alternativa consigliata, utilizzando una combinazione di `sealed class` e di `data class`, in modo da creare un 
+Kotlin di per se'non supporta direttamente i tipi di dati algebrici, ma è possibile, ed è anche l'alternativa consigliata, utilizzando una combinazione di `sealed class`, di `data class` e di `object`, sfruttando il polimorfismo, in modo da creare un funzionamento simile a quello desiderato.
+
+L'ExpressionToken è quindi definito nel seguente metodo:
+```kotlin
+sealed class ExpressionToken {  
+    object OperatorPlus: ExpressionToken()  
+    object OperatorMinus: ExpressionToken()  
+    object OperatorMultiplication: ExpressionToken()  
+    object OperatorDivision: ExpressionToken()  
+    object OperatorPower: ExpressionToken()  
+    object OpenParenthesis: ExpressionToken()  
+    object CloseParenthesis: ExpressionToken()  
+    data class VariableX(
+	    val negative: Boolean, 
+	    val nComp: NegativeComputationType = NegativeComputationType.None
+	): ExpressionToken()  
+    data class Value(
+	    val value: Double, 
+	    val nComp: NegativeComputationType = NegativeComputationType.None
+	): ExpressionToken()  
+}
+```
+
+Si nota che in kotlin una `sealed class` è una speciale classe astratta che non permette l'aggiunta di nuovi metodi nelle sue classi derivate. In questo caso viene creata una classe sealed senza metodi, dalla quale derivano tutte le varianti dell'ExpressionToken.
+Un `object` è l'equivalente delle classi statiche di java. In questo caso non ha senso creare più istanze di un token senza valori salvati all'interno di esso.
+Infine una `data class` è simile al `record` di Java 14, ulteriormente causa il trattamento della classe come se fosse una struttura e quest'ultima venisse sempre passata come valore.
 
 ### ExpressionTokenizer
 ```kotlin
