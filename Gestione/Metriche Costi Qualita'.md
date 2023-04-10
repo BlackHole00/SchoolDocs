@@ -82,7 +82,7 @@ I metodi basati sui modelli generici si dividono a loro volta in:
 - *non proprietari*: pubblica, spesso definita da uno standard ed utilizzabile da chiunque
 
 I metodi basati sui modelli specifici si dividono invece a loro volta in:
-- *data driven*: a seconda del tipo si basano su piu'dati, che vengono analizzati attraverso una formula fissa (nel caso di quelli *parametrici*) o su di una non precisa (nel caso dei *non parametrici*)
+- *data driven*: a seconda del tipo si basano su piu'dati e modelli matematici, che vengono analizzati attraverso una formula fissa (nel caso di quelli *parametrici*) o su di una non precisa (nel caso dei *non parametrici*). Utilizzano un valore di produttivita'detto *KDSI (Kilo Delivered Source Instruction)*, che conteggia le linee di codice consegnate effettivamente al cliente, quindi escludendo test e commenti.
 - *composti*: realizzati attraverso l'utilizzo di tecniche data driven combinate con l'opinione di esperti.
 
 #### Metodo SLIM
@@ -121,7 +121,44 @@ Rispetto a COCOMO I, i progetti sono divisi per tipologia. Ogni tipologia, come 
 L'idea generale, per tutte le sottocategorie, e'l'utilizzo di una nuova modalita'di calcolo che considera l'impegno complessivo per il progetto non in modalita'proporzionale al lavoro necessario per sviluppare il software.
 
 Il modello quindi terra'conto dei seguenti parametri:
-- *PREC (Precedentedness)*: 
+- *PREC (Precedentedness)*: se il progetto ha precedenti di difficolta'nota
+- *FLEX (Development FLEXibility)*: indica la flessibilita'delle specifiche del progetto (es. standard di sviluppo)
+- *REAL (Architecture/Risck RESolution)*: relativo ai rischi trattati ed affrontati
+- *TEAM (TEAM Cohesion)*
+- *PMAT (Process MATurity)*
+
+Come anche il COCOMO I, COCOMO II utilizza i fattori di aggiustamento, sotto il nome di *moltiplicatori di sforzo (EM)*, che vengono utilizzati per aggiustare la stima dei mesi/persona e sono divisi in 4 categorie:
+- *prodotto*
+- *piattaforma*
+- *personale*
+- *progetto*
+
+#### Modelli di Doty, Walston-Felix e Bailey-Basili
+Modelli basati sul data driven. Utilizzano formule fisse.
+
+#### Modello COBRA
+Il modello COBRA *(COst Estimation Benchmarking and Rick Assessment)* e'un metodo composto che fornisce una stima per analogia attraverso due componenti:
+- un modello matematico che fornisce la stima dei costi utilizzando un insieme di fattori acquisito mediante gli esperti.
+- l'utilizzo dei dati dei progetti passati con richieste simili.
+
+COBRA fornisce molteplici vantaggi:
+- puo'essere applicato a piu'ambienti, anche con poci dati
+- vengono riutilizzate le conoscenze passate
+- viene accettato facilmente
+Ma fornisce anche alcuni svantaggi:
+- bisogna avere dispobibilita'di esperti e dati passati
+
+#### Metodo Delphi Standard
+Questo metodo non e'basato su un modello. La stima viene offerta attraverso la consultazione di piu'esperti, sotto la supervisione di un supervisore. Si nota che gli esperti consultati non saranno in collegamento tra di loro, per ottenere una stima eterogenea, che poi verra'"normalizzata" e rifatta analizzare dagli esperti.
+
+#### Metodo Delphi Wideband
+Questo metodo non e'basato su un modello. E'simile al modello delphi standard.
+
+#### Metodo della Stima alla Parkinson
+Questo metodo non e'basato su un modello. Si basa sull'idea che il progetto consumera'tutto il budget. Quindi generera'sovrastime e portera'all'aggiunta di funzionalita'aggiuntive e di consumo ad esaurimento delle risorse. 
+
+#### Metodo dell Stima Price-to-win
+Questo metodo non e'basato su un modello. Viene utilizzato per aggiudicarsi una gara o un contratto. Porta quindi a molti problemi di processo ed ad una qualita'inferiore del prodotto.
 
 ### Dimensioni del software
 Ci sono due dimensioni del software che vengono considerate:
