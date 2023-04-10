@@ -1,6 +1,7 @@
 {
   "accentColor": "",
-  "cssTheme": "",
+  "cssTheme": "Obsidian gruvbox",
   "textFontFamily": "",
-  "monospaceFontFamily": "Consolas"
+  "monospaceFontFamily": "Consolas",
+  "baseFontSize": 18
 }
