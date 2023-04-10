@@ -78,7 +78,7 @@ Secondo la classificazione definita da *Barry Boehm*, i metodi di stima sono div
 - *non basati su modelli*: si basano sull'esprienza di un tecnico che offre una stima. Richiede ovviamente piu'opinioni e confronti.
 
 I metodi basati sui modelli generici si dividono a loro volta in:
-- *proprietari*: non pubblici, relativi ad una singola organizzazione
+- *proprietari*: non pubblici, relativi ad una singola organizzazione. Sono quindi i piu'difficili da accettare. Un esempio e'il metodo di *Putman*
 - *non proprietari*: pubblica, spesso definita da uno standard ed utilizzabile da chiunque
 
 I metodi basati sui modelli specifici si dividono invece a loro volta in:
@@ -88,7 +88,7 @@ I metodi basati sui modelli specifici si dividono invece a loro volta in:
 ### Dimensioni del software
 Ci sono due dimensioni del software che vengono considerate:
 - *dimensione interna*: misurata in LOC, viene anche detta *strutturale*. Vengono utilizzate perche'sono facilmente definibili, misurabili ed intepretabili, ma hanno lo svantaggio di non avere una definizione standard, in quanto il conteggio non tiene conto del linguaggio utilizzato, dallo stile di programmazione e delle funzionalita'delle linee di codice.
-- *dimensione esterna*: misurata in FP, viene detta anche *funzionale*. I suoi vantaggi sono gli svantaggi dei quella interna e viceversa. Oltre a questi ultimi, l'utilizzo degli FP porta ad ulteriori svantaggi, ovvero la difficile definizione 
+- *dimensione esterna*: misurata in FP, viene detta anche *funzionale*. I suoi vantaggi sono gli svantaggi dei quella interna e viceversa. Oltre a questi ultimi, l'utilizzo degli FP porta ad ulteriori svantaggi, ovvero la difficile definizione delle funzionalita'del progetto, in quanto la determinazione dei FP e dello schema dei pesi utilizzato e'soggettivo
 
 ### Modello COCOMO II
 
