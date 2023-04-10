@@ -86,7 +86,9 @@ I metodi basati sui modelli specifici si dividono invece a loro volta in:
 - *composti*: realizzati attraverso l'utilizzo di tecniche data driven combinate con l'opinione di esperti.
 
 ### Dimensioni del software
-Le dimensioni del software 
+Ci sono due dimensioni del software che vengono considerate:
+- *dimensione interna*: misurata in LOC, viene anche detta *strutturale*. Vengono utilizzate perche'sono facilmente definibili, misurabili ed intepretabili, ma hanno lo svantaggio di non avere una definizione standard, in quanto il conteggio non tiene conto del linguaggio utilizzato, dallo stile di programmazione e delle funzionalita'delle linee di codice.
+- *dimensione esterna*: misurata in FP, viene detta anche *funzionale*. I suoi vantaggi sono gli svantaggi dei quella interna e viceversa. Oltre a questi ultimi, l'utilizzo degli FP porta ad ulteriori svantaggi, ovvero la difficile definizione 
 
 ### Modello COCOMO II
 
