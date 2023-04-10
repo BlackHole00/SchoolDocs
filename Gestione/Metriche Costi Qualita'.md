@@ -78,12 +78,50 @@ Secondo la classificazione definita da *Barry Boehm*, i metodi di stima sono div
 - *non basati su modelli*: si basano sull'esprienza di un tecnico che offre una stima. Richiede ovviamente piu'opinioni e confronti.
 
 I metodi basati sui modelli generici si dividono a loro volta in:
-- *proprietari*: non pubblici, relativi ad una singola organizzazione. Sono quindi i piu'difficili da accettare. Un esempio e'il metodo di *Putman*
+- *proprietari*: non pubblici, relativi ad una singola organizzazione. Sono quindi i piu'difficili da accettare. Un esempio e'il metodo di *Putnam e *SLIM*
 - *non proprietari*: pubblica, spesso definita da uno standard ed utilizzabile da chiunque
 
 I metodi basati sui modelli specifici si dividono invece a loro volta in:
 - *data driven*: a seconda del tipo si basano su piu'dati, che vengono analizzati attraverso una formula fissa (nel caso di quelli *parametrici*) o su di una non precisa (nel caso dei *non parametrici*)
 - *composti*: realizzati attraverso l'utilizzo di tecniche data driven combinate con l'opinione di esperti.
+
+#### Metodo SLIM
+Inventato da Putnam. Viene applicato a progetti superiori a 70000 righe.
+Utilizza due equazioni che descrivono la relazione tra lo sforzo di sviluppo e la pianificazione sotto forma di mano d'opera.
+
+#### Metodo di Putnam
+Il metodo sul quale si basa il metodo SLIM. Utilizza una curva (*curva di Raleigh-Norden*) per descrivere l'andamento dello sforzo necessario nel corso del progetto. La curva viene ottenuta utilizzando lo sforzo totale e il mese attuale.
+
+#### Metodo COCOMO
+Il metodo cocomo e'un modello proprietario sviluppato da *Barry Boehm*. Viene utilizzato nei progetti con le seguenti caratteristiche:
+- La progettazione deve essere a cascata seguendo le fasi di pianificazioni, progettazione, sviluppo e di testing.
+- I requisiti devono essere stabilito
+- Il mese di lavoro e'composto da 19 giorni, ovvero la totalita'delle ore di lavoro al mese di ogni singolo individuo.
+
+Questo metodo, basandosi su LOC e FP, permette di creare una stima tenendo conto di molti fattori, anche esterni al progetto, e permette di effettuare una stima del preventivo.
+
+Secondo questo modello, a seconda della scala del progetto, bisogna effettuare diversi calcoli. I progetti possono essere:
+- Semplici, utilizzando il modello base
+- Intermedio, utilizzando il modello intermedio
+- Complesso, utilizzando il modello avanzato
+
+Il metodo COCOMO quindi si divide in:
+- *base*: utilizza solo le LOC per ottenere lo sforzo in mesi-persona
+- *intermedio*: utilizza le stesse tecniche del modello base, ma implementa 15 fattori correttivi per le categorie di attributi del prodotto, del calcolatore, del personale, del progetto
+- *avanzato*: simile al modello intermedio, anche se i miglioramenti di stima sono molto inferiori rispetto a quelli tra il metodo base e quello intermedio. Rispetto al livello intermedio, in quello avanzato, vengono analizzati altri fattori di correzione dipendenti dalla fase del progetto.
+
+#### Metodo COCOMO II
+Il metodo COCOMO II e'un'evoluzione del metodo COCOMO ed e'la versione attualmente utilizzata.
+
+Rispetto a COCOMO I, i progetti sono divisi per tipologia. Ogni tipologia, come anche nella prima versione, definisce un nuovo metodo di calcolo.
+- *End-User Programming*, che utilizza il modello *Application Composition Model*
+- *Application Composition*, che utilizza il modello *Early Design*
+- *Application Generators & Composition Aids*, che utilizza il modello *Post-Architecture*
+
+L'idea generale, per tutte le sottocategorie, e'l'utilizzo di una nuova modalita'di calcolo che considera l'impegno complessivo per il progetto non in modalita'proporzionale al lavoro necessario per sviluppare il software.
+
+Il modello quindi terra'conto dei seguenti parametri:
+- *PREC (Precedentedness)*: 
 
 ### Dimensioni del software
 Ci sono due dimensioni del software che vengono considerate:
