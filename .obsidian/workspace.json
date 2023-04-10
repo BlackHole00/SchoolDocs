@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
+                "file": "Gestione/Progettazione d'Impresa.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8e1243c2ea8f519b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gestione/Metriche Costi Qualita'.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6b658cb94900cbdb",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
+                "file": "Gestione/Metriche Costi Qualita'.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
+                "file": "Gestione/Metriche Costi Qualita'.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tecnologie/Viciguerra Francesco - Calcolatrice.md"
+                "file": "Gestione/Metriche Costi Qualita'.md"
               }
             }
           }
@@ -161,17 +174,19 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "29c5428ed15e51c8",
+  "active": "d4d1942c2513e25d",
   "lastOpenFiles": [
+    "Gestione/Progettazione d'Impresa.md",
+    "Gestione/Metriche Costi Qualita'.md",
+    "Gestione/SEO.md",
+    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
     "Tecnologie/Calcolatrice.pptx",
     "Tecnologie/~$Calcolatrice.pptx",
     "Tecnologie/res/GraphViewActivity.png",
     "Tecnologie/Sistemi informativi - note 1.md",
     "Tecnologie/res/MainActivity.png",
-    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
     "Tecnologie/res",
     "Tecnologie/New folder",
-    "Gestione/Progettazione d'Impresa.md",
     "Sistemi/Vlan commands.md",
     "Sistemi/Firewall - Proxy - DMZ.md",
     "Gestione/domande gestione impresa - 2.md",
@@ -183,7 +198,6 @@
     "Sistemi/Dns - Arp - Dhcp.md",
     "Inglese/Totalitarian Language.md",
     "Educazione Civica/UE - Punti Contro.md",
-    "Gestione/SEO.md",
     "Inglese",
     "Italiano/italiano_svevo.md",
     "Educazione Civica",
@@ -193,7 +207,6 @@
     "Tecnologie",
     "Storia",
     "Untitled.canvas",
-    "2023-03-02.md",
-    "Sistemi"
+    "2023-03-02.md"
   ]
 }
