@@ -55,7 +55,38 @@ La stima del costo di un progetto si basa su tre aspetti fondamentali:
 - **quantita'di lavoro richiesta in ore-uomo**
 - **quantita'di persone**
 
+Si nota che la progettazione del software richiede una progettazione particolare, in quanto e'molto diversa dai progetti normali, in quanto in questi ultimi il costo e'facilmente prevedibile e subisce piccole variazioni. Il costo del software invece e'caratterizzato da un *alto costo sottoforma di sforzo iniziale*, che e'in genere maggiore a quello relativo alla fine del progetto.
+E'anche necessario considerare che il costo di *manutenzione* e'*sempre piu'alto* di quello di sviluppo.
+
+La stima dei costi e'richiesta per la quasi totalita'di progetti software, grazie ai seguenti benefici:
+- possibilita'di stipulare contratti sensati dal punto di vista del costruttore e dell'acquirente
+- previsione dei tempi di sviluppo
+- corretto dimensionamento del team di sviluppo
+
+Come menzionato in precedenza in genere il costo di un'applicazione dipende dallo *sforzo* imposto su quest'ultima. Lo sforzo viene definito dai seguenti fattori:
+- *dimensione del software*
+- *fattori umani*: la specializzazione ed esperienza richiesta
+- *complessita'dell'applicazione*
+- *stabilita'dei requisiti*
+- *vincoli extra richiesti dall'applicazione*, che richiedono l'utilizzo di piu'risorse
+- *ambiente di sviluppo*: l'organizzazione interna all'azienda
+
 ### Classificazione dei metodi di stima
+Secondo la classificazione definita da *Barry Boehm*, i metodi di stima sono divisi in:
+- *basati su modelli generici*
+- *basati su modelli specifici*
+- *non basati su modelli*: si basano sull'esprienza di un tecnico che offre una stima. Richiede ovviamente piu'opinioni e confronti.
+
+I metodi basati sui modelli generici si dividono a loro volta in:
+- *proprietari*: non pubblici, relativi ad una singola organizzazione
+- *non proprietari*: pubblica, spesso definita da uno standard ed utilizzabile da chiunque
+
+I metodi basati sui modelli specifici si dividono invece a loro volta in:
+- *data driven*: a seconda del tipo si basano su piu'dati, che vengono analizzati attraverso una formula fissa (nel caso di quelli *parametrici*) o su di una non precisa (nel caso dei *non parametrici*)
+- *composti*: realizzati attraverso l'utilizzo di tecniche data driven combinate con l'opinione di esperti.
+
+### Dimensioni del software
+Le dimensioni del software 
 
 ### Modello COCOMO II
 

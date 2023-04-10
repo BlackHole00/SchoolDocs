@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "34a462c3f07dd004",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gestione/Progettazione d'Impresa.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "29c5428ed15e51c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gestione/Progettazione d'Impresa.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8e1243c2ea8f519b",
             "type": "leaf",
             "state": {
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -174,35 +149,35 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "d4d1942c2513e25d",
+  "active": "8e1243c2ea8f519b",
   "lastOpenFiles": [
-    "Gestione/Progettazione d'Impresa.md",
-    "Gestione/Metriche Costi Qualita'.md",
     "Gestione/SEO.md",
-    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
-    "Tecnologie/Calcolatrice.pptx",
-    "Tecnologie/~$Calcolatrice.pptx",
-    "Tecnologie/res/GraphViewActivity.png",
-    "Tecnologie/Sistemi informativi - note 1.md",
-    "Tecnologie/res/MainActivity.png",
-    "Tecnologie/res",
-    "Tecnologie/New folder",
-    "Sistemi/Vlan commands.md",
+    "Sistemi/Firewall - Iptables.md",
+    "Storia/Seconda Guerra Mondiale.md",
     "Sistemi/Firewall - Proxy - DMZ.md",
+    "Sistemi/Vlan commands.md",
+    "Educazione Civica/GDPR - Note.md",
+    "Educazione Civica/UE - Punti Contro.md",
+    "Gestione/Progettazione d'Impresa.md",
     "Gestione/domande gestione impresa - 2.md",
     "Gestione/domande gestione impresa - 1.md",
-    "Educazione Civica/GDPR - Note.md",
-    "Storia/Seconda Guerra Mondiale.md",
-    "Sistemi/Firewall - Iptables.md",
-    "2023-03-06.md",
-    "Sistemi/Dns - Arp - Dhcp.md",
+    "Gestione/Metriche Costi Qualita'.md",
     "Inglese/Totalitarian Language.md",
-    "Educazione Civica/UE - Punti Contro.md",
+    "Sistemi/Dns - Arp - Dhcp.md",
+    "Tecnologie/Sistemi informativi - note 2.md",
+    "Tecnologie/Sistemi informativi - note 1.md",
+    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
+    "Tecnologie/res/GraphViewActivity.png",
+    "Tecnologie/res/MainActivity.png",
+    "Tecnologie/Calcolatrice.pptx",
+    "Tecnologie/~$Calcolatrice.pptx",
+    "Tecnologie/res",
+    "Tecnologie/New folder",
+    "2023-03-06.md",
     "Inglese",
     "Italiano/italiano_svevo.md",
     "Educazione Civica",
     "Italiano",
-    "Tecnologie/Sistemi informativi - note 2.md",
     "Gestione",
     "Tecnologie",
     "Storia",
