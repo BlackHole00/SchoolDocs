@@ -226,4 +226,13 @@ La qualita'd'uso viene definita dalle caratteristiche:
 
 Dal punto di vista effettivo, la qualita'del codice viene raggruppata in tre categorie:
 - *errori*
-- *dif*
+- *difetti*
+- *malfunzionamenti*
+
+Tuttosommato, per migliorare la qualita'e'necessario migliorare:
+- la competenza delle persone
+- i processi maturi
+- metriche, metodi, tecniche e strumenti
+
+### ISO/IEC 15504
+E'un modello utilizzato per i processi software, fornendo un approccio strutturato. E'anche conosciuto come *SPICE (Software Process Improvement and Capacity Determination)*. E' una sottosezione dell'ISO 9126.
