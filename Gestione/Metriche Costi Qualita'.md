@@ -173,12 +173,31 @@ Si nota che gli *utilizzatori* si aspettano qualita'correlata ad *efficienza, us
 Per standardizzare la qualita'vengono utilizzati modelli. In genere questi ultimi funzionano a livelli e definiscono la qualita'da diversi punti di vista. Ogni livello analizza in modo qualitativo piu'attributi utilizzando una scala di riferimento.
 
 ### Modello McCall-Boehm
-Il primo modello per la standardizzazione della qualita'e'stato il *modello McCall-Boehm*, col nome attuale di *ISO/IEC 9126 Software engineering - Product quality*.
+Il uno dei primi modelli per la standardizzazione della qualita'e'stato il *modello McCall-Boehm*.
 La qualita'del software viene definita da questo modello come l'insieme delle caratteristiche che incidono sulla capacita'di soddisfare requisiti impliciti od espliciti.
 
 Il modello McCall-Bohem utilizza un'architettura a tre livelli:
-- *fattori*: descrivono il software dal punto di vista esterno, dell'utente
-- *criteri*: descrivono il software dal punto di vista degli sviluppatori
+- *fattori*: descrivono il software dal punto di vista esterno, dell'utente. Ne prevede 11
+- *criteri*: descrivono il software dal punto di vista degli sviluppatori. Ne prevede 23
 - *metriche*: controlla che il software sviluppato corrisponda alle richieste dell'utente
 
 Il modello utilizza quindi una visione gerarchica ed un approccio top-down.  
+
+I requisiti dell'utente (fattori) sono i seguenti:
+- *servizio*:
+	- *correttezza*: il software deve essere tracciabile, coerente e completo
+	- *affidabilita'*: il sfotware deve tollerare l'errore, essere coerente, essere accurato ed  essere semplice
+	- *efficienza*: sia in esecuzione che in memorizzazione
+	- *integrita'*: provvede controllo e revisione degli accessi
+	- *usabilita'*: il software deve essere operabile, attraverso un addestramento conoscendo il volume e la velocita'dell'I/O
+- *manutenzione*
+	- *mantenibilita'*: il software deve essere coerente, semplice, coinciso, modulare e con documentazione automatica
+	- *flessibilita'*: il software deve essere generale ed espandibile
+	- *testabilita'*
+- *migrazione a nuovi sistemi*:
+	- *portabilita'*: il software deve essere modulare, auto documentante, indipendente dalla macchina e dal software
+	- *riusabilita'*, legata alla portabilita'e flessibilita'
+	- *interoperabilita'*: il software deve essere modulare ed utilizzare standard di comunicazione e di dati.
+Si nota che alcuni fattori hanno sinergia tra di loro, mentre altri sono in conflitto.
+
+### Modello ISO/IEC 9126
