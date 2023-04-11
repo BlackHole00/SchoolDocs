@@ -201,3 +201,29 @@ I requisiti dell'utente (fattori) sono i seguenti:
 Si nota che alcuni fattori hanno sinergia tra di loro, mentre altri sono in conflitto.
 
 ### Modello ISO/IEC 9126
+Conosciuto anche come *Software engineering - Product quality*, e'un altro modello per definire la qualita'del software. Si basa sul definire caratteristiche e sottocaratteristiche, per le quali sono indicati vari descrittori. Questo modello viene utilizzato in piu'fasi di vita del progetto ed e'destinato sia al team di sviluppo, che agli utenti che ai gestori del sistema (a tutte le persone a contatto col progetto).
+
+Per definire la qualita', a seconda della categoria, vengono utilizzati diversi metodi, cambiando le caratteristiche, le sottocaratteristiche ed i descrittori.
+
+Le categorie sono:
+- *qualita'interna*: misurata direttamente dal codice sorgente, tiene in considerazione i requisiti dell'utente e le specifiche tecniche.
+- *qualita'esterna*: misurata attraverso le prestazioni del prodotto dal punto di vista delle sue funzionalita'.
+- *qualita'in uso*: misurata attraverso la percezione dell'utilizzatore del prodotto.
+
+La qualita'interna ed esterna vengono definite dai seguenti attributi:
+- *functionalita'*
+- *affidabilita'*
+- *usabilita'*
+- *efficienza*
+- *mantenibilita'*
+- *portabilita'*
+
+La qualita'd'uso viene definita dalle caratteristiche:
+- *efficacia*
+- *produttivita'*
+- *sicurezza*
+- *soddisfazione*
+
+Dal punto di vista effettivo, la qualita'del codice viene raggruppata in tre categorie:
+- *errori*
+- *dif*
