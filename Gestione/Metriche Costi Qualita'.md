@@ -78,7 +78,7 @@ Secondo la classificazione definita da *Barry Boehm*, i metodi di stima sono div
 - *non basati su modelli*: si basano sull'esprienza di un tecnico che offre una stima. Richiede ovviamente piu'opinioni e confronti.
 
 I metodi basati sui modelli generici si dividono a loro volta in:
-- *proprietari*: non pubblici, relativi ad una singola organizzazione. Sono quindi i piu'difficili da accettare. Un esempio e'il metodo di *Putnam e *SLIM*
+- *proprietari*: non pubblici, relativi ad una singola organizzazione. Sono quindi i piu'difficili da accettare. Un esempio e'il metodo di *Putnam e SLIM*
 - *non proprietari*: pubblica, spesso definita da uno standard ed utilizzabile da chiunque
 
 I metodi basati sui modelli specifici si dividono invece a loro volta in:
