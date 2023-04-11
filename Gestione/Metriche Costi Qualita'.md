@@ -165,6 +165,20 @@ Ci sono due dimensioni del software che vengono considerate:
 - *dimensione interna*: misurata in LOC, viene anche detta *strutturale*. Vengono utilizzate perche'sono facilmente definibili, misurabili ed intepretabili, ma hanno lo svantaggio di non avere una definizione standard, in quanto il conteggio non tiene conto del linguaggio utilizzato, dallo stile di programmazione e delle funzionalita'delle linee di codice.
 - *dimensione esterna*: misurata in FP, viene detta anche *funzionale*. I suoi vantaggi sono gli svantaggi dei quella interna e viceversa. Oltre a questi ultimi, l'utilizzo degli FP porta ad ulteriori svantaggi, ovvero la difficile definizione delle funzionalita'del progetto, in quanto la determinazione dei FP e dello schema dei pesi utilizzato e'soggettivo
 
-### Modello COCOMO II
+# Qualita'
+Per qualita'si intende l'insieme degli attributi che definiscono la "bonta'"di un prodotto. Ovviamente l'obiettivo del produttore e'quello di ottenere un prodotto con buona qualita'che rispetti le specifiche definite dal cliente.
 
-### Modello COBRA
+Si nota che gli *utilizzatori* si aspettano qualita'correlata ad *efficienza, usabilita' ed affidabilita'*. Gli sviluppatori invece si aspettano *riusabilita', comprensibilita', testabilita' e mantenibilita'*.
+
+Per standardizzare la qualita'vengono utilizzati modelli. In genere questi ultimi funzionano a livelli e definiscono la qualita'da diversi punti di vista. Ogni livello analizza in modo qualitativo piu'attributi utilizzando una scala di riferimento.
+
+### Modello McCall-Boehm
+Il primo modello per la standardizzazione della qualita'e'stato il *modello McCall-Boehm*, col nome attuale di *ISO/IEC 9126 Software engineering - Product quality*.
+La qualita'del software viene definita da questo modello come l'insieme delle caratteristiche che incidono sulla capacita'di soddisfare requisiti impliciti od espliciti.
+
+Il modello McCall-Bohem utilizza un'architettura a tre livelli:
+- *fattori*: descrivono il software dal punto di vista esterno, dell'utente
+- *criteri*: descrivono il software dal punto di vista degli sviluppatori
+- *metriche*: controlla che il software sviluppato corrisponda alle richieste dell'utente
+
+Il modello utilizza quindi una visione gerarchica ed un approccio top-down.  
