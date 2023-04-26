@@ -215,3 +215,177 @@ _ti verrà desiderio di guardarmi._
 
 _Ricorderai d'avermi atteso tanto,_  
 _e avrai negli occhi un rapido sospiro._
+
+---
+# Saba
+## Canzoniere
+
+### A mia moglie
+_Tu sei come una giovane  
+una bianca pollastra.  
+Le si arruffano al vento  
+le piume, il collo china  
+per bere, e in terra raspa;  
+ma, nell'andare, ha il lento  
+tuo passo di regina,  
+ed incede sull'erba  
+pettoruta e superba.  
+È migliore del maschio.  
+È come sono tutte  
+le femmine di tutti  
+i sereni animali  
+che avvicinano a Dio,  
+Così, se l'occhio, se il giudizio mio  
+non m'inganna, fra queste hai le tue uguali,  
+e in nessun'altra donna.  
+Quando la sera assonna  
+le gallinelle,  
+mettono voci che ricordan quelle,  
+dolcissime, onde a volte dei tuoi mali  
+ti quereli, e non sai  
+che la tua voce ha la soave e triste  
+musica dei pollai.  _
+  
+_Tu sei come una gravida  
+giovenca;  
+libera ancora e senza  
+gravezza, anzi festosa;  
+che, se la lisci, il collo  
+volge, ove tinge un rosa  
+tenero la tua carne.  
+se l'incontri e muggire  
+l'odi, tanto è quel suono  
+lamentoso, che l'erba  
+strappi, per farle un dono.  
+È così che il mio dono  
+t'offro quando sei triste.  _
+  
+_Tu sei come una lunga  
+cagna, che sempre tanta  
+dolcezza ha negli occhi,  
+e ferocia nel cuore.  
+Ai tuoi piedi una santa  
+sembra, che d'un fervore  
+indomabile arda,  
+e così ti riguarda  
+come il suo Dio e Signore.  
+Quando in casa o per via  
+segue, a chi solo tenti  
+avvicinarsi, i denti  
+candidissimi scopre.  
+Ed il suo amore soffre  
+di gelosia. _ 
+  
+_Tu sei come la pavida  
+coniglia. Entro l'angusta  
+gabbia ritta al vederti  
+s'alza,  
+e verso te gli orecchi  
+alti protende e fermi;  
+che la crusca e i radicchi  
+tu le porti, di cui  
+priva in sé si rannicchia,  
+cerca gli angoli bui.  
+Chi potrebbe quel cibo  
+ritoglierle? chi il pelo  
+che si strappa di dosso,  
+per aggiungerlo al nido  
+dove poi partorire?  
+Chi mai farti soffrire?  _
+  
+_Tu sei come la rondine  
+che torna in primavera.  
+Ma in autunno riparte;  
+e tu non hai quest'arte._  
+  
+_Tu questo hai della rondine:  
+le movenze leggere:  
+questo che a me, che mi sentiva ed era  
+vecchio, annunciavi un'altra primavera.  _
+  
+_Tu sei come la provvida  
+formica. Di lei, quando  
+escono alla campagna,  
+parla al bimbo la nonna  
+che l'accompagna.  
+E così nella pecchia  
+ti ritrovo, ed in tutte  
+le femmine di tutti  
+i sereni animali  
+che avvicinano a Dio;  
+e in nessun'altra donna._
+
+---
+### La Capra
+_Ho parlato a una capra  
+Era sola sul prato, era legata.  
+Sazia d’erba, bagnata  
+alla pioggia, belava._
+
+_Quell’uguale belato era fraterno  
+al mio dolore. Ed io risposi, prima  
+per celia, poi perchè il dolore è eterno,  
+ha una voce e non varia.  
+Questa voce sentiva  
+gemere in una capra solitaria._
+
+_In una capra dal viso semita  
+sentiva querelarsi ogni altro male,  
+ogni altra vita._
+
+---
+### Trieste
+_Ho attraversata tutta la città.  
+Poi ho salita un'erta,  
+popolosa in principio, in là deserta,  
+chiusa da un muricciolo:  
+un cantuccio in cui solo  
+siedo; e mi pare che dove esso termina  
+termini la città.  _
+  
+_Trieste ha una scontrosa  
+grazia. Se piace,  
+è come un ragazzaccio aspro e vorace,  
+con gli occhi azzurri e mani troppo grandi  
+per regalare un fiore;  
+come un amore  
+con gelosia.  
+Da quest'erta ogni chiesa, ogni sua via  
+scopro, se mena all'ingombrata spiaggia,  
+o alla collina cui, sulla sassosa  
+cima, una casa, l'ultima, s'aggrappa.  
+Intorno  
+circola ad ogni cosa  
+un'aria strana, un'aria tormentosa,  
+l'aria natia._  
+  
+_La mia città che in ogni parte è viva,  
+ha il cantuccio a me fatto, alla mia vita  
+pensosa e schiva._
+
+---
+### Citta'vecchia
+_Spesso, per ritornare alla mia casa  
+prendo un'oscura via di città vecchia.  
+Giallo in qualche pozzanghera si specchia  
+qualche fanale, e affollata è la strada._
+  
+_Qui tra la gente che viene che va  
+dall'osteria alla casa o al lupanare  
+dove son merci ed uomini il detrito  
+di un gran porto di mare,  
+io ritrovo, passando, l'infinito  
+nell'umiltà.  
+Qui prostituta e marinaio, il vecchio  
+che bestemmia, la femmina che bega,  
+il dragone che siede alla bottega  
+del friggitore.  
+la tumultuante giovane impazzita  
+d'amore,  
+sono tutte creature della vita  
+e del dolore;  
+s'agita in esse, come in me, il Signore._
+  
+_Qui degli umili sento in compagnia  
+il mio pensiero farsi  
+più puro dove più turpe è la via._
