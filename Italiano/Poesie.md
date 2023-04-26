@@ -389,3 +389,46 @@ s'agita in esse, come in me, il Signore._
 _Qui degli umili sento in compagnia  
 il mio pensiero farsi  
 più puro dove più turpe è la via._
+
+---
+### Teatro degli artigianelli
+_Falce martello e la stella d’Italia  
+ornano nuovi la sala. Ma quanto  
+dolore per quel segno su quel muro!  
+Entra, sorretto dalle grucce, il Prologo.  
+Saluta al pugno; dice sue parole  
+perché le donne ridano e i fanciulli  
+che affollano la povera platea.  
+Dice, timido ancora, dell’idea  
+che gli animali affratella; chiude: «E adesso  
+faccio come i tedeschi: mi ritiro».  
+Tra un atto e l’altro, alla Cantina, in giro  
+rosseggia parco ai bicchieri l’amico  
+dell’uomo, cui rimargina ferite,  
+gli chiude solchi dolorosi; alcuno  
+venuto qui da spaventosi esigli,  
+si scalda a lui come chi ha freddo al sole.  
+Questo è il Teatro degli Artigianelli,  
+quale lo vide il poeta nel mille  
+novecentoquarantaquattro, un giorno  
+di Settembre, che a tratti  
+rombava ancora il cannone, e Firenze  
+taceva, assorta nelle sue rovine._
+
+---
+### Ulisse
+_Nella mia giovinezza ho navigato_  
+_lungo le coste dalmate. Isolotti_  
+_a fior d’onda emergevano, ove raro_  
+_un uccello sostava intento a prede,_  
+_coperti d’alghe, scivolosi, al sole_  
+_belli come smeraldi. Quando l’alta_  
+_marea e la notte li annullava, vele_  
+_sottovento sbandavano più al largo,_  
+_per fuggirne l’insidia. Oggi il mio regno_  
+_è quella terra di nessuno. Il porto_  
+_accende ad altri i suoi lumi; me al largo_  
+_sospinge ancora il non domato spirito,_  
+_e della vita il doloroso amore._
+
+---
