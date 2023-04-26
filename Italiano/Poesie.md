@@ -3,8 +3,6 @@
 ## Allegria
 
 ### IN MEMORIA
-_Locvizza il 30 settembre 1916._
-
 _Si chiamava  
 Moammed Sceab_
 
@@ -166,3 +164,54 @@ Una corolla
 Di tenebre_
 
 ---
+### San Marino del Carso
+_Di queste case  
+non è rimasto  
+che qualche  
+brandello di muro_
+
+_Di tanti  
+che mi corrispondevano  
+non è rimasto  
+neppure tanto_
+
+_Ma nel cuore  
+nessuna croce manca_
+
+_È il mio cuore  
+il paese più straziato_
+
+---
+### Mattina
+_M'illumino  
+d'immenso_
+
+---
+### Soldati
+_Si sta come 
+d'autunno
+sugli alberi
+le foglie_
+
+---
+## Sentimento del tempo
+### La Madre
+_E il cuore quando d'un ultimo battito_  
+_avrà fatto cadere il muro d'ombra_  
+_per condurmi, Madre, sino al Signore,_  
+_come una volta mi darai la mano._
+
+_In ginocchio, decisa,_  
+_Sarai una statua davanti all'eterno,_  
+_come già ti vedeva_  
+_quando eri ancora in vita._
+
+_Alzerai tremante le vecchie braccia,_  
+_come quando spirasti_  
+_dicendo: Mio Dio, eccomi._
+
+_E solo quando m'avrà perdonato,_  
+_ti verrà desiderio di guardarmi._
+
+_Ricorderai d'avermi atteso tanto,_  
+_e avrai negli occhi un rapido sospiro._
