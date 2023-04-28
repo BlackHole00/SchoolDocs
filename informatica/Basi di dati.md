@@ -1,0 +1,28 @@
+- database
+	- semplice - efficiente - efficace -sicuro
+	- base di dati
+		- collezione di dati strutturati correlati e senza ridondanze inutili
+		- sicura - integra - consistente - condivisibile - persistente - scalabile
+		- dato vs informazione
+		- schema (intensione) vs istanza (estensione)
+	- indipendenza logica
+		- dizionario dei dati
+		- viste
+	- indipendenza fisica
+	- architettura 3 livelli
+		- livello fisico
+		- livello logico
+		- sottoschema o viste
+	- inconsistenza
+		- ridondanza
+		- operazioni non complete
+			- roll back
+			- ACID
+				- atomicity - consistency - isolation - durability
+		- accesso non arbitrario
+	- integrita'
+		- di entita'
+		- di univocita'
+		- di dominio
+		- referenziale
+	- forma normale
