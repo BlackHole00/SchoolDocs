@@ -1,3 +1,7 @@
+- sistema informativo
+	- operativo
+	- tattico
+	- strategico
 - database
 	- semplice - efficiente - efficace -sicuro
 	- base di dati
