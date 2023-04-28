@@ -6,7 +6,7 @@
 	- semplice - efficiente - efficace -sicuro
 	- base di dati
 		- collezione di dati strutturati correlati e senza ridondanze inutili
-		- sicura - integra - consistente - condivisibile - persistente - scalabile
+		-  SICCPS sicura - integra - consistente - condivisibile - persistente - scalabile
 		- dato vs informazione
 		- schema (intensione) vs istanza (estensione)
 	- indipendenza logica
