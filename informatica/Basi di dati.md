@@ -7,6 +7,11 @@
 	- base di dati
 		- collezione di dati strutturati correlati e senza ridondanze inutili
 		-  SICCPS sicura - integra - consistente - condivisibile - persistente - scalabile
+			- sicura non danneggiabile
+			- integra operazioni solo da utenti autorizzati
+			- consistente dati significativi
+			- persistente lunghezza di vita illimitata
+			- scalabile
 		- dato vs informazione
 		- schema (intensione) vs istanza (estensione)
 	- indipendenza logica
