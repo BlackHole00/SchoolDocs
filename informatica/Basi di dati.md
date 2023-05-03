@@ -28,10 +28,17 @@
 			- roll back
 			- ACID
 				- atomicity - consistency - isolation - durability
+					- atomiche senza passaggi intermedi
+					- consistenti il db deve essere valido dopo i cambiamenti
+					- isolamente dipende solo da se stessa e non cambia altre
+					- durabilita' dopo che c'e'un commit le modifiche non saranno perse
 		- accesso non arbitrario
+		- perdita'di integrita'
 	- integrita'
 		- di entita'
+			- chiavi primarie univoche e obbligatorie
 		- di univocita'
+			- i campi posso essere univoci
 		- di dominio
 		- referenziale
 	- forma normale
