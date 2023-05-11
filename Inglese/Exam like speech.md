@@ -50,5 +50,44 @@
 	- The seventh works with ports and sockets and has higher level protocols
 
 #### Sockets
-Sockets are a basic method to create a peer to peer connection between two computers.
-They create an effective channel 
+- Sockets are a basic method to create a peer to peer connection between two computers.
+- They create an effective channel to exchange data using an IP address and a port.
+We used them in java.
+
+#### High level protocols
+- Using sockets, it is possible to transmit any kind of data, so more protocols are created. 
+- The most popular are the HTTP and HTTPS protocols (and their derivate REST), which are used everywhere in the modern web.
+- They permit to send and receive information, even in crypted form.
+
+#### Encryption
+- Data in modern is very sensitive and needs to be protected
+- So it is encrypted
+- A popular algorithm is the RSA. It uses the modulo math function.
+
+#### Browsers and WebApps
+- browsers are the most used way to share information
+- they use HTTP
+- webapps are apps for the browsers
+
+#### Tomcat
+- implementation of serverside-rendered webapps
+- implementation of rest API
+
+#### PHP
+- name
+- implementation of serverside-rendered webapps
+- facebook
+- SQL integration
+
+#### Data Storage
+- classical archives
+- databases
+- sql
+- servers
+
+#### Data privacy
+- the General data protection regulation is a EU law entered in charge in 2018
+- defines what and how data can be processed
+- defines right to the user that possesses the data, for example to be tutelated, and the right to be forgotten
+
+####

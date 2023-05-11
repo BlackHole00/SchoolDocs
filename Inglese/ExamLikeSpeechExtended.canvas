@@ -4,14 +4,13 @@
 		{"type":"text","text":"Irish Question","id":"200437ba669011a7","x":-800,"y":-300,"width":250,"height":60,"color":"5"},
 		{"type":"text","text":"End of Belle Epoque","id":"d22cf1d671541ac7","x":-500,"y":-415,"width":250,"height":60,"color":"6"},
 		{"type":"text","text":"Radio and Telegraph","id":"483ff889f9bb61f7","x":-500,"y":-300,"width":250,"height":60,"color":"3"},
-		{"type":"text","text":"*Technology in WWI*","id":"3827f35436e37c62","x":-200,"y":-415,"width":250,"height":60,"color":"6"},
 		{"type":"text","text":"Communication Mediums and Protocols","id":"4d3bccc6c1ddebbe","x":-500,"y":-180,"width":250,"height":80,"color":"3"},
 		{"type":"text","text":"*Titanic*","id":"5c49ac30895deeae","x":-197,"y":-300,"width":250,"height":60,"color":"6"},
 		{"type":"text","text":"First Level (Radio and Telegraph)","id":"1964d16ad5887f0c","x":-197,"y":-50,"width":250,"height":80,"color":"3"},
-		{"type":"text","text":"Seventh Level (Sockets)","id":"b70f3bd64765d46b","x":-197,"y":280,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"Last 3 Levels (Sockets)","id":"b70f3bd64765d46b","x":-197,"y":280,"width":250,"height":60,"color":"4"},
 		{"type":"text","text":"Fourth Level (TCP/UDP)","id":"5248726ec9e8df56","x":-197,"y":180,"width":250,"height":60,"color":"3"},
 		{"type":"text","text":"Third Level (IP address)","id":"d24541f8c588b9ca","x":-197,"y":80,"width":250,"height":60,"color":"3"},
-		{"type":"text","text":"*Encryption*","id":"de9b4bd402b8b80d","x":-499,"y":180,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"Encryption","id":"de9b4bd402b8b80d","x":-499,"y":180,"width":250,"height":60,"color":"3"},
 		{"type":"text","text":"High level protocols (HTTP/HTTPS)","id":"d92024b55d5198ab","x":-500,"y":67,"width":250,"height":73,"color":"4"},
 		{"type":"text","text":"Browsers and Webapps","id":"e91448b49950b1b5","x":-800,"y":67,"width":250,"height":60,"color":"4"},
 		{"type":"text","text":"PHP","id":"7e84df5f2540015e","x":-800,"y":-50,"width":250,"height":60,"color":"2"},
@@ -20,12 +19,11 @@
 		{"type":"text","text":"Data Storage","id":"75fdc40102b7b657","x":-1100,"y":67,"width":250,"height":60,"color":"2"},
 		{"type":"text","text":"Databases and SQL","id":"78c1d2945bd853f3","x":-1100,"y":177,"width":250,"height":60,"color":"2"},
 		{"type":"text","text":"Personal Information Storing and processing","id":"f1f68b4320747ecb","x":-1100,"y":-50,"width":250,"height":80,"color":"#f5f5f5"},
-		{"type":"text","text":"GDPR","id":"09da1ef34692690b","x":-1100,"y":-180,"width":250,"height":60,"color":"#f5f5f5"},
-		{"type":"text","text":"UE","id":"eb6778f86c92f033","x":-800,"y":-180,"width":250,"height":60,"color":"#f5f5f5"},
-		{"type":"text","text":"*Marconi*","id":"97489a32fceb2e94","x":-197,"y":-180,"width":250,"height":60,"color":"6"},
-		{"type":"text","text":"*United Kingdom*","id":"c06b55cd07d275a6","x":-1100,"y":-420,"width":250,"height":60,"color":"5"},
-		{"type":"text","text":"*Brexit*","id":"467f8e80c7419068","x":-1100,"y":-300,"width":250,"height":60,"color":"#f5f5f5"},
-		{"type":"text","text":"**COLORS**\nRED: starting argument\nPURPLE: history\nYELLOW: systems\nGREEN: technology\nORANGE: informatics\nGRAY: civics \n\nITALIC: non essential arguments","id":"ee79dbe41bf15c1f","x":120,"y":-415,"width":250,"height":315}
+		{"type":"text","text":"**COLORS**\nRED: starting argument\nPURPLE: history\nPINK: italian\nYELLOW: systems\nGREEN: technology\nORANGE: informatics\nGRAY: civics \nBLACK: math\n\nITALIC: non essential arguments","id":"ee79dbe41bf15c1f","x":120,"y":-415,"width":250,"height":365},
+		{"type":"text","text":"*Modulo function*","id":"a9c4f1a5e2264fdf","x":-499,"y":279,"width":250,"height":60},
+		{"type":"text","text":"*Technology in WWI*","id":"3827f35436e37c62","x":-197,"y":-180,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"*La coscienza di Zeno*","id":"d2102c09148c6d99","x":-197,"y":-415,"width":250,"height":60,"color":"#ae8989"},
+		{"type":"text","text":"GDPR","id":"09da1ef34692690b","x":-800,"y":-170,"width":250,"height":60,"color":"#f5f5f5"}
 	],
 	"edges":[
 		{"id":"14bcda6956239be1","fromNode":"1a71a42efec0619c","fromSide":"bottom","toNode":"200437ba669011a7","toSide":"top"},
@@ -34,7 +32,6 @@
 		{"id":"f87127075c8186c9","fromNode":"d22cf1d671541ac7","fromSide":"bottom","toNode":"483ff889f9bb61f7","toSide":"top"},
 		{"id":"4a3d1319e49ce4bf","fromNode":"483ff889f9bb61f7","fromSide":"right","toNode":"3827f35436e37c62","toSide":"left","fromEnd":"arrow"},
 		{"id":"e2a8d0d5ead650ea","fromNode":"483ff889f9bb61f7","fromSide":"right","toNode":"5c49ac30895deeae","toSide":"left"},
-		{"id":"946ea4669b7ea3ec","fromNode":"483ff889f9bb61f7","fromSide":"right","toNode":"97489a32fceb2e94","toSide":"left"},
 		{"id":"e4c58ab983eeb137","fromNode":"4d3bccc6c1ddebbe","fromSide":"bottom","toNode":"d7c5a5e212ca50c0","toSide":"top"},
 		{"id":"44d37018baefee05","fromNode":"d7c5a5e212ca50c0","fromSide":"right","toNode":"1964d16ad5887f0c","toSide":"left"},
 		{"id":"9038352f54815fcd","fromNode":"1964d16ad5887f0c","fromSide":"bottom","toNode":"d24541f8c588b9ca","toSide":"top"},
@@ -49,10 +46,8 @@
 		{"id":"e1602e75e3c06bd1","fromNode":"e91448b49950b1b5","fromSide":"left","toNode":"75fdc40102b7b657","toSide":"right"},
 		{"id":"5fe375cb0a1cc896","fromNode":"75fdc40102b7b657","fromSide":"bottom","toNode":"78c1d2945bd853f3","toSide":"top"},
 		{"id":"04530246cc926c41","fromNode":"75fdc40102b7b657","fromSide":"top","toNode":"f1f68b4320747ecb","toSide":"bottom"},
-		{"id":"887b850c68b3ed22","fromNode":"f1f68b4320747ecb","fromSide":"top","toNode":"09da1ef34692690b","toSide":"bottom"},
-		{"id":"010bada9441eef56","fromNode":"09da1ef34692690b","fromSide":"right","toNode":"eb6778f86c92f033","toSide":"left"},
-		{"id":"5cd2cf5ca76ce406","fromNode":"200437ba669011a7","fromSide":"left","toNode":"c06b55cd07d275a6","toSide":"right","fromEnd":"arrow"},
-		{"id":"73af6789bc5739ca","fromNode":"eb6778f86c92f033","fromSide":"top","toNode":"467f8e80c7419068","toSide":"bottom"},
-		{"id":"24dfa0ebda1da07a","fromNode":"c06b55cd07d275a6","fromSide":"bottom","toNode":"467f8e80c7419068","toSide":"top","fromEnd":"arrow"}
+		{"id":"53b45090004553e0","fromNode":"de9b4bd402b8b80d","fromSide":"bottom","toNode":"a9c4f1a5e2264fdf","toSide":"top"},
+		{"id":"62d092aea58730f1","fromNode":"d22cf1d671541ac7","fromSide":"right","toNode":"d2102c09148c6d99","toSide":"left"},
+		{"id":"6a0d12a973a7205b","fromNode":"f1f68b4320747ecb","fromSide":"top","toNode":"09da1ef34692690b","toSide":"left"}
 	]
 }
