@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"1a71a42efec0619c","x":-800,"y":-420,"width":250,"height":70,"type":"text","text":"1914 Germans are not enemies for Irish people"},
+		{"id":"200437ba669011a7","x":-800,"y":-300,"width":250,"height":60,"type":"text","text":"Irish Question"},
+		{"id":"d22cf1d671541ac7","x":-500,"y":-415,"width":250,"height":60,"type":"text","text":"End of Belle Epoque"},
+		{"id":"483ff889f9bb61f7","x":-500,"y":-300,"width":250,"height":60,"type":"text","text":"Radio and Telegraph"},
+		{"id":"3827f35436e37c62","x":-200,"y":-415,"width":250,"height":60,"type":"text","text":"Technology in WWI"},
+		{"id":"4d3bccc6c1ddebbe","x":-500,"y":-180,"width":250,"height":80,"type":"text","text":"Communication Protocols"}
+	],
+	"edges":[
+		{"id":"14bcda6956239be1","fromNode":"1a71a42efec0619c","fromSide":"bottom","toNode":"200437ba669011a7","toSide":"top"},
+		{"id":"4dfda91429d113d5","fromNode":"483ff889f9bb61f7","fromSide":"bottom","toNode":"4d3bccc6c1ddebbe","toSide":"top"},
+		{"id":"1b390d970f173100","fromNode":"1a71a42efec0619c","fromSide":"right","toNode":"d22cf1d671541ac7","toSide":"left"},
+		{"id":"f87127075c8186c9","fromNode":"d22cf1d671541ac7","fromSide":"bottom","toNode":"483ff889f9bb61f7","toSide":"top"},
+		{"id":"4a3d1319e49ce4bf","fromNode":"483ff889f9bb61f7","fromSide":"right","toNode":"3827f35436e37c62","toSide":"left","fromEnd":"arrow"}
+	]
+}

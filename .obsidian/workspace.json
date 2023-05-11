@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 302.5110321044922
   },
   "right": {
     "id": "6b658cb94900cbdb",
@@ -159,7 +159,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "d4d1942c2513e25d",
+  "active": "b876beb0be800bf0",
   "lastOpenFiles": [
     "Inglese/Untitled.md",
     "Inglese/ExamLikeSpeech.canvas",
