@@ -2,7 +2,6 @@
 	"nodes":[
 		{"type":"text","text":"**1914 Germany is not Ireland's enemy**","id":"1a71a42efec0619c","x":-800,"y":-420,"width":250,"height":70,"color":"1"},
 		{"type":"text","text":"Irish Question","id":"200437ba669011a7","x":-800,"y":-300,"width":250,"height":60,"color":"5"},
-		{"type":"text","text":"End of Belle Epoque","id":"d22cf1d671541ac7","x":-500,"y":-415,"width":250,"height":60,"color":"6"},
 		{"type":"text","text":"Communication Mediums and Protocols","id":"4d3bccc6c1ddebbe","x":-500,"y":-297,"width":250,"height":80,"color":"3"},
 		{"type":"text","text":"ISO OSI Stack\nMost important levels","id":"d7c5a5e212ca50c0","x":-499,"y":-180,"width":250,"height":70,"color":"3"},
 		{"type":"text","text":"Sockets and high level protocols (HTTP/HTTPS)","id":"d92024b55d5198ab","x":-499,"y":-50,"width":250,"height":73,"color":"4"},
@@ -12,7 +11,8 @@
 		{"type":"text","text":"PHP, Data Storage and SQL","id":"75fdc40102b7b657","x":-1100,"y":-53,"width":250,"height":93,"color":"2"},
 		{"type":"text","text":"Brexit","id":"467f8e80c7419068","x":-1100,"y":-420,"width":250,"height":60,"color":"#f5f5f5"},
 		{"type":"text","text":"UE","id":"eb6778f86c92f033","x":-1100,"y":-300,"width":250,"height":60,"color":"#f5f5f5"},
-		{"type":"text","text":"Encryption","id":"de9b4bd402b8b80d","x":-499,"y":67,"width":250,"height":60,"color":"3"}
+		{"type":"text","text":"Encryption","id":"de9b4bd402b8b80d","x":-499,"y":67,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"End of Belle Epoque, beginning of WWI","id":"d22cf1d671541ac7","x":-500,"y":-435,"width":250,"height":85,"color":"6"}
 	],
 	"edges":[
 		{"id":"14bcda6956239be1","fromNode":"1a71a42efec0619c","fromSide":"bottom","toNode":"200437ba669011a7","toSide":"top"},
