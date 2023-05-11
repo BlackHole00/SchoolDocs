@@ -1,17 +1,32 @@
 {
 	"nodes":[
-		{"id":"1a71a42efec0619c","x":-800,"y":-420,"width":250,"height":70,"type":"text","text":"1914 Germans are not enemies for Irish people"},
-		{"id":"200437ba669011a7","x":-800,"y":-300,"width":250,"height":60,"type":"text","text":"Irish Question"},
-		{"id":"d22cf1d671541ac7","x":-500,"y":-415,"width":250,"height":60,"type":"text","text":"End of Belle Epoque"},
-		{"id":"483ff889f9bb61f7","x":-500,"y":-300,"width":250,"height":60,"type":"text","text":"Radio and Telegraph"},
-		{"id":"3827f35436e37c62","x":-200,"y":-415,"width":250,"height":60,"type":"text","text":"Technology in WWI"},
-		{"id":"4d3bccc6c1ddebbe","x":-500,"y":-180,"width":250,"height":80,"type":"text","text":"Communication Protocols"}
+		{"type":"text","text":"**1914 Germany is not Ireland's enemy**","id":"1a71a42efec0619c","x":-800,"y":-420,"width":250,"height":70,"color":"1"},
+		{"type":"text","text":"Irish Question","id":"200437ba669011a7","x":-800,"y":-300,"width":250,"height":60,"color":"5"},
+		{"type":"text","text":"End of Belle Epoque","id":"d22cf1d671541ac7","x":-500,"y":-415,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"Communication Mediums and Protocols","id":"4d3bccc6c1ddebbe","x":-500,"y":-297,"width":250,"height":80,"color":"3"},
+		{"type":"text","text":"ISO OSI Stack\nMost important levels","id":"d7c5a5e212ca50c0","x":-499,"y":-180,"width":250,"height":70,"color":"3"},
+		{"type":"text","text":"Sockets and high level protocols (HTTP/HTTPS)","id":"d92024b55d5198ab","x":-499,"y":-50,"width":250,"height":73,"color":"4"},
+		{"type":"text","text":"PHP","id":"7e84df5f2540015e","x":-800,"y":-175,"width":250,"height":60,"color":"2"},
+		{"type":"text","text":"Browsers and Webapps","id":"e91448b49950b1b5","x":-800,"y":-50,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"Personal Information Storing and DPCM","id":"f1f68b4320747ecb","x":-1100,"y":-170,"width":250,"height":80,"color":"#f5f5f5"},
+		{"type":"text","text":"PHP, Data Storage and SQL","id":"75fdc40102b7b657","x":-1100,"y":-53,"width":250,"height":93,"color":"2"},
+		{"type":"text","text":"Brexit","id":"467f8e80c7419068","x":-1100,"y":-420,"width":250,"height":60,"color":"#f5f5f5"},
+		{"type":"text","text":"UE","id":"eb6778f86c92f033","x":-1100,"y":-300,"width":250,"height":60,"color":"#f5f5f5"},
+		{"type":"text","text":"Encryption","id":"de9b4bd402b8b80d","x":-499,"y":67,"width":250,"height":60,"color":"3"}
 	],
 	"edges":[
 		{"id":"14bcda6956239be1","fromNode":"1a71a42efec0619c","fromSide":"bottom","toNode":"200437ba669011a7","toSide":"top"},
-		{"id":"4dfda91429d113d5","fromNode":"483ff889f9bb61f7","fromSide":"bottom","toNode":"4d3bccc6c1ddebbe","toSide":"top"},
 		{"id":"1b390d970f173100","fromNode":"1a71a42efec0619c","fromSide":"right","toNode":"d22cf1d671541ac7","toSide":"left"},
-		{"id":"f87127075c8186c9","fromNode":"d22cf1d671541ac7","fromSide":"bottom","toNode":"483ff889f9bb61f7","toSide":"top"},
-		{"id":"4a3d1319e49ce4bf","fromNode":"483ff889f9bb61f7","fromSide":"right","toNode":"3827f35436e37c62","toSide":"left","fromEnd":"arrow"}
+		{"id":"e4c58ab983eeb137","fromNode":"4d3bccc6c1ddebbe","fromSide":"bottom","toNode":"d7c5a5e212ca50c0","toSide":"top"},
+		{"id":"eba7a5917065f06a","fromNode":"d92024b55d5198ab","fromSide":"bottom","toNode":"de9b4bd402b8b80d","toSide":"top"},
+		{"id":"862ded9ea16b6a33","fromNode":"d92024b55d5198ab","fromSide":"left","toNode":"e91448b49950b1b5","toSide":"right"},
+		{"id":"83dfd1f57db8993e","fromNode":"e91448b49950b1b5","fromSide":"top","toNode":"7e84df5f2540015e","toSide":"bottom"},
+		{"id":"76207f5d6ec98bb0","fromNode":"7e84df5f2540015e","fromSide":"left","toNode":"75fdc40102b7b657","toSide":"right"},
+		{"id":"e1602e75e3c06bd1","fromNode":"e91448b49950b1b5","fromSide":"left","toNode":"75fdc40102b7b657","toSide":"right"},
+		{"id":"04530246cc926c41","fromNode":"75fdc40102b7b657","fromSide":"top","toNode":"f1f68b4320747ecb","toSide":"bottom"},
+		{"id":"73af6789bc5739ca","fromNode":"eb6778f86c92f033","fromSide":"top","toNode":"467f8e80c7419068","toSide":"bottom"},
+		{"id":"a5305daca4b8faf8","fromNode":"f1f68b4320747ecb","fromSide":"top","toNode":"eb6778f86c92f033","toSide":"bottom"},
+		{"id":"dfbb6b658f3da012","fromNode":"d22cf1d671541ac7","fromSide":"bottom","toNode":"4d3bccc6c1ddebbe","toSide":"top","label":"Telegraph and Radio"},
+		{"id":"cfecd5eee7b86389","fromNode":"d7c5a5e212ca50c0","fromSide":"bottom","toNode":"d92024b55d5198ab","toSide":"top"}
 	]
 }

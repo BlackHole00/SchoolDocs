@@ -13,10 +13,10 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Inglese/ExamLikeSpeech.canvas",
+                "file": "Inglese/ExamLikeSpeechExtended.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
+                  "x": -346.37744140625,
+                  "y": 93.644287109375,
                   "zoom": 0
                 }
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inglese/ExamLikeSpeech.canvas",
+                "file": "Inglese/ExamLikeSpeechExtended.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inglese/ExamLikeSpeech.canvas",
+                "file": "Inglese/ExamLikeSpeechExtended.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inglese/ExamLikeSpeech.canvas"
+                "file": "Inglese/ExamLikeSpeechExtended.canvas"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "b876beb0be800bf0",
   "lastOpenFiles": [
-    "Inglese/Untitled.md",
     "Inglese/ExamLikeSpeech.canvas",
+    "Inglese/ExamLikeSpeechExtended.canvas",
+    "Inglese/Untitled.md",
     "informatica/Basi di dati.md",
     "Italiano/Poesie.md",
     "informatica",
