@@ -8,7 +8,7 @@
 		{"type":"text","text":"Sockets and high level protocols (HTTP/HTTPS)","id":"d92024b55d5198ab","x":-499,"y":-50,"width":250,"height":73,"color":"4"},
 		{"type":"text","text":"PHP","id":"7e84df5f2540015e","x":-800,"y":-175,"width":250,"height":60,"color":"2"},
 		{"type":"text","text":"Browsers and Webapps","id":"e91448b49950b1b5","x":-800,"y":-50,"width":250,"height":60,"color":"4"},
-		{"type":"text","text":"Personal Information Storing and DPCM","id":"f1f68b4320747ecb","x":-1100,"y":-170,"width":250,"height":80,"color":"#f5f5f5"},
+		{"type":"text","text":"Personal Information Storing and GDPR","id":"f1f68b4320747ecb","x":-1100,"y":-170,"width":250,"height":80,"color":"#f5f5f5"},
 		{"type":"text","text":"PHP, Data Storage and SQL","id":"75fdc40102b7b657","x":-1100,"y":-53,"width":250,"height":93,"color":"2"},
 		{"type":"text","text":"Brexit","id":"467f8e80c7419068","x":-1100,"y":-420,"width":250,"height":60,"color":"#f5f5f5"},
 		{"type":"text","text":"UE","id":"eb6778f86c92f033","x":-1100,"y":-300,"width":250,"height":60,"color":"#f5f5f5"},

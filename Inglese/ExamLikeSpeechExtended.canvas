@@ -20,7 +20,7 @@
 		{"type":"text","text":"Data Storage","id":"75fdc40102b7b657","x":-1100,"y":67,"width":250,"height":60,"color":"2"},
 		{"type":"text","text":"Databases and SQL","id":"78c1d2945bd853f3","x":-1100,"y":177,"width":250,"height":60,"color":"2"},
 		{"type":"text","text":"Personal Information Storing and processing","id":"f1f68b4320747ecb","x":-1100,"y":-50,"width":250,"height":80,"color":"#f5f5f5"},
-		{"type":"text","text":"DPCM","id":"09da1ef34692690b","x":-1100,"y":-180,"width":250,"height":60,"color":"#f5f5f5"},
+		{"type":"text","text":"GDPR","id":"09da1ef34692690b","x":-1100,"y":-180,"width":250,"height":60,"color":"#f5f5f5"},
 		{"type":"text","text":"UE","id":"eb6778f86c92f033","x":-800,"y":-180,"width":250,"height":60,"color":"#f5f5f5"},
 		{"type":"text","text":"Marconi","id":"97489a32fceb2e94","x":-197,"y":-180,"width":250,"height":60,"color":"6"},
 		{"type":"text","text":"*United Kingdom*","id":"c06b55cd07d275a6","x":-1100,"y":-420,"width":250,"height":60,"color":"5"},

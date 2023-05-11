@@ -11,14 +11,11 @@
             "id": "b876beb0be800bf0",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Inglese/ExamLikeSpeechExtended.canvas",
-                "viewState": {
-                  "x": -346.37744140625,
-                  "y": 93.644287109375,
-                  "zoom": 0
-                }
+                "file": "Inglese/Exam like speech.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inglese/ExamLikeSpeechExtended.canvas",
+                "file": "Inglese/Exam like speech.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inglese/ExamLikeSpeechExtended.canvas",
+                "file": "Inglese/Exam like speech.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inglese/ExamLikeSpeechExtended.canvas"
+                "file": "Inglese/Exam like speech.md"
               }
             }
           }
@@ -161,9 +158,13 @@
   },
   "active": "b876beb0be800bf0",
   "lastOpenFiles": [
-    "Inglese/ExamLikeSpeech.canvas",
     "Inglese/ExamLikeSpeechExtended.canvas",
-    "Inglese/Untitled.md",
+    "Inglese/ExamLikeSpeech.canvas",
+    "Inglese/Exam like speech.md",
+    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
+    "Tecnologie/Sistemi informativi - note 2.md",
+    "Tecnologie/Sistemi informativi - note 1.md",
+    "Gestione/PresentazionePcto.mp4",
     "informatica/Basi di dati.md",
     "Italiano/Poesie.md",
     "informatica",
@@ -171,7 +172,6 @@
     "2023-04-26.md",
     "Gestione/domande gestione impresa - 2.md",
     "Gestione/Progettazione d'Impresa.md",
-    "Gestione/PresentazionePcto.mp4",
     "Gestione/Metriche Costi Qualita'.md",
     "Sistemi/Firewall - Iptables.md",
     "Storia/Seconda Guerra Mondiale.md",
@@ -182,9 +182,6 @@
     "Gestione/domande gestione impresa - 1.md",
     "Inglese/Totalitarian Language.md",
     "Sistemi/Dns - Arp - Dhcp.md",
-    "Tecnologie/Sistemi informativi - note 2.md",
-    "Tecnologie/Sistemi informativi - note 1.md",
-    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
     "Tecnologie/res/GraphViewActivity.png",
     "Tecnologie/res/MainActivity.png",
     "Tecnologie/Calcolatrice.pptx",
