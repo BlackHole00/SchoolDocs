@@ -89,5 +89,3 @@ We used them in java.
 - the General data protection regulation is a EU law entered in charge in 2018
 - defines what and how data can be processed
 - defines right to the user that possesses the data, for example to be tutelated, and the right to be forgotten
-
-####
