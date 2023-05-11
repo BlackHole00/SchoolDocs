@@ -11,28 +11,18 @@
             "id": "b876beb0be800bf0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Italiano/Poesie.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a9fb8c88abae133e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "informatica/Basi di dati.md",
-                "mode": "source",
-                "source": false
+                "file": "Inglese/ExamLikeSpeech.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6b658cb94900cbdb",
@@ -107,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "informatica/Basi di dati.md",
+                "file": "Inglese/ExamLikeSpeech.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "informatica/Basi di dati.md",
+                "file": "Inglese/ExamLikeSpeech.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "informatica/Basi di dati.md"
+                "file": "Inglese/ExamLikeSpeech.canvas"
               }
             }
           }
@@ -170,10 +159,12 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a9fb8c88abae133e",
+  "active": "d4d1942c2513e25d",
   "lastOpenFiles": [
-    "Italiano/Poesie.md",
+    "Inglese/Untitled.md",
+    "Inglese/ExamLikeSpeech.canvas",
     "informatica/Basi di dati.md",
+    "Italiano/Poesie.md",
     "informatica",
     "Gestione/SEO.md",
     "2023-04-26.md",
