@@ -11,14 +11,11 @@
             "id": "b876beb0be800bf0",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Inglese/ExamLikeSpeech.canvas",
-                "viewState": {
-                  "x": -674.5,
-                  "y": -211,
-                  "zoom": 0
-                }
+                "file": "Gestione/Progettazione d'Impresa.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inglese/ExamLikeSpeech.canvas",
+                "file": "Gestione/Progettazione d'Impresa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inglese/ExamLikeSpeech.canvas",
+                "file": "Gestione/Progettazione d'Impresa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inglese/ExamLikeSpeech.canvas"
+                "file": "Gestione/Progettazione d'Impresa.md"
               }
             }
           }
@@ -161,10 +158,12 @@
   },
   "active": "b876beb0be800bf0",
   "lastOpenFiles": [
+    "Educazione Civica/GDPR - Note.md",
+    "Gestione/Progettazione d'Impresa.md",
+    "Inglese/ExamLikeSpeech.canvas",
     "Inglese/Exam like speech.md",
     "Inglese/ExamLikeSpeechExtended.canvas",
     "Inglese/Totalitarian Language.md",
-    "Inglese/ExamLikeSpeech.canvas",
     "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
     "Tecnologie/Sistemi informativi - note 2.md",
     "Tecnologie/Sistemi informativi - note 1.md",
@@ -175,13 +174,11 @@
     "Gestione/SEO.md",
     "2023-04-26.md",
     "Gestione/domande gestione impresa - 2.md",
-    "Gestione/Progettazione d'Impresa.md",
     "Gestione/Metriche Costi Qualita'.md",
     "Sistemi/Firewall - Iptables.md",
     "Storia/Seconda Guerra Mondiale.md",
     "Sistemi/Firewall - Proxy - DMZ.md",
     "Sistemi/Vlan commands.md",
-    "Educazione Civica/GDPR - Note.md",
     "Educazione Civica/UE - Punti Contro.md",
     "Gestione/domande gestione impresa - 1.md",
     "Sistemi/Dns - Arp - Dhcp.md",

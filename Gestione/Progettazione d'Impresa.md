@@ -1,3 +1,21 @@
+Progetto e progettazione sono due elementi fondamentali di un'impresa.
+Le attivita'eseguite da un'azienda sono divise nelle seguenti categorie:
+- **attivita'ordinarie**: operazioni svolte periodicamente con obiettivi impliciti e definiti, utilizzando costi e risorse standard
+- **progetto**: e'un operazione univoca, con obiettivi espliciti e originali, con durata pianificabile e temporanea
+- **programma**: un gruppo di progetti collegati tra di loro con un obiettivo comune.
+
+Tutte le attivita'hanno a che fare con **tempi**, **costi** e **risorse**, elementi collegati tra di loro che vanno studiati e bilanciati.
+
+# Il progetto
+Il progetto viene definito come *uno sforzo temporaneo per creare un prodotto, un servizio o un risultato con caratteristiche di univocita'*.
+Nel particolare un progetto ha le seguenti caratteristiche:
+- ha uno scopo ben definito
+- ha un inizio ed una fine
+- ha dei vincoli da rispettare e dei rischi da valutare
+- termina quando lo scopo e'raggiunto
+
+Spesso per supportare un progetto viene ricercato uno **sponsor**. 
+
 # WBS
 Per pianificare un progetto viene utilizzata una **Work Breakdown Structure**. Con questo termine si intende una rappresentazione in forma **grafica** che enfatizza **la gerarchia** delle attivita'del progetto. 
 
