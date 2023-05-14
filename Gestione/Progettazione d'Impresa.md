@@ -14,7 +14,36 @@ Nel particolare un progetto ha le seguenti caratteristiche:
 - ha dei vincoli da rispettare e dei rischi da valutare
 - termina quando lo scopo e'raggiunto
 
-Spesso per supportare un progetto viene ricercato uno **sponsor**. 
+Spesso per supportare un progetto viene ricercato uno **sponsor**, il quale viene considerato e trovato nel **business plan**, che tiene conto anche di atri fattori come il **PKI** o il **CAGR** (*compound annual growth rate*).
+
+Per realizzare un progetto e'necessari effettuare un **project management**, ovvero *l'applicazione di conoscenze, capacita', strumenti e tecniche alle attivita'di progetto per soddisfarne i requisiti*.
+
+Si nota che un progetto viene eseguito in un **processo**, che e'diviso in piu'**fasi**, anche interconnesse tra di loro, le quali, tutte insieme, formano il **ciclo di vita**. In genere le fasi tipiche di un progetto sono **avvio**, **esecuzione** e **chiusura**. Ad ogni fase e'collegato un **risultato parziale**, che viene detto **deliverable**. Gli eventi importanti in un progetto, spesso collegati con i deliverables, vengono detti **milestones**.
+
+# PMBOK
+Il PMBOK (*Project management body of knowledge*) definisce i processi necessari per affrontare e organizzare un progetto e li unisce in **gruppi di processo** ed **aree di conoscenza**.
+
+I gruppi di processo sono:
+- **avvio**
+- **pianificazione**, definiscono lo scopo e gli obiettivi del progetto e indicano le azioni per raggiungerli
+- **esecuzione**, assicurano che vengano eseguite tutte le attivita'per raggiungere gli obiettivi
+- **monitoraggio e controllo**, verificano che gli obiettivi siano raggiunti
+- **chiusura**, formalizzano il raggiungimento degli obiettivi del processo
+
+I gruppi di conoscenza sono:
+- **integrazione**: i processi necessari per coordinare le varie attivita'del progetto
+- **scopo**
+- **tempi**
+- **costi**
+- **qualita'**
+- **risorse umane**
+- **comunicazione**
+- **rischi**
+- **acquisti**
+
+Secondo il PMBOK un processo e'sempre caratterizzato da una struttura logica che prevede una serie di **input** e un **attivita'** che genera una serie di **output**.
+
+Viene detto **project charter** il documento preliminare, stilato in fase di avvio che delinea le caratteristiche di base dell'intero progetto. Il **piano di project management** e'invece un documento molto piu'voluminoso ed importante che definisce il progetto nello specifico.
 
 # WBS
 Per pianificare un progetto viene utilizzata una **Work Breakdown Structure**. Con questo termine si intende una rappresentazione in forma **grafica** che enfatizza **la gerarchia** delle attivita'del progetto. 
