@@ -2,14 +2,10 @@ La **crittografia** e'la scienza che studia ed elabora metodi finalizzati al nas
 
 Storicamente la crittografia ha avuto utilizzi **diplomatici**, **militari**. Attualmente viene utilizzata per la **protezione del segreto industriale**, per la **privacy del cittadino** e per le **transazioni economiche per via telematica**.
 
-Dal punto di vista pratico la crittografia si occupa di **convertire** dati da un formato **leggibile** ad uno **codificato**, che puo'essere letto o interpretato solo dopo essere stato decrittato solo da persone **autorizzate**.  
+Dal punto di vista pratico la crittografia si occupa di **convertire** dati da un formato **leggibile** ad uno **codificato**, che puo'essere letto o interpretato solo dopo essere stato decrittato solo da persone **autorizzate**. 
 In *generale* per far cio'si utilizzano **sistemi crittografici** che hanno in comune due elementi:
 - una **trasformazione** del messaggio per garantire la sicurezza (comunemente la  *cifratura*)
 - una **informazione segreta** nota solo agli **attori** (trasmettitore e ricevitore) della comunicazione (in genere la *chiave*)
-
-Si nota che i sistemi crittografici sono distinti in:
-- **sistemi simmetrici** o *a chiave privata*: la chiave utilizzata per cifrare e decifrare il messaggio e'la **stessa**, ovvero avviene una **criptazione simmetrica**
-- **sistemi asimmetrici** o *a chiave pubblica*: vengono utilizzate due chiavi **distinte** per la criptazione (che utilizza la chiave **pubblica**) e la decriptazione (che utilizza la chiave **privata**), ovvero avviene una **criptazione asimmetrica**
 
 ## Crittografia Simmetrica
 Questo metodo di criptazione, come detto prima utilizza un'unica chiave. Si basa sulla funzione matematica del **cifrario**, la quale viene utilizzare per criptare e decriptare ed e'**iniettiva** ed **invertibile**. La chiave viene utilizzata come parametro applicato al cifrario.
@@ -49,15 +45,40 @@ Alcune situazioni in cui si puo'provare sono:
 
 Si nota che la soluzione piu'comune e'quando il crittoanalista conosce solo il crittogramma e l'algoritmo di cifratura utilizzato. In mancanza di altre informazioni viene utilizzato un **attacco esaustivo** (anche detto **forza bruta**), privando ad utilizzare tutte le possibile chiavi. Questo approccio e'generalmente poco produttivo.
 
+## Crittosistemi
+Si nota che i sistemi crittografici sono distinti in:
+- **sistemi simmetrici** o *a chiave privata*: la chiave utilizzata per cifrare e decifrare il messaggio e'la **stessa**, ovvero avviene una **criptazione simmetrica**
+- **sistemi asimmetrici** o *a chiave pubblica*: vengono utilizzate due chiavi **distinte** per la criptazione (che utilizza la chiave **pubblica**) e la decriptazione (che utilizza la chiave **privata**), ovvero avviene una **criptazione asimmetrica**
+
+Un **sistema crittografico** con le seguenti ulteriori caratteristiche:
+- l'algoritmo di cifratura deve essere abbastanza **resistente** da resistere ad attacchi di tipo **chipertext only** e **known plaintext**
+- deve avere un meccanismo sicuro per l'ottenimento della chiave, che deve rimanere segreta
+
+Un sistema crittografico viene detto **incondizionalmente sicuro** quando il testo cifrato **non** contiene abbastanza informazioni perche'un crittoanalista sia in grado di **risalire** al **testo in chiaro**, indipendentemente dalle risorse utilizzate. In pratica **non esistono** sistemi incondizionalmente sicuri, esistono solo sistemi **computazionalmente sicuri**, il quale tempo di decriptazione e'maggiore del tempo di utilita'del testo in chiaro.
+
 ## Stream cipher e Block Cipher
 I cifrari possono essere divisi in due gruppi a seconda della modalita'di criptazione:
 - **Stream cipher**: cifrario a base simmetrica, in cui le cifre di testo in **chiaro** sono **combinate** con un flusso di cifre di cifratura **pseudocasuale**. Come funzionamento si basa sul cifrare ogni singolo bit o byte del flusso di dati. Le cifre pseudocasuali vengono generate attraverso valori iniziali, che utilizzano registri a scorrimento delle cifre. Si nota che lo stream cipher utilizza una chiave diversa per ogni byte. 
 - **Block cipher**: metodo di crittografia che applica un algoritmo **deterministico** per crittografare un testo di lunghezza conosciuta, al posto di crittografare ogni singolo bit. Il testo viene generalmente diviso in **blocchi** da 64 o 128 byte ed ogniuno di questi viene criptato separatamente.
 
 ## Block cipher
-Gli algoritmi di cifratura simmetrica 
+Gli algoritmi di cifratura simmetrica a blocchi sono divisi a loro volta a seconda del funzionamento:
+- **per sostituzione**: mappano ogni elemento del testo in chiaro con un nuovo elemento criptato
+- **per trasposizione**: distribuiscono gli elementi del testo in chiaro in ordine diverso
 
 ### Il codice di cesare
-Il codice di cesare e'un algoritmo di criptazione a blocchi che cripta il singolo byte combinando (con l'operazione logica **XOR**) il byte in chiaro con la chiave (detta **keystream**). Il keystream viene generato in maniera pseudocasuale utilizzando una **chiave**. Quest'ultimo viene anche detto algoritmo di **sostituzione**, in quanto sostituisce ogni byte con il corrispondente criptato.
+Il codice di cesare e'un algoritmo di criptazione a blocchi che associa ogni singola lettera ad un suo equivalente statico. Utilizza quindi un algoritmo per **sostituzione**.
+
+Il codice di cesare e'vulnerabile ad attacchi di **forza bruta**, specialmente se si tiene in considerazione la **frequenza** dell'apparizione delle singole lettere in una determinata lingua.
+
+### Cifrari polialfabeti
+Per risolvere la debolezza del codice di cesare venne creato un cifrario a sostituzione **polialfabetica**, il quale usa una **piu'** diversi algoritmi di associazione delle lettere, i quali vengono utilizzati un un **determinato ordine** definito dalla chiave. La lunghezza della chiave definisce quindi anche la complessita'del cifrario. Utilizzando una chiave breve, il messaggio sara'piu'facilmente decriptabile.
+Si nota che i cifrari standard, come quello di cesare, vengono considerati **monoalfabetici**.
+
+Un esempio di cifrario **polialfabetico** fu quello di **Vignere** che venne utilizzato estensivamente nel 1800.
 
 ## Cifratura simmetrica a cifrari a blocchi: DES e AES
+
+## Stream cipher
+### Esempio
+Il codice di cesare e'un algoritmo di criptazione a blocchi che cripta il singolo byte combinando (con l'operazione logica **XOR**) il byte in chiaro con la chiave (detta **keystream**). Il keystream viene generato in maniera pseudocasuale utilizzando una **chiave**. Quest'ultimo viene anche detto algoritmo di **sostituzione**, in quanto sostituisce ogni byte con il corrispondente criptato.
