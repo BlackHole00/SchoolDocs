@@ -109,8 +109,28 @@ AES utilizza quindi blocchi e chiavi di lunghezza diversa, generalmente i blocch
 ### Algoritmo 3-DES
 Questo algoritmo fu creato come successore del DES ed **alternativa all'AES**, con l'obiettivo di continuare ad essere compatibile con l'hardware designato per il DES e consiste nell'applicare il **DES tre volte**, utilizzando una **chiave di 168 bit**. Il 3-DES e'comunque meno sicuro (sebbene sia comunque computazionalmente sicuri), quindi si e'mantenuto l'AES.
 
-### Modalita'operative per i cifrari a blocchi
-Gli algoritmi per la cifratura 
+## Modalita'operative per i cifrari a blocchi
+Gli algoritmi per la cifratura sono in grado di criptare un blocco di lunghezza determinata di $n$ bit. Se un messaggio e'piu'lungo di un blocco deve essere **diviso** in piu'parti grandi come un blocco, ogniuno dei quali viene elaborato a se'.
+
+Sorgono allora alcuni **problemi**, in quanto i cifrari visti danno sicurezza solo sul singolo blocco, cio'porta a problemi di sicurezza, in quanto ci sono molti blocchi cifrati con la **stessa chiave**.
+
+Per risolvere questo problema sono state definite delle modalita'di applicazione ripetuta degli algoritmi di cifratura, dette **modalita'operative**, le quali sono indipendenti dal cifrario utilizzato.
+
+### Electronic CodeBook
+L'ECB e'una modalita'operativa. E'molto semplice in quanto divide il messaggio in blocchi e completa con bit casuali quelli che non sono "pieni". Questo porta alla **mancanza di diffusione**, quindi nei messaggi lunghi rivelera'eventuali irregolarita'presenti nel messaggio originale.
+
+### Cipher Block Chaining
+Il CBC utilizza il crittogramma risultante dal blocco precendente in **XOR** con il blocco da in chiaro da cifrare. Nel primo blocco viene utilizzato quello che si definische **vettore di inizializzazione** $V_i$.  
+Il messaggio otterra'sicuramente diffusione, ma non potra'essere criptato in parallelo.
+
+### Counter
+La modalita'CTR utilizza, come input dell'algoritmo di criptazione, passa, al posto del testo in chiaro, un **nonce**, ovvero un numero casuale utilizzato solo una volta nel messaggio, ed un **contatore**.  
+Al risultato ottenuto viene messo in **XOR** il testo in chiaro, per generare il crittogramma.   
+Per decifrare viene utilizzata l'operazione opposta.
+
+I vantaggi sono numerosi:
+- **efficienza hardware**: permette la parallelizzazione
+- **efficienza software**: 
 
 ## Stream cipher
 ### Esempio
