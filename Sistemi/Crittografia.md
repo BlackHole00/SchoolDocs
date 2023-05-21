@@ -51,6 +51,13 @@ Si nota che la soluzione piu'comune e'quando il crittoanalista conosce solo il c
 
 ## Stream cipher e Block Cipher
 I cifrari possono essere divisi in due gruppi a seconda della modalita'di criptazione:
-- **Stream cipher**: cifrario a base simmetrica, in cui le cifre di testo in **chiaro** sono **combinate** con un flusso di cifre di cifratura **pseudocasuale**. Come funzionamento si basa sul cifrare ogni singolo bit del flusso di dati. Le cifre pseudocasuali vengono generate attraverso valori iniziali, che utilizzano registri a scorrimento delle cifre
+- **Stream cipher**: cifrario a base simmetrica, in cui le cifre di testo in **chiaro** sono **combinate** con un flusso di cifre di cifratura **pseudocasuale**. Come funzionamento si basa sul cifrare ogni singolo bit o byte del flusso di dati. Le cifre pseudocasuali vengono generate attraverso valori iniziali, che utilizzano registri a scorrimento delle cifre. Si nota che lo stream cipher utilizza una chiave diversa per ogni byte. 
+- **Block cipher**: metodo di crittografia che applica un algoritmo **deterministico** per crittografare un testo di lunghezza conosciuta, al posto di crittografare ogni singolo bit. Il testo viene generalmente diviso in **blocchi** da 64 o 128 byte ed ogniuno di questi viene criptato separatamente.
+
+## Block cipher
+Gli algoritmi di cifratura simmetrica 
+
+### Il codice di cesare
+Il codice di cesare e'un algoritmo di criptazione a blocchi che cripta il singolo byte combinando (con l'operazione logica **XOR**) il byte in chiaro con la chiave (detta **keystream**). Il keystream viene generato in maniera pseudocasuale utilizzando una **chiave**. Quest'ultimo viene anche detto algoritmo di **sostituzione**, in quanto sostituisce ogni byte con il corrispondente criptato.
 
 ## Cifratura simmetrica a cifrari a blocchi: DES e AES
