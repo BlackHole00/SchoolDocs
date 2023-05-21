@@ -203,7 +203,16 @@ Le funzioni hash hanno le seguenti caratteristiche:
 - **second pre-image resitance**
 - **collision resistance**: e'impossibile determinare una coppia che genera collisioni
 
-Spesso la funzione hash e'incorporato nella cifratura del messaggio. Cio'e'tuttavia soggietto ad attacchi man-in-the-middle, che, oltre a modificare il messaggio, e'in grado di modificare l'hash
+Spesso il risultato della funzione hash e'incorporato con il messaggio, per renderne possibile controllare l'autenticita'. Cio'e'tuttavia soggetto ad attacchi man-in-the-middle, che, oltre a modificare il messaggio, e'in grado di modificare l'hash, allora, in genere, si utilizza cifrare l'hash con una chiave condivisa.
+
+Un altro attacco a cui l'hash e'soggetto e'la **forza bruta**, che si divisono in:
+- **attacchi pre-image e second pre-image**: dato un valore hash noto h, si cerca un valore y tale che H(y) = h; per farlo si determinano y casuali e si provano sino a trovare una collisione
+- **attacchi collision resistant**: si cercano due valori x e y che abbiano lo stesso valore hash: H(x) = H(y)
+- **crittoanalitici**, che cercano di determinare le proprietà dell’algoritmo per fare attacchi diversi da quelli di forza bruta.
+	- La resistenza a questi attacchi viene misurata confrontandola con quella degli attacchi di tipo forza bruta.
+	- Una funzione hash ideale richiede uno sforzo computazionale per attacchi crittoanalitici pari o maggiore di quello richiesto per attacchi di tipo forza bruta.
+
+Questi attacchi di forza bruta sono riusciti a violare l'algoritmo **MD5**, questo porto'alla creazione del **SHA** (secure hash algorithm), tuttora utilizzato.
 
 ### Codici di autenticazione del messaggio (MAC)
 Funzioni che, dato un qualunque messaggio ed una chiave, producono un valore di lunghezza fissa, ovvero l'autenticatore
