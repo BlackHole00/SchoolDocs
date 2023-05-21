@@ -168,3 +168,42 @@ Praticamente, tuttavia, questo compromesso **non esiste**, e per fornire tale si
 
 ### Algoritmo RSA
 L'algoritmo RSA e'stato creato nel 1977 ed e'ancora oggi quello piu'diffuso ed utilizzato per la cifratura asimmetrica.
+
+Questo algoritmo si basa sulle proprieta'dell'operatore **modulo**. Per crittografare utilizza funzioni matematiche che trasformano interi a $n$ bit (in genere 1024) in un altro numero.
+$$
+X = Crypt(T, n, K_1) = T^{K_1}mod\space n
+$$
+$$
+T = D(X, n, K_2) = X^{K_2}mod\space n
+$$
+
+### Crittografia ellittica ECC
+ECC (Elliptic Curve Criptography) e'un algoritmo alternativo all'RSA, che si basa sulle *curve ellittiche definite su insiemi di valori numerici interi e limitati*.
+
+Si ricorda che una curva ellittica e'data dalla funzione $y^2=x^3+ax+b$.
+
+## Autenticazione ed integrita'dei dati
+I meccanismi di **autentificazione del mittente** o di **verifica di integrita'** dei dati vengono tipicamente realizzati in un protocollo che utilizza un **autenticatore** per verificare il messaggio, il quale viene prodotto a partire dal messaggio utilizzando una funzione ad hoc.
+
+Seguono esempi di queste funzioni.
+
+### Cifratura del messaggio
+Il crittogramma stesso assume il ruolo di autenticatore.  
+Garantisce sia la confidalita'che l'integrita'dei dati, in quanto il messaggio non puo'essere modificato senza avere la chiave. Questo vale sia per la criptazione simmetrica che quella asimmetrica.  
+Tuttavia non e'possibile sapere con estrema certezza che il messaggio ricevuto sia quello originale, quindi, in genere, vengono spediti col messaggio alcuni dati aggiuntivi (come l'hash).
+
+### Funzioni hash
+Funzioni che, dato un qualunque messaggio, producono un valore di lunghezza fissa, ovvero l'autenticatore. Una buona funzione hash non porta a collisioni e, dando due input simili, produrra'sempre output molto diversi tra di loro.
+
+Le funzioni hash hanno le seguenti caratteristiche:
+- **determinismo**
+- **efficienza computazionale**
+- **effetto valanga**
+- **pre-image resistance**: dall'hash non e'possibile ottenere il messaggio originario
+- **second pre-image resitance**
+- **collision resistance**: e'impossibile determinare una coppia che genera collisioni
+
+Spesso la funzione hash e'incorporato nella cifratura del messaggio. Cio'e'tuttavia soggietto ad attacchi man-in-the-middle, che, oltre a modificare il messaggio, e'in grado di modificare l'hash
+
+### Codici di autenticazione del messaggio (MAC)
+Funzioni che, dato un qualunque messaggio ed una chiave, producono un valore di lunghezza fissa, ovvero l'autenticatore
