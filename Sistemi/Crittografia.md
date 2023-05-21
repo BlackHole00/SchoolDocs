@@ -66,6 +66,9 @@ I cifrari possono essere divisi in due gruppi a seconda della modalita'di cripta
 - **Stream cipher**: cifrario a base simmetrica, in cui le cifre di testo in **chiaro** sono **combinate** con un flusso di cifre di cifratura **pseudocasuale**. Come funzionamento si basa sul cifrare ogni singolo bit o byte del flusso di dati. Le cifre pseudocasuali vengono generate attraverso valori iniziali, che utilizzano registri a scorrimento delle cifre. Si nota che lo stream cipher utilizza una chiave diversa per ogni byte. 
 - **Block cipher**: metodo di crittografia che applica un algoritmo **deterministico** per crittografare un testo di lunghezza conosciuta, al posto di crittografare ogni singolo bit. Il testo viene generalmente diviso in **blocchi** da 64 o 128 byte ed ogniuno di questi viene criptato separatamente.
 
+## Stream cipher
+Un esempio di un algoritmo di criptazione a stream e'quello che cripta il singolo byte combinando (con l'operazione logica **XOR**) il byte in chiaro con il **keystream**/ Il keystream viene generato in maniera pseudocasuale utilizzando una **chiave**. Quest'ultimo viene anche detto algoritmo di **sostituzione**, in quanto sostituisce ogni byte con il corrispondente criptato.
+
 ## Block cipher
 Gli algoritmi di cifratura simmetrica a blocchi sono divisi a loro volta a seconda del funzionamento:
 - **per sostituzione**: mappano ogni elemento del testo in chiaro con un nuovo elemento criptato
@@ -130,8 +133,38 @@ Per decifrare viene utilizzata l'operazione opposta.
 
 I vantaggi sono numerosi:
 - **efficienza hardware**: permette la parallelizzazione
-- **efficienza software**: 
+- **efficienza software**: permette la parallelizzazione
+- **sicurezza**
+- **elaborazione a priori**: i blocchi possono essere pre calcolati, per poi essere messi in XOR col messaggio in chiaro solo quando serve
+- **semplicita'**
+- **accesso in lettura casuale**
 
-## Stream cipher
-### Esempio
-Il codice di cesare e'un algoritmo di criptazione a blocchi che cripta il singolo byte combinando (con l'operazione logica **XOR**) il byte in chiaro con la chiave (detta **keystream**). Il keystream viene generato in maniera pseudocasuale utilizzando una **chiave**. Quest'ultimo viene anche detto algoritmo di **sostituzione**, in quanto sostituisce ogni byte con il corrispondente criptato.
+## Crittografia a chiave pubblica/privata
+I crittosistemi simmetrici hanno una grande **debolezza** difficile da superare: lo **scambio delle chiavi**, cosa che richiede un canale sicuro di comunicazione, che e'difficile da creare senza, appunto, le chiavi.
+
+Per risolvere il problema vennero scoperti i **crittosistemi asimmetrici**, i quali utilizzano due chiavi distinte. Questi si basano quindi su funzioni matematiche e non piu'sostituzioni e permutazioni.
+
+I **requisiti** per un crittosistema asimmetrici sono:
+- facilita'di generare una coppia di chiavi
+- facilita'computazionale per il mittente di generare il crittogramma
+- impossibilita'computazionale di dedurre la chiave privata conoscendo quella pubblica
+- facilita'computazionale per un destinatario di risalire al messaggio in chiaro
+- impossibilita'computazionale di dedurre il messaggio in chiaro conoscendo la solo chiave pubblica
+- possibilita'di applicare le due chiavi in entrambi gli ordini (opzionale)
+
+In genere in un sistema crittografico asimmetrico vi sono i seguenti **passaggi**:
+- ogniuno deve avere una chiave pubblica e privata
+- ogni persona deve rendere presente al prossimo la propria chiave pubblica
+- il mittente cifra il messaggio con la chiave pubblica del destinatario
+- il destinatario decifra il messaggio utilizzando la chiave privata
+
+Se anche l'ultimo dei requisiti e'soddisfatto e'anche possibile **decifrare** messaggi cifrati con la chiave privata. Cio'puo'garantire l'**autenticita'** del mittente. In questo caso vengono utilizzati ulteriori passaggi:
+- prima di cifrare il messaggio con la chiave pubblica del destinatario, il mittente lo decifra con la propria chiave privata
+- dopo di aver decifrato il messaggio, il destinatario utilizza la chiave pubblica del mittente per decifrare il messaggio. Se il messaggio risulta allora in chiaro si puo'essere sicuri che il destinatario sia autentico.
+
+Si nota infine che i crittosistemi asimmetrici sono vulnerabili ad attacchi di **forza bruta**. Per una maggiore protezione e'consigliato aumentare le dimensioni della chive, tuttavia il tempo di criptazione e decriptazione aumenta non in maniera lineare, ma piu'velocemente, all'aumentare della lenghezza della chiave. Questo richiede di trovare un **compromesso** tra velocita'e sicurezza.
+
+Praticamente, tuttavia, questo compromesso **non esiste**, e per fornire tale sicurezza non e'possibile avere un sistema puramente simmetrico. Viene quindi utilizzato un sistema **ibrido**, che utilizza la criptazione asimmetrica per condividere la chiave simmetrica, con la quale avverra'la normale comunicazione. La chiave simmetrica viene generalmente cambiata ad ogni messaggio e viene detta quindi **chiave di sessione**.
+
+### Algoritmo RSA
+L'algoritmo RSA e'stato creato nel 1977 ed e'ancora oggi quello piu'diffuso ed utilizzato per la cifratura asimmetrica.
