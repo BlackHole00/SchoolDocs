@@ -7,6 +7,10 @@ In *generale* per far cio'si utilizzano **sistemi crittografici** che hanno in c
 - una **trasformazione** del messaggio per garantire la sicurezza (comunemente la  *cifratura*)
 - una **informazione segreta** nota solo agli **attori** (trasmettitore e ricevitore) della comunicazione (in genere la *chiave*)
 
+Si nota che i sistemi crittografici sono distinti in:
+- **sistemi simmetrici** o *a chiave privata*: la chiave utilizzata per cifrare e decifrare il messaggio e'la **stessa**, ovvero avviene una **criptazione simmetrica**
+- **sistemi asimmetrici** o *a chiave pubblica*: vengono utilizzate due chiavi **distinte** per la criptazione (che utilizza la chiave **pubblica**) e la decriptazione (che utilizza la chiave **privata**), ovvero avviene una **criptazione asimmetrica**
+
 ## Crittografia Simmetrica
 Questo metodo di criptazione, come detto prima utilizza un'unica chiave. Si basa sulla funzione matematica del **cifrario**, la quale viene utilizzare per criptare e decriptare ed e'**iniettiva** ed **invertibile**. La chiave viene utilizzata come parametro applicato al cifrario.
 $$
@@ -29,7 +33,6 @@ $$
 $$
 Crypted \rightarrow f_{privateKey}() \rightarrow Plain 
 $$
-
 Si nota che e'**impossibile derivare una chiave dall'altra**, quindi essendo a conoscenza della chiave pubblica non e'possibile ottenere quella privata e viceversa.
 
 ## Crittoanalisi
@@ -46,15 +49,17 @@ Alcune situazioni in cui si puo'provare sono:
 Si nota che la soluzione piu'comune e'quando il crittoanalista conosce solo il crittogramma e l'algoritmo di cifratura utilizzato. In mancanza di altre informazioni viene utilizzato un **attacco esaustivo** (anche detto **forza bruta**), privando ad utilizzare tutte le possibile chiavi. Questo approccio e'generalmente poco produttivo.
 
 ## Crittosistemi
-Si nota che i sistemi crittografici sono distinti in:
-- **sistemi simmetrici** o *a chiave privata*: la chiave utilizzata per cifrare e decifrare il messaggio e'la **stessa**, ovvero avviene una **criptazione simmetrica**
-- **sistemi asimmetrici** o *a chiave pubblica*: vengono utilizzate due chiavi **distinte** per la criptazione (che utilizza la chiave **pubblica**) e la decriptazione (che utilizza la chiave **privata**), ovvero avviene una **criptazione asimmetrica**
-
-Un **sistema crittografico** con le seguenti ulteriori caratteristiche:
+Un **sistema crittografico** ha le seguenti ulteriori caratteristiche:
 - l'algoritmo di cifratura deve essere abbastanza **resistente** da resistere ad attacchi di tipo **chipertext only** e **known plaintext**
 - deve avere un meccanismo sicuro per l'ottenimento della chiave, che deve rimanere segreta
 
 Un sistema crittografico viene detto **incondizionalmente sicuro** quando il testo cifrato **non** contiene abbastanza informazioni perche'un crittoanalista sia in grado di **risalire** al **testo in chiaro**, indipendentemente dalle risorse utilizzate. In pratica **non esistono** sistemi incondizionalmente sicuri, esistono solo sistemi **computazionalmente sicuri**, il quale tempo di decriptazione e'maggiore del tempo di utilita'del testo in chiaro.
+
+Un esempio di sicurezza, definito da *Claude Shannon*, e'che in un testo cifrato non si riflettessero le statistiche di frequenza dell'utilizzo delle lettere nella lingua utilizzata.
+
+Il cifrario robusto deve quindi utilizzare due metodi:
+- **diffusione**: la struttura statistica del testo in chiaro viene diffusa nel crittogramma, facendo in modo che il cambiamento di una cifra nel testo in chiaro causi il cambiamento di molte cifre nel crittogramma. Questo effetto viene detto **effetto valanga**
+- **confusione**: la relazione tra chiave e crittogramma deve essere molto complessa, rendendo difficile ricostruire la chiave.
 
 ## Stream cipher e Block Cipher
 I cifrari possono essere divisi in due gruppi a seconda della modalita'di criptazione:
@@ -77,7 +82,26 @@ Si nota che i cifrari standard, come quello di cesare, vengono considerati **mon
 
 Un esempio di cifrario **polialfabetico** fu quello di **Vignere** che venne utilizzato estensivamente nel 1800.
 
-## Cifratura simmetrica a cifrari a blocchi: DES e AES
+### Algoritmo DES
+Inventato dalla IBM negli anni '60, il DES (Data Encryption Standard) e'un algoritmo di **cifratura simmetrica a blocchi**, che codifica **blocchi di 64 bit** con una **chiave di 56 bit**.
+
+Si nota che il DES **non viene piu'utilizzato** dal 2001, quando e'stato scoperto che puo'essere soggetto ad attacchi di **forza bruta**.
+
+Il blocco viene permutato inizialmente da un **permutazione iniziale** $P_i$ e subisce una **trasformazione** $F$ 16 volte utilizzando la chiave ed infine subisce una **permutazione finale** $P_f$ inversa di $P_i$. 
+
+Con il termine **permutazione** si intende lo **scambio** delle posizioni dei **bit** stessi. Si nota che le permutazioni iniziali e finali **non hanno valenza crittografica**, ma vennero create per facilitare l'input con l'hardware dell'epoca.
+
+Prima di ogni **trasformazione** ogni blocco viene diviso in **due parti** da 32 bit, che vengono elaborate alternamente. Vengono inoltre generate 16 **sottochiavi** di 48 bit utilizzando la chiave principale utilizzando la permutazione dello **shift a sinistra**, una utilizzata per ogni trasformazione.
+
+Le **trasformazioni** quindi lavorano con blocchi di 32 bit e consistono nei seguenti passaggi:
+- **expansion**: il blocco viene **ridimensionato** a **48 bit**, utilizzando un algoritmo deterministico. Meta'dei bit sono quindi duplicati. Questa operazione viene fatta dal **blocco E**
+- **key mixing**: il blocco viene messo a **XOR** con la sottochiave corrispondente alla trasformazione
+- **substitution**: i 48 bit risultanti vengono divisi in parti da 6 bit, i quali vengono utilizzati come indici di una **tabella di lookup** che ritorna 4 bit. Viene creato quindi un blocco da **32 bit**. Ogni tabella di lookup viene detta **S-box**
+- **permutation**: i 32 bit vengono mescolati da una permutazione predefinita. Questa operazione viene fatta dal **blocco P**
+
+L'utilizzo delle **S-box** e dei **blocchi E e P** causano **diffusione** e **conclusione**, rendendo sicuro l'algoritmo.
+
+## 
 
 ## Stream cipher
 ### Esempio
