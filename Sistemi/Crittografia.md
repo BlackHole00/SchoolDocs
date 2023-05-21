@@ -101,7 +101,16 @@ Le **trasformazioni** quindi lavorano con blocchi di 32 bit e consistono nei seg
 
 L'utilizzo delle **S-box** e dei **blocchi E e P** causano **diffusione** e **conclusione**, rendendo sicuro l'algoritmo.
 
-## 
+### Algoritmo AES
+Quando il DES venne violato nel 2001 venne creato un algoritmo piu'robusto, chiamato **AES** (Advanced Encryption Standard). Quest'ultimo e'un cifrario a blocchi della famiglia *Rjindael*.
+
+AES utilizza quindi blocchi e chiavi di lunghezza diversa, generalmente i blocchi sono di 128 bit, mentre le chiavi possono essere di 128 bit, 192 bit e 256 bit. La modalita'di funzionamento e'simile a quella del DES.
+
+### Algoritmo 3-DES
+Questo algoritmo fu creato come successore del DES ed **alternativa all'AES**, con l'obiettivo di continuare ad essere compatibile con l'hardware designato per il DES e consiste nell'applicare il **DES tre volte**, utilizzando una **chiave di 168 bit**. Il 3-DES e'comunque meno sicuro (sebbene sia comunque computazionalmente sicuri), quindi si e'mantenuto l'AES.
+
+### Modalita'operative per i cifrari a blocchi
+Gli algoritmi per la cifratura 
 
 ## Stream cipher
 ### Esempio
