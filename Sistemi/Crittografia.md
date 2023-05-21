@@ -37,3 +37,12 @@ $$
 Si nota che e'**impossibile derivare una chiave dall'altra**, quindi essendo a conoscenza della chiave pubblica non e'possibile ottenere quella privata e viceversa.
 
 ## Crittoanalisi
+Per crittoanalisi si intende lo studio dei **metodi di decriptazione** per ricostruire un messaggio in chiaro. Si dice **crittoanalista** colui che prova a decriptare un messaggio.
+
+Quest'ultimo puo'provare diversi **tipi di attacco** a seconda delle informazioni che ha a disposizione sull'**algoritmo di cifratura** e sul **crittogramma**.  
+Alcune situazioni in cui si puo'provare sono:
+- **ciphertext only** (solo crittogramma): la situazione piu'difficile per il crittoanalista
+- **known plaintext** (testo in chiaro noto): si conosce il testo in chiaro con il corrispondente crittogramma e chiave segreta
+- **chosen plaintext** (testo in chiaro a scelta): il crittoanalista e'a conoscenza di parte del testo in chiaro ed e'in grado di intercettare il corrispondente crittogramma con la chiave segreta. Questo attacco e'in genere causato da un grande numero di testo in chiaro che viene studiato per trovare eventuali vulnerabilita' dovute a comportamenti non casuali. Questa tecnica fu utilizzata nelle *bombe* durante la seconda guerra mondiale
+- **chosen ciphertext** (crittogramma a scelta): il crittoanalista e'in grado ti ottenere un crittogramma con la chiave segreta conoscendo il testo in chiaro che lo ha generato
+- **opek key model**: il crittoanalista ha una conoscenza limitata della chiave o della sua struttura, quindi sfrutta queste conoscienze per ottenere i testi in chiaro
