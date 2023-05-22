@@ -44,7 +44,7 @@ Alcune situazioni in cui si puo'provare sono:
 - **known plaintext** (testo in chiaro noto): si conosce il testo in chiaro con il corrispondente crittogramma e chiave segreta
 - **chosen plaintext** (testo in chiaro a scelta): il crittoanalista e'a conoscenza di parte del testo in chiaro ed e'in grado di intercettare il corrispondente crittogramma con la chiave segreta. Questo attacco e'in genere causato da un grande numero di testo in chiaro che viene studiato per trovare eventuali vulnerabilita' dovute a comportamenti non casuali.
 - **chosen ciphertext** (crittogramma a scelta): il crittoanalista e'in grado di ottenere un testo in chiaro con la chiave segreta conoscendo il crittogramma che lo ha generato
-- **opek key model**: il crittoanalista ha una conoscenza limitata della chiave o della sua struttura, quindi sfrutta queste conoscienze per ottenere i testi in chiaro
+- **open key model**: il crittoanalista ha una conoscenza limitata della chiave o della sua struttura, quindi sfrutta queste conoscienze per ottenere i testi in chiaro
 
 Si nota che la soluzione piu'comune e'quando il crittoanalista conosce solo il crittogramma e l'algoritmo di cifratura utilizzato. In mancanza di altre informazioni viene utilizzato un **attacco esaustivo** (anche detto **forza bruta**), privando ad utilizzare tutte le possibile chiavi. Questo approccio e'generalmente poco produttivo.
 
