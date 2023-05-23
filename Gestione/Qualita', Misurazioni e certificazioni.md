@@ -96,6 +96,19 @@ Le certificazioni vengono utilizzate per garantire che una persona, un prodotto,
 
 Le prime certificazioni furono quelle stabilite dalla norma **ISO 9000**, sebbene siano ora obsolete. All'interno di queste certificazioni apparirono per la prima volta i concetti di **Sistema di Gestione della Qualita'** (SGQ) e **Qualita'Totale** (TQM). Si nota che la norma **ISO 9000** e'basata sulla tecnica del **BSI** (British Standards Institution). La sua ultima forma/evoluzione e'la norma **ISO 9001:2015**.
 
+Nella serie ISO 9000 nello specifico, solo il documento ISO 9001 riguarda le norme (i requisiti che le aziende devono soddisfare). Gli altri due documenti (ISO 9000 ed ISO 9004) contengono solo linee guida per il documento ISO 9001. I documenti ISO 9002 e ISO 9003 sono stati unificati con ISO 9001. La norma ISO/IEC 90003:2018 e'una alternativa moderna alla ISO 9001 e la sostituisce.
+
 Si nota che la linea di norme ISO 9000 fornisce solo norme generali, quindi sono state formate certificazioni piu'specifiche. Un esempio e' la **IAF**, che riguarda il mondo dell'IT.
 
-L'IAF, si nota, si occupa anche di internazionalizzare i meccanismi di certificazione attraverso gli accordi **MLA**. Questo e'importante in quanto solo una azienda certificata e'autorizzata a produrre a sua volta certificati (processo dett)
+L'IAF, si nota, si occupa anche di internazionalizzare i meccanismi di certificazione attraverso gli accordi **MLA**. Questo e'importante in quanto solo una azienda certificata e'autorizzata a produrre a sua volta certificati (processo detto di **accredimento**). In Italia l'agenzia, autorizzata dalla MLA, e'**Accredia**.
+
+Nel caso di molte certificazioni, la loro validita'e'usialmente tra i tre ed i cinque anni, quindi puo'scadere.
+
+Le certificazioni del mondo moderno per il mondo IT previste da accredia sono le seguenti:
+- **EN ISO 9001:2015** - di tipo aziendale: Sistemi di gestione per la qualita'
+- **ISO/IEC 20000-1:2011/2018** - di tipo aziendale: Sistemi di gestione Servizi Informatici
+- **UNI CEI EN ISO/IEC 27001:2006/2014/2017** - di tipo aziendale: Sistemi di gestione per la Sicurezza delle Informazioni
+- *... molte altre. Vedi libro*
+
+# Note aggiuntive
+Con **best practice** si intende indicare una serire di attivita' o esperienze che sono risultate nel passato le migliori per raggiungere un obiettivo. Spesso la best practice consiste nella procedura utilizzata nel mondo reale.
