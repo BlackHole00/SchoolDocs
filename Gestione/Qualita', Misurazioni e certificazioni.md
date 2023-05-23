@@ -76,4 +76,26 @@ Un vantaggio aggiuntivo a questo metodo e'la possibilita'di prevedere la dimensi
 - **MAM**: manutenzione migliorativa
 - **MAD**: manutenzione adeguativa
 
-Il conteggio dei function points avviene attraverso procedure standard emanate dall'**IFPUG**
+Il conteggio dei function points avviene attraverso procedure standard emanate dall'**IFPUG**, il quale prevede di individuare e scomporre il programma in 5 tipologie:
+- **ILF** (Internal Logical File): archivi utilizzati internamente al programma
+- **EIF** (External Interface File): archivi scambiati dal programma con altri programmi
+- **EI** (External Input): permettono all'utente di fornire input al software
+- **EO** (External Output): forniscono l'output dell'applicazione
+- **EQ** (External Query): forniscono l'output senza interagire con dati
+Si nota che le prime due voci sono relative ai **dati**, mentre le ultime tre sono relative alle **elaborazioni**.
+
+Da queste tipologie si possono poi ottenere i parametri seguenti:
+- **RET e DET**: relativi ai dati
+- **FTR e DET**: relativi alla elaborazione
+
+Questi parametri possono poi essere utilizzati per definire il numero di function point (che prendono il nome di **FP unadjusted**).  
+Questi FP possono essere quindi aggiustati (e diventare **FP adjusted**) con un fattore detto **VAF** (Value Adjustement Factor) per ottenere un eventuale LOC preciso.
+
+# Certificazioni ICT
+Le certificazioni vengono utilizzate per garantire che una persona, un prodotto, un processo o un'azienda possano dimostrare un determinato livello di qualita'.
+
+Le prime certificazioni furono quelle stabilite dalla norma **ISO 9000**, sebbene siano ora obsolete. All'interno di queste certificazioni apparirono per la prima volta i concetti di **Sistema di Gestione della Qualita'** (SGQ) e **Qualita'Totale** (TQM). Si nota che la norma **ISO 9000** e'basata sulla tecnica del **BSI** (British Standards Institution). La sua ultima forma/evoluzione e'la norma **ISO 9001:2015**.
+
+Si nota che la linea di norme ISO 9000 fornisce solo norme generali, quindi sono state formate certificazioni piu'specifiche. Un esempio e' la **IAF**, che riguarda il mondo dell'IT.
+
+L'IAF, si nota, si occupa anche di internazionalizzare i meccanismi di certificazione attraverso gli accordi **MLA**. Questo e'importante in quanto solo una azienda certificata e'autorizzata a produrre a sua volta certificati (processo dett)
