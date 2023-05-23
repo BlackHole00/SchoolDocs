@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemi/Crittografia.md",
+                "file": "Gestione/Qualita'e certificazioni.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi/Crittografia.md",
+                "file": "Gestione/Qualita'e certificazioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi/Crittografia.md",
+                "file": "Gestione/Qualita'e certificazioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi/Crittografia.md"
+                "file": "Gestione/Qualita'e certificazioni.md"
               }
             }
           }
@@ -159,8 +159,9 @@
   },
   "active": "b876beb0be800bf0",
   "lastOpenFiles": [
-    "Gestione/Progettazione d'Impresa.md",
     "Sistemi/Crittografia.md",
+    "Gestione/Qualita'e certificazioni.md",
+    "Gestione/Progettazione d'Impresa.md",
     "Educazione Civica/GDPR - Note.md",
     "Inglese/ExamLikeSpeech.canvas",
     "Inglese/Exam like speech.md",
