@@ -40,11 +40,14 @@ La **scala Likert** e'un diverso metodo di misurazione per la qualita'del softwa
 
 Il modello cocomo e'un modello per la misurazione dei tempi e costi. Vedi [[Metriche Costi Qualita'#Metodo COCOMO]].
 
-# Metriche per il software: LOC
-Per misurare il software nello specifico sono stati creati sistemi di misurazione efficienti, detti **metriche**. Questi ultimi sono divisi in tre tipi:
+# Metriche per il software
+Per misurare il software nello specifico sono stati creati sistemi di misurazione efficienti, detti **metriche**. Questi ultimi sono divisi in piu'tipi:
 - **dimensionali**: misurano la dimensione del codice
 - **strutturali**: misurano la struttura del codice
 - **funzionali**: misurano il funzionamento del codice
+
+## Metriche dimensionali
+Le metriche dimensionali misurano la dimensione del codice.
 
 Il LOC e'il metodo piu'semplice per la misurazione della qualita'del software. Vedi [[Metriche Costi Qualita'#Mole di software]]. Il LOC ha molti problemi in quanto e'una misura che dipende molto dal linguaggio utilizzato, dallo stile di codice e da molto altro. Il LOC non e'quindi oggettivo e viene praticamente utilizzato solo per misure statistiche come:
 - **la probabilita'di errori**
@@ -52,4 +55,25 @@ Il LOC e'il metodo piu'semplice per la misurazione della qualita'del software. V
 - **la produttivita'ed i compensi**: conoscendo il numero di lavoratori e la paga
 - **densita'del commento del codice**
 
-# Metriche per il software: numero ciclomatico
+## Metriche strutturali
+Le metriche di tipo strutturali si occupano di misurare la struttura logica interna, estrapolando la complessita'di realizzazione, insieme al livello di comprensione e facilita'di modifica.
+
+La metrica strutturale piu'diffusa e' quella del **numero ciclomatico**, che calcola il numero di percorsi logici che il "flusso di esecuzione" del programma puo'seguire, tenendo in conto i punti decisionali (ad es. if-else). Si nota che tale cosa e'possibile se il programma e'strutturato e puo'essere ridotto ad un grafo (il flowchart).  
+Viene quindi detto numero ciclomatico il conteggio di tutti i possibili cammini del programma.
+
+Evitando di utilizzare la forza bruta si sa che in un grafo (come il flowchart) la complessita'viene indicata come $V(g)=numeroArchi-numeroNodi=2p$. Si nota che $p$ e'sempre 1 nel caso del flowchart.  
+In alternativa, utilizzando direttamente il diagramma di flusso, viene detto $\pi$ il numero di punti decisionali presente in quest'ultimo. Il numero ciclomatico vale $\pi + 1$.
+
+Si nota quando il numero ciclomatico e'alto, la qualita'e'bassa, software tende ad essere soggetto ad errore e tende ad essere meno comprensibile.
+
+## Metriche funzionali
+Le metriche funzionali si occupano del misurare un software dal punto di vista delle funzionalita'che offre all'utente che deve utilizzarlo. Si nota che in questi casi il misuramento del software puo'essere fatto senza essere a conoscenza del sorgente ed addirittura senza aver sviluppato il progetto (quindi anche in fase di analisi).
+
+Il metodo piu'diffuso e'quello dei **Function Points**, che, attraverso una operazione di **function point analisys**, portano al dimensionamento del progetto in **function points**. Vedi [[Metriche Costi Qualita'#Function Points FP]].  
+Un vantaggio aggiuntivo a questo metodo e'la possibilita'di prevedere la dimensione del software di manutenzione di un software gia'esistente. Questo viene fatto calcolando i seguenti valori:
+- **MEV**: manutenzione evolutiva
+- **MAC**: manutenzione correttiva
+- **MAM**: manutenzione migliorativa
+- **MAD**: manutenzione adeguativa
+
+Il conteggio dei function points avviene attraverso procedure standard emanate dall'**IFPUG**
