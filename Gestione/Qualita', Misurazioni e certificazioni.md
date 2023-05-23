@@ -28,4 +28,28 @@ Per la qualita'd'uso vengono invece utilizzate le seguenti:
 - **soddisfazione**: grado di risposta positiva dell'utente nell'iterazione con il prodotto finale
 
 # La misurazione del software
-Per fornire una misura effettiva del lavoro effettuato c'e'il bisogno di utilizzare una **metrica**, che puo'essere valutata con i valori  
+Per misurazione del software si intente la pratica di fornire una metrica del costo, della grandezza o della qualita'relativa ad un determinato pezzo di software.
+
+Per fornire una misura effettiva del progetto c'e'il bisogno di utilizzare una **metrica**, che puo'essere valutata con valori **misurati**. Vengono detti valori di **soglia** i valori che rappresentano la qualita'minima o massima a seconda degli obiettivi del progetto.
+
+L'esempio piu'semplice della misurazione del'efficienza software e'quella **M/L**, dove M e'il tempo necessario per l'elaborazione di una specifica operazione, mentre L e'il tempo obiettivo.
+
+Un altro simile indicatore e'quello **S/N * 100**, dove S rappresenta il numero di utenti soddisfatti del prodotto e dove N e'il numero totale degli utenti intervistati. A questi valori si associa l'obiettivo (che normalmente e'posto al 90%).
+
+La **scala Likert** e'un diverso metodo di misurazione per la qualita'del software. Si basa sul misurare quanto l'atteggiamento di un individuo sia positivo o negativo rispetto ad una determinata feature o caratteristica. Questo viene fatto con questionari a scelta multipla con 5 item per domanda, dove l'1 indica  una risposta molto negativa e il 5 ne indica una molto positiva. Tutto questo e'standardizzato nell'**ISO 9001**.
+
+Il modello cocomo e'un modello per la misurazione dei tempi e costi. Vedi [[Metriche Costi Qualita'#Metodo COCOMO]].
+
+# Metriche per il software: LOC
+Per misurare il software nello specifico sono stati creati sistemi di misurazione efficienti, detti **metriche**. Questi ultimi sono divisi in tre tipi:
+- **dimensionali**: misurano la dimensione del codice
+- **strutturali**: misurano la struttura del codice
+- **funzionali**: misurano il funzionamento del codice
+
+Il LOC e'il metodo piu'semplice per la misurazione della qualita'del software. Vedi [[Metriche Costi Qualita'#Mole di software]]. Il LOC ha molti problemi in quanto e'una misura che dipende molto dal linguaggio utilizzato, dallo stile di codice e da molto altro. Il LOC non e'quindi oggettivo e viene praticamente utilizzato solo per misure statistiche come:
+- **la probabilita'di errori**
+- **il tempo di realizzazione**
+- **la produttivita'ed i compensi**: conoscendo il numero di lavoratori e la paga
+- **densita'del commento del codice**
+
+# Metriche per il software: numero ciclomatico
