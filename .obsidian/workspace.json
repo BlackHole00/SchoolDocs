@@ -14,8 +14,19 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "d9064c00d97c4464",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +160,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "20cb9ca4bb3af547",
+  "active": "d9064c00d97c4464",
   "lastOpenFiles": [
     "Gestione/Qualita', Misurazioni e certificazioni.md",
     "Gestione/Metriche Costi Qualita'.md",
