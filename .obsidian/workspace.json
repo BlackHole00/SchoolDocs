@@ -11,22 +11,15 @@
             "id": "20cb9ca4bb3af547",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "d9064c00d97c4464",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.3.3"
+                "file": "informatica/Sistemi informativi.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5110321044922,
-    "collapsed": true
+    "width": 302.5110321044922
   },
   "right": {
     "id": "6b658cb94900cbdb",
@@ -101,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "informatica/Sistemi informativi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "informatica/Sistemi informativi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "informatica/Sistemi informativi.md"
+              }
             }
           }
         ],
@@ -160,8 +156,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "d9064c00d97c4464",
+  "active": "20cb9ca4bb3af547",
   "lastOpenFiles": [
+    "informatica/Basi di dati.md",
+    "informatica/Sistemi informativi.md",
     "Gestione/Qualita', Misurazioni e certificazioni.md",
     "Gestione/Metriche Costi Qualita'.md",
     "Gestione/Progettazione d'Impresa.md",
@@ -175,7 +173,6 @@
     "Tecnologie/Sistemi informativi - note 2.md",
     "Tecnologie/Sistemi informativi - note 1.md",
     "Gestione/PresentazionePcto.mp4",
-    "informatica/Basi di dati.md",
     "Italiano/Poesie.md",
     "informatica",
     "Gestione/SEO.md",
