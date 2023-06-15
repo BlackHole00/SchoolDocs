@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"type":"group","id":"2a3c8fb484bf051d","x":-840,"y":-140,"width":1065,"height":380,"color":"4","label":"Storia"},
+		{"type":"text","text":"Cassa del mezzogiorno","id":"66a1723ce5aba762","x":-540,"y":55,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"*Unificazione Italiana*","id":"d40bdc6a74041851","x":-820,"y":-115,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"**Governo Anni '50**","id":"830ba575b3bfbe31","x":-540,"y":-115,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"**GUERRA FREDDA**","id":"5e93e98033e010c2","x":-240,"y":-115,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"**Guerra Vietnam**","id":"5bf90e10a68f86de","x":-240,"y":55,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"Drogaggio Soldati","id":"18e37b7062a40193","x":-45,"y":160,"width":250,"height":60,"color":"4"},
+		{"id":"210857825b3e1f82","x":480,"y":-135,"width":250,"height":50,"color":"5","type":"text","text":"SUD"},
+		{"type":"file","file":"Mappe Esame/Concetti Generali.canvas","id":"0ac353d247052512","x":760,"y":-145,"width":300,"height":400,"color":"5"},
+		{"type":"text","text":"SUPERUOMO","id":"901e6523a8e9e15f","x":480,"y":-85,"width":250,"height":50,"color":"5"}
+	],
+	"edges":[
+		{"id":"088ac1d26dc4674c","fromNode":"830ba575b3bfbe31","fromSide":"bottom","toNode":"66a1723ce5aba762","toSide":"top"},
+		{"id":"b5f22c938a5eb84c","fromNode":"5e93e98033e010c2","fromSide":"bottom","toNode":"5bf90e10a68f86de","toSide":"top"},
+		{"id":"3209a7aa59fcbe6e","fromNode":"5bf90e10a68f86de","fromSide":"bottom","toNode":"18e37b7062a40193","toSide":"left"},
+		{"id":"2414a2e0623105d9","fromNode":"66a1723ce5aba762","fromSide":"right","toNode":"210857825b3e1f82","toSide":"left","color":"5"},
+		{"id":"1c357b33e8784839","fromNode":"18e37b7062a40193","fromSide":"right","toNode":"901e6523a8e9e15f","toSide":"left","color":"5"},
+		{"id":"455e0f42ca64f128","fromNode":"210857825b3e1f82","fromSide":"right","toNode":"0ac353d247052512","toSide":"left"},
+		{"id":"9dffbf6dc7f25ef9","fromNode":"901e6523a8e9e15f","fromSide":"right","toNode":"0ac353d247052512","toSide":"left"}
+	]
+}

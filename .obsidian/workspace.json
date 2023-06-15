@@ -8,31 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "20cb9ca4bb3af547",
+            "id": "6303fb06ea0fe672",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Mappe Esame/Italiano.canvas",
                 "viewState": {
-                  "x": 330,
-                  "y": -20,
-                  "zoom": -0.4561264739136253
-                }
-              }
-            }
-          },
-          {
-            "id": "6303fb06ea0fe672",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Mappe Esame/Concetti Generali.canvas",
-                "viewState": {
-                  "x": -115,
-                  "y": -120,
-                  "zoom": 0
+                  "x": 510,
+                  "y": -15,
+                  "zoom": -0.6991694045599531
                 }
               }
             }
@@ -174,12 +159,13 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "20cb9ca4bb3af547",
+  "active": "6303fb06ea0fe672",
   "lastOpenFiles": [
     "Mappe Esame/Concetti Generali.canvas",
     "Mappe Esame/Italiano.canvas",
+    "Mappe Esame/Storia.canvas",
     "Mappe Esame/Root.canvas",
-    "Mappe Esame/Untitled.md",
+    "Mappe Esame/S.md",
     "Mappe Esame/Italiano",
     "Untitled.md",
     "Mappe Esame",

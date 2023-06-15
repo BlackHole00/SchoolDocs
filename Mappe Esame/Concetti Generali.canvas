@@ -1,15 +1,38 @@
 {
 	"nodes":[
-		{"type":"text","text":"**SUD**","id":"fe35c1d456d9aebd","x":-380,"y":-420,"width":100,"height":60},
-		{"type":"text","text":"**PROGRESSO**","id":"36a715f2172c2253","x":-380,"y":-320,"width":182,"height":50},
-		{"type":"text","text":"**SUPERUOMO**","id":"900e5b384e03fe4f","x":-100,"y":-325,"width":250,"height":60},
-		{"type":"text","text":"**ANIMA E CORPO**","id":"aeb505db85e12a2d","x":-380,"y":-120,"width":250,"height":60},
-		{"type":"text","text":"**DECADIMENTO SOCIETA'**","id":"f16908f788b9969a","x":-380,"y":-220,"width":291,"height":53},
-		{"type":"text","text":"**SFIDUCIA SCIENZA**","id":"ea454453575d832d","x":-380,"y":0,"width":250,"height":60},
-		{"type":"text","text":"**RIPETERSI DELLA STORIA**","id":"a860e925be9d614a","x":-380,"y":120,"width":300,"height":60}
+		{"type":"group","id":"34f48beeeb0afe65","x":-280,"y":-560,"width":543,"height":760,"color":"5","label":"Concetti Generali"},
+		{"type":"file","file":"Mappe Esame/Italiano.canvas","id":"5a5f05f0032ef0b6","x":-1280,"y":-560,"width":280,"height":600,"color":"1"},
+		{"type":"file","file":"Mappe Esame/Storia.canvas","id":"226e6ed4b909bf4f","x":-1280,"y":100,"width":280,"height":400,"color":"4"},
+		{"type":"text","text":"VERGA","id":"cc6b61cd09e46e59","x":-980,"y":-560,"width":250,"height":50,"color":"1"},
+		{"type":"text","text":"DECADENTISMO","id":"f078fbddbde1601c","x":-980,"y":-510,"width":250,"height":50,"color":"1"},
+		{"type":"text","text":"NIETZSCHE","id":"09cc4d646f61ca73","x":-980,"y":-460,"width":250,"height":50,"color":"1"},
+		{"type":"text","text":"BERGSON","id":"bd8066ff9e2d01e8","x":-980,"y":-410,"width":250,"height":50,"color":"1"},
+		{"type":"text","text":"**PROGRESSO**","id":"36a715f2172c2253","x":-260,"y":-320,"width":182,"height":60,"color":"5"},
+		{"type":"text","text":"**SFIDUCIA SCIENZA**","id":"ea454453575d832d","x":-260,"y":-120,"width":250,"height":60,"color":"5"},
+		{"type":"text","text":"**CORPO E ANIMA**","id":"aeb505db85e12a2d","x":-260,"y":0,"width":250,"height":60,"color":"5"},
+		{"type":"text","text":"**RIPETERSI DELLA STORIA**","id":"a860e925be9d614a","x":-260,"y":120,"width":280,"height":60,"color":"5"},
+		{"type":"text","text":"**SUPERUOMO**","id":"900e5b384e03fe4f","x":-48,"y":-380,"width":250,"height":60,"color":"5"},
+		{"type":"text","text":"**DECADIMENTO SOCIETA'**","id":"f16908f788b9969a","x":-48,"y":-260,"width":291,"height":53,"color":"5"},
+		{"type":"text","text":"**SUD**","id":"fe35c1d456d9aebd","x":-260,"y":-540,"width":100,"height":60,"color":"5"},
+		{"id":"1a6a99c501885db3","x":-980,"y":100,"width":280,"height":50,"color":"4","type":"text","text":"CASSA DEL MEZZOGIORNO"},
+		{"id":"3b8636e8dfb56a07","x":-980,"y":150,"width":280,"height":50,"color":"4","type":"text","text":"SOLDATI VIETNAM"}
 	],
 	"edges":[
 		{"id":"c2b99b9456a15443","fromNode":"36a715f2172c2253","fromSide":"right","toNode":"900e5b384e03fe4f","toSide":"left","fromEnd":"arrow"},
-		{"id":"bf30663c52ca26e5","fromNode":"36a715f2172c2253","fromSide":"bottom","toNode":"f16908f788b9969a","toSide":"top"}
+		{"id":"3fe511feebabd803","fromNode":"36a715f2172c2253","fromSide":"right","toNode":"f16908f788b9969a","toSide":"left"},
+		{"id":"7f2056614ba98652","fromNode":"fe35c1d456d9aebd","fromSide":"left","toNode":"cc6b61cd09e46e59","toSide":"right","color":"1"},
+		{"id":"4e9ce5f24fd247fe","fromNode":"cc6b61cd09e46e59","fromSide":"left","toNode":"5a5f05f0032ef0b6","toSide":"right"},
+		{"id":"f9f5864dc4b6172e","fromNode":"900e5b384e03fe4f","fromSide":"left","toNode":"09cc4d646f61ca73","toSide":"right","color":"1"},
+		{"id":"748762c50bb75f15","fromNode":"ea454453575d832d","fromSide":"left","toNode":"f078fbddbde1601c","toSide":"right","color":"1"},
+		{"id":"373fadaa4dadb8f7","fromNode":"f16908f788b9969a","fromSide":"left","toNode":"f078fbddbde1601c","toSide":"right","color":"1"},
+		{"id":"7d27fe340f8bba87","fromNode":"aeb505db85e12a2d","fromSide":"left","toNode":"bd8066ff9e2d01e8","toSide":"right","color":"1"},
+		{"id":"f9c0ddf3e1187c06","fromNode":"a860e925be9d614a","fromSide":"left","toNode":"09cc4d646f61ca73","toSide":"right","color":"1"},
+		{"id":"1999acb54b792796","fromNode":"f078fbddbde1601c","fromSide":"left","toNode":"5a5f05f0032ef0b6","toSide":"right"},
+		{"id":"e806e0db122e1cd9","fromNode":"09cc4d646f61ca73","fromSide":"left","toNode":"5a5f05f0032ef0b6","toSide":"right"},
+		{"id":"87ce5c34adc540c7","fromNode":"bd8066ff9e2d01e8","fromSide":"left","toNode":"5a5f05f0032ef0b6","toSide":"right"},
+		{"id":"116888a013dcca92","fromNode":"1a6a99c501885db3","fromSide":"left","toNode":"226e6ed4b909bf4f","toSide":"right"},
+		{"id":"0c3c23786307097d","fromNode":"fe35c1d456d9aebd","fromSide":"left","toNode":"1a6a99c501885db3","toSide":"right","color":"4"},
+		{"id":"3bf6949b16f1372a","fromNode":"3b8636e8dfb56a07","fromSide":"left","toNode":"226e6ed4b909bf4f","toSide":"right"},
+		{"id":"4c6031c27871d09a","fromNode":"900e5b384e03fe4f","fromSide":"left","toNode":"3b8636e8dfb56a07","toSide":"right","color":"4"}
 	]
 }
