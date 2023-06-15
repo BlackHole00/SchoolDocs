@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "informatica/Sistemi informativi.md",
+                "file": "Sistemi/Signal Protocol.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "informatica/Sistemi informativi.md",
+                "file": "Sistemi/Signal Protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "informatica/Sistemi informativi.md",
+                "file": "Sistemi/Signal Protocol.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "informatica/Sistemi informativi.md"
+                "file": "Sistemi/Signal Protocol.md"
               }
             }
           }
@@ -158,8 +158,15 @@
   },
   "active": "20cb9ca4bb3af547",
   "lastOpenFiles": [
-    "informatica/Basi di dati.md",
+    "Sistemi/pptA866.tmp",
+    "Sistemi/ppt9A12.tmp",
+    "Sistemi/pptA1B9.tmp",
+    "Sistemi/~$SignalProtocol.pptx",
+    "Sistemi/pptACE9.tmp",
+    "Sistemi/pptDAD5.tmp",
     "informatica/Sistemi informativi.md",
+    "Sistemi/Signal Protocol.md",
+    "informatica/Basi di dati.md",
     "Gestione/Qualita', Misurazioni e certificazioni.md",
     "Gestione/Metriche Costi Qualita'.md",
     "Gestione/Progettazione d'Impresa.md",
@@ -190,14 +197,7 @@
     "Tecnologie/Calcolatrice.pptx",
     "Tecnologie/~$Calcolatrice.pptx",
     "Tecnologie/res",
-    "Tecnologie/New folder",
     "2023-03-06.md",
-    "Inglese",
-    "Italiano/italiano_svevo.md",
-    "Educazione Civica",
-    "Italiano",
-    "Gestione",
-    "Untitled.canvas",
-    "2023-03-02.md"
+    "Untitled.canvas"
   ]
 }
