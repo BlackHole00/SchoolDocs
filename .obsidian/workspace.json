@@ -13,10 +13,25 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Mappe Esame/Root.canvas",
+                "file": "Mappe Esame/Italiano.canvas",
                 "viewState": {
-                  "x": -22.72216796875,
-                  "y": -180.09296798706055,
+                  "x": 330,
+                  "y": -20,
+                  "zoom": -0.4561264739136253
+                }
+              }
+            }
+          },
+          {
+            "id": "6303fb06ea0fe672",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Mappe Esame/Concetti Generali.canvas",
+                "viewState": {
+                  "x": -115,
+                  "y": -120,
                   "zoom": 0
                 }
               }
@@ -96,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mappe Esame/Root.canvas",
+                "file": "Mappe Esame/Italiano.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mappe Esame/Root.canvas",
+                "file": "Mappe Esame/Italiano.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mappe Esame/Root.canvas"
+                "file": "Mappe Esame/Italiano.canvas"
               }
             }
           }
@@ -161,9 +176,12 @@
   },
   "active": "20cb9ca4bb3af547",
   "lastOpenFiles": [
+    "Mappe Esame/Concetti Generali.canvas",
+    "Mappe Esame/Italiano.canvas",
+    "Mappe Esame/Root.canvas",
+    "Mappe Esame/Untitled.md",
     "Mappe Esame/Italiano",
     "Untitled.md",
-    "Mappe Esame/Root.canvas",
     "Mappe Esame",
     "Italiano/Poesie.md",
     "Sistemi/Signal Protocol.md",
@@ -198,10 +216,8 @@
     "Sistemi/Vlan commands.md",
     "Educazione Civica/UE - Punti Contro.md",
     "Gestione/domande gestione impresa - 1.md",
-    "Sistemi/Dns - Arp - Dhcp.md",
     "Tecnologie/res/GraphViewActivity.png",
     "Tecnologie/res/MainActivity.png",
-    "Tecnologie/Calcolatrice.pptx",
     "Untitled.canvas"
   ]
 }

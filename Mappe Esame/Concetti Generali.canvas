@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"type":"text","text":"**SUD**","id":"fe35c1d456d9aebd","x":-380,"y":-420,"width":100,"height":60},
+		{"type":"text","text":"**PROGRESSO**","id":"36a715f2172c2253","x":-380,"y":-320,"width":182,"height":50},
+		{"type":"text","text":"**SUPERUOMO**","id":"900e5b384e03fe4f","x":-100,"y":-325,"width":250,"height":60},
+		{"type":"text","text":"**ANIMA E CORPO**","id":"aeb505db85e12a2d","x":-380,"y":-120,"width":250,"height":60},
+		{"type":"text","text":"**DECADIMENTO SOCIETA'**","id":"f16908f788b9969a","x":-380,"y":-220,"width":291,"height":53},
+		{"type":"text","text":"**SFIDUCIA SCIENZA**","id":"ea454453575d832d","x":-380,"y":0,"width":250,"height":60},
+		{"type":"text","text":"**RIPETERSI DELLA STORIA**","id":"a860e925be9d614a","x":-380,"y":120,"width":300,"height":60}
+	],
+	"edges":[
+		{"id":"c2b99b9456a15443","fromNode":"36a715f2172c2253","fromSide":"right","toNode":"900e5b384e03fe4f","toSide":"left","fromEnd":"arrow"},
+		{"id":"bf30663c52ca26e5","fromNode":"36a715f2172c2253","fromSide":"bottom","toNode":"f16908f788b9969a","toSide":"top"}
+	]
+}

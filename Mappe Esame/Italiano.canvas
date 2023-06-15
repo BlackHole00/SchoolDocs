@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"type":"group","id":"bd3a36567e7ea9e5","x":-760,"y":-650,"width":470,"height":210,"label":"Movimenti"},
+		{"type":"text","text":"**DECADENTISMO**","id":"7dd65691aaa7b852","x":-740,"y":-530,"width":250,"height":60,"color":"1"},
+		{"type":"text","text":"**VERGA**","id":"da94ef219e138d9c","x":-245,"y":-370,"width":150,"height":60,"color":"1"},
+		{"type":"text","text":"**PIRANDELLO**","id":"fec703d6a5ca0f8a","x":515,"y":-370,"width":202,"height":60,"color":"1"},
+		{"type":"text","text":"Vita dei campi:\n- Rosso Malpelo","id":"da246b061ea35695","x":-95,"y":-290,"width":250,"height":130,"color":"1"},
+		{"type":"text","text":"Novelle Rusticane:\n- liberta'","id":"e5e1f5b134d96ab7","x":-95,"y":-130,"width":250,"height":100,"color":"1"},
+		{"type":"text","text":"Novelle per un anno:\n- Ciaula","id":"aab11209d3236d5b","x":491,"y":-290,"width":250,"height":105,"color":"1"},
+		{"type":"text","text":"**NATURALISMO**","id":"310d200e8377f234","x":-740,"y":-630,"width":220,"height":60,"color":"1"},
+		{"type":"text","text":"**VERISMO**","id":"0cb7bc447dad2549","x":-470,"y":-630,"width":160,"height":60,"color":"1"},
+		{"type":"file","file":"Mappe Esame/Concetti Generali.canvas","id":"905a24b151f942f6","x":1020,"y":-670,"width":400,"height":400,"color":"5"},
+		{"type":"text","text":"**BERGSON**\n- tempo oggettivo vs soggettivo\n- conoscienza intuitiva\n- slancio vitale","id":"c523e85e5a801baa","x":-235,"y":190,"width":390,"height":200,"color":"1"},
+		{"type":"text","text":"Ciclo dei Vinti:\n- malavoglia\n\t- fiumana del progresso","id":"543d1c6eace4a3d4","x":-95,"y":-10,"width":250,"height":160,"color":"1"},
+		{"type":"text","text":"**NIETZSCHE**\n- distruzione societa' (falso nichilismo)\n\t- oltre uomo\n- teoria eterno ritorno\n","id":"9930008fdc467ca1","x":-235,"y":430,"width":390,"height":200,"color":"1"}
+	],
+	"edges":[
+		{"id":"ba27299ac7c91241","fromNode":"310d200e8377f234","fromSide":"right","toNode":"0cb7bc447dad2549","toSide":"left"},
+		{"id":"37bb8ae55b774001","fromNode":"7dd65691aaa7b852","fromSide":"bottom","toNode":"c523e85e5a801baa","toSide":"left"},
+		{"id":"0635204cc740504d","fromNode":"7dd65691aaa7b852","fromSide":"bottom","toNode":"9930008fdc467ca1","toSide":"left"},
+		{"id":"02ad3d6269778389","fromNode":"0cb7bc447dad2549","fromSide":"bottom","toNode":"da94ef219e138d9c","toSide":"top"},
+		{"id":"d4ff04155cb0459d","fromNode":"da94ef219e138d9c","fromSide":"bottom","toNode":"da246b061ea35695","toSide":"left"},
+		{"id":"c13a4531e744aa02","fromNode":"da94ef219e138d9c","fromSide":"bottom","toNode":"e5e1f5b134d96ab7","toSide":"left"},
+		{"id":"9af55d2415c1fd45","fromNode":"da94ef219e138d9c","fromSide":"bottom","toNode":"543d1c6eace4a3d4","toSide":"left"},
+		{"id":"4c7b33de54bdbb51","fromNode":"fec703d6a5ca0f8a","fromSide":"bottom","toNode":"aab11209d3236d5b","toSide":"top"},
+		{"id":"cb5d167f10e3e98e","fromNode":"c523e85e5a801baa","fromSide":"bottom","toNode":"9930008fdc467ca1","toSide":"top","fromEnd":"arrow"},
+		{"id":"0bd39cd1757c05ff","fromNode":"da246b061ea35695","fromSide":"right","toNode":"aab11209d3236d5b","toSide":"left","fromEnd":"arrow","label":"Rosso Malpelo / Ciaula"},
+		{"id":"d1544def24481d90","fromNode":"da94ef219e138d9c","fromSide":"right","toNode":"905a24b151f942f6","toSide":"left","label":"SUD"}
+	]
+}
