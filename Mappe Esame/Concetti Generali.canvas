@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"type":"group","id":"34f48beeeb0afe65","x":-280,"y":-560,"width":543,"height":760,"color":"5","label":"Concetti Generali"},
+		{"type":"group","id":"34f48beeeb0afe65","x":-280,"y":-560,"width":543,"height":860,"color":"5","label":"Concetti Generali"},
 		{"type":"file","file":"Mappe Esame/Italiano.canvas","id":"5a5f05f0032ef0b6","x":-1280,"y":-560,"width":280,"height":600,"color":"1"},
 		{"type":"file","file":"Mappe Esame/Storia.canvas","id":"226e6ed4b909bf4f","x":-1280,"y":100,"width":280,"height":400,"color":"4"},
 		{"type":"text","text":"VERGA","id":"cc6b61cd09e46e59","x":-980,"y":-560,"width":250,"height":50,"color":"1"},
@@ -8,14 +8,16 @@
 		{"type":"text","text":"NIETZSCHE","id":"09cc4d646f61ca73","x":-980,"y":-460,"width":250,"height":50,"color":"1"},
 		{"type":"text","text":"BERGSON","id":"bd8066ff9e2d01e8","x":-980,"y":-410,"width":250,"height":50,"color":"1"},
 		{"type":"text","text":"**PROGRESSO**","id":"36a715f2172c2253","x":-260,"y":-320,"width":182,"height":60,"color":"5"},
+		{"type":"text","text":"CASSA DEL MEZZOGIORNO","id":"1a6a99c501885db3","x":-980,"y":100,"width":280,"height":50,"color":"4"},
+		{"type":"text","text":"SOLDATI VIETNAM","id":"3b8636e8dfb56a07","x":-980,"y":150,"width":280,"height":50,"color":"4"},
 		{"type":"text","text":"**SFIDUCIA SCIENZA**","id":"ea454453575d832d","x":-260,"y":-120,"width":250,"height":60,"color":"5"},
 		{"type":"text","text":"**CORPO E ANIMA**","id":"aeb505db85e12a2d","x":-260,"y":0,"width":250,"height":60,"color":"5"},
 		{"type":"text","text":"**RIPETERSI DELLA STORIA**","id":"a860e925be9d614a","x":-260,"y":120,"width":280,"height":60,"color":"5"},
 		{"type":"text","text":"**SUPERUOMO**","id":"900e5b384e03fe4f","x":-48,"y":-380,"width":250,"height":60,"color":"5"},
 		{"type":"text","text":"**DECADIMENTO SOCIETA'**","id":"f16908f788b9969a","x":-48,"y":-260,"width":291,"height":53,"color":"5"},
 		{"type":"text","text":"**SUD**","id":"fe35c1d456d9aebd","x":-260,"y":-540,"width":100,"height":60,"color":"5"},
-		{"id":"1a6a99c501885db3","x":-980,"y":100,"width":280,"height":50,"color":"4","type":"text","text":"CASSA DEL MEZZOGIORNO"},
-		{"id":"3b8636e8dfb56a07","x":-980,"y":150,"width":280,"height":50,"color":"4","type":"text","text":"SOLDATI VIETNAM"}
+		{"type":"text","text":"**MERCIFICAZIONE ARTE**","id":"14f778d5e3a8310e","x":-260,"y":220,"width":250,"height":60,"color":"5"},
+		{"id":"22fd22032b968ae9","x":-980,"y":-360,"width":250,"height":50,"color":"1","type":"text","text":"BAUDELAIRE"}
 	],
 	"edges":[
 		{"id":"c2b99b9456a15443","fromNode":"36a715f2172c2253","fromSide":"right","toNode":"900e5b384e03fe4f","toSide":"left","fromEnd":"arrow"},
@@ -33,6 +35,9 @@
 		{"id":"116888a013dcca92","fromNode":"1a6a99c501885db3","fromSide":"left","toNode":"226e6ed4b909bf4f","toSide":"right"},
 		{"id":"0c3c23786307097d","fromNode":"fe35c1d456d9aebd","fromSide":"left","toNode":"1a6a99c501885db3","toSide":"right","color":"4"},
 		{"id":"3bf6949b16f1372a","fromNode":"3b8636e8dfb56a07","fromSide":"left","toNode":"226e6ed4b909bf4f","toSide":"right"},
-		{"id":"4c6031c27871d09a","fromNode":"900e5b384e03fe4f","fromSide":"left","toNode":"3b8636e8dfb56a07","toSide":"right","color":"4"}
+		{"id":"4c6031c27871d09a","fromNode":"900e5b384e03fe4f","fromSide":"left","toNode":"3b8636e8dfb56a07","toSide":"right","color":"4"},
+		{"id":"6113d09d050f89f3","fromNode":"14f778d5e3a8310e","fromSide":"right","toNode":"f16908f788b9969a","toSide":"left","fromEnd":"arrow"},
+		{"id":"373ec267e79681ea","fromNode":"22fd22032b968ae9","fromSide":"left","toNode":"5a5f05f0032ef0b6","toSide":"right"},
+		{"id":"1b7eeb7c7ff787ca","fromNode":"14f778d5e3a8310e","fromSide":"left","toNode":"22fd22032b968ae9","toSide":"right","color":"1"}
 	]
 }
