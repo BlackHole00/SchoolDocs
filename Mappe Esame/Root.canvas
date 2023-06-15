@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"b8b5cd1c5c502e64","x":120,"y":-460,"width":640,"height":340,"type":"group","label":"Storia"},
+		{"type":"group","id":"eab67d2d01ddf90c","x":-860,"y":-480,"width":520,"height":340,"label":"Italiano"},
+		{"type":"group","id":"4f8635cf61935123","x":-840,"y":-420,"width":470,"height":100,"label":"Movimenti"},
+		{"type":"text","text":"**VERISMO**","id":"24e86083fa3bd6eb","x":-550,"y":-400,"width":160,"height":60,"color":"1"},
+		{"type":"text","text":"**NATURALISMO**","id":"4f74cc940f2a29e2","x":-820,"y":-400,"width":220,"height":60,"color":"1"},
+		{"type":"text","text":"**VERGA**","id":"bf8791edbc091450","x":-540,"y":-260,"width":140,"height":60,"color":"1"},
+		{"type":"text","text":"**SUD**","id":"b11db2b347ba1990","x":-220,"y":-400,"width":100,"height":60},
+		{"type":"text","text":"*Unificazione Italiana*","id":"e1c6201e799bc437","x":160,"y":-400,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"**Governo Anni '50**","id":"b8369a8377336d6e","x":440,"y":-400,"width":250,"height":60,"color":"4"},
+		{"id":"6b4babd5be09c59b","x":440,"y":-260,"width":250,"height":60,"type":"text","text":"Cassa del mezzogiorno"}
+	],
+	"edges":[
+		{"id":"ed08cd64df878ecd","fromNode":"24e86083fa3bd6eb","fromSide":"bottom","toNode":"bf8791edbc091450","toSide":"top"},
+		{"id":"c1b90e5311f4d44d","fromNode":"4f74cc940f2a29e2","fromSide":"right","toNode":"24e86083fa3bd6eb","toSide":"left"},
+		{"id":"2a9a1c876a52fcb3","fromNode":"bf8791edbc091450","fromSide":"right","toNode":"e1c6201e799bc437","toSide":"left","label":"Supporta"},
+		{"id":"1d08da7b8ff11514","fromNode":"bf8791edbc091450","fromSide":"right","toNode":"b11db2b347ba1990","toSide":"left"},
+		{"id":"b3b56a177e228a12","fromNode":"b8369a8377336d6e","fromSide":"bottom","toNode":"6b4babd5be09c59b","toSide":"top"},
+		{"id":"db9060443b238c65","fromNode":"b11db2b347ba1990","fromSide":"right","toNode":"6b4babd5be09c59b","toSide":"left"}
+	]
+}

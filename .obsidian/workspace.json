@@ -11,11 +11,14 @@
             "id": "20cb9ca4bb3af547",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Sistemi/Signal Protocol.md",
-                "mode": "source",
-                "source": false
+                "file": "Mappe Esame/Root.canvas",
+                "viewState": {
+                  "x": -22.72216796875,
+                  "y": -180.09296798706055,
+                  "zoom": 0
+                }
               }
             }
           }
@@ -93,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi/Signal Protocol.md",
+                "file": "Mappe Esame/Root.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi/Signal Protocol.md",
+                "file": "Mappe Esame/Root.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi/Signal Protocol.md"
+                "file": "Mappe Esame/Root.canvas"
               }
             }
           }
@@ -158,6 +161,12 @@
   },
   "active": "20cb9ca4bb3af547",
   "lastOpenFiles": [
+    "Mappe Esame/Italiano",
+    "Untitled.md",
+    "Mappe Esame/Root.canvas",
+    "Mappe Esame",
+    "Italiano/Poesie.md",
+    "Sistemi/Signal Protocol.md",
     "Sistemi/pptA866.tmp",
     "Sistemi/ppt9A12.tmp",
     "Sistemi/pptA1B9.tmp",
@@ -165,7 +174,6 @@
     "Sistemi/pptACE9.tmp",
     "Sistemi/pptDAD5.tmp",
     "informatica/Sistemi informativi.md",
-    "Sistemi/Signal Protocol.md",
     "informatica/Basi di dati.md",
     "Gestione/Qualita', Misurazioni e certificazioni.md",
     "Gestione/Metriche Costi Qualita'.md",
@@ -180,7 +188,6 @@
     "Tecnologie/Sistemi informativi - note 2.md",
     "Tecnologie/Sistemi informativi - note 1.md",
     "Gestione/PresentazionePcto.mp4",
-    "Italiano/Poesie.md",
     "informatica",
     "Gestione/SEO.md",
     "2023-04-26.md",
@@ -195,9 +202,6 @@
     "Tecnologie/res/GraphViewActivity.png",
     "Tecnologie/res/MainActivity.png",
     "Tecnologie/Calcolatrice.pptx",
-    "Tecnologie/~$Calcolatrice.pptx",
-    "Tecnologie/res",
-    "2023-03-06.md",
     "Untitled.canvas"
   ]
 }
