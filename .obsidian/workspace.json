@@ -11,14 +11,11 @@
             "id": "6303fb06ea0fe672",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Mappe Esame/Italiano.canvas",
-                "viewState": {
-                  "x": 453.972511235815,
-                  "y": 128.21580356069103,
-                  "zoom": -0.9761093797919788
-                }
+                "file": "Italiano/Poesie.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mappe Esame/Italiano.canvas",
+                "file": "Italiano/Poesie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mappe Esame/Italiano.canvas",
+                "file": "Italiano/Poesie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mappe Esame/Italiano.canvas"
+                "file": "Italiano/Poesie.md"
               }
             }
           }
@@ -159,10 +156,26 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6303fb06ea0fe672",
+  "active": "d4d1942c2513e25d",
   "lastOpenFiles": [
-    "Mappe Esame/Concetti Generali.canvas",
+    "informatica/Sistemi informativi.md",
+    "informatica/Basi di dati.md",
+    "Gestione/domande gestione impresa - 1.md",
+    "Gestione/domande gestione impresa - 2.md",
+    "Gestione/Metriche Costi Qualita'.md",
+    "Gestione/PresentazionePcto.mp4",
+    "Gestione/~$PresentazionePcto.pptx",
+    "Gestione/Progettazione d'Impresa.md",
+    "Gestione/Qualita', Misurazioni e certificazioni.md",
+    "Gestione/SEO.md",
+    "Educazione Civica/UE - Punti Contro.md",
+    "Educazione Civica/GDPR - Note.md",
+    "Inglese/Totalitarian Language.md",
+    "Inglese/ExamLikeSpeechExtended.canvas",
+    "Inglese/ExamLikeSpeech.canvas",
+    "Inglese/Exam like speech.md",
     "Mappe Esame/Italiano.canvas",
+    "Mappe Esame/Concetti Generali.canvas",
     "Mappe Esame/Storia.canvas",
     "Mappe Esame/Root.canvas",
     "Mappe Esame/S.md",
@@ -177,31 +190,15 @@
     "Sistemi/~$SignalProtocol.pptx",
     "Sistemi/pptACE9.tmp",
     "Sistemi/pptDAD5.tmp",
-    "informatica/Sistemi informativi.md",
-    "informatica/Basi di dati.md",
-    "Gestione/Qualita', Misurazioni e certificazioni.md",
-    "Gestione/Metriche Costi Qualita'.md",
-    "Gestione/Progettazione d'Impresa.md",
     "Sistemi/Crittografia.md",
-    "Educazione Civica/GDPR - Note.md",
-    "Inglese/ExamLikeSpeech.canvas",
-    "Inglese/Exam like speech.md",
-    "Inglese/ExamLikeSpeechExtended.canvas",
-    "Inglese/Totalitarian Language.md",
     "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
     "Tecnologie/Sistemi informativi - note 2.md",
     "Tecnologie/Sistemi informativi - note 1.md",
-    "Gestione/PresentazionePcto.mp4",
-    "informatica",
-    "Gestione/SEO.md",
     "2023-04-26.md",
-    "Gestione/domande gestione impresa - 2.md",
     "Sistemi/Firewall - Iptables.md",
     "Storia/Seconda Guerra Mondiale.md",
     "Sistemi/Firewall - Proxy - DMZ.md",
     "Sistemi/Vlan commands.md",
-    "Educazione Civica/UE - Punti Contro.md",
-    "Gestione/domande gestione impresa - 1.md",
     "Tecnologie/res/GraphViewActivity.png",
     "Tecnologie/res/MainActivity.png",
     "Untitled.canvas"
