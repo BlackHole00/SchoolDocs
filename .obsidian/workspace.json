@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Italiano/Poesie.md",
+                "file": "Gestione/domande gestione impresa - 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Italiano/Poesie.md",
+                "file": "Gestione/domande gestione impresa - 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Italiano/Poesie.md",
+                "file": "Gestione/domande gestione impresa - 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Italiano/Poesie.md"
+                "file": "Gestione/domande gestione impresa - 1.md"
               }
             }
           }
@@ -156,51 +156,51 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "d4d1942c2513e25d",
+  "active": "6303fb06ea0fe672",
   "lastOpenFiles": [
-    "informatica/Sistemi informativi.md",
-    "informatica/Basi di dati.md",
-    "Gestione/domande gestione impresa - 1.md",
     "Gestione/domande gestione impresa - 2.md",
+    "Gestione/domande gestione impresa - 1.md",
     "Gestione/Metriche Costi Qualita'.md",
     "Gestione/PresentazionePcto.mp4",
-    "Gestione/~$PresentazionePcto.pptx",
     "Gestione/Progettazione d'Impresa.md",
     "Gestione/Qualita', Misurazioni e certificazioni.md",
     "Gestione/SEO.md",
-    "Educazione Civica/UE - Punti Contro.md",
-    "Educazione Civica/GDPR - Note.md",
-    "Inglese/Totalitarian Language.md",
-    "Inglese/ExamLikeSpeechExtended.canvas",
-    "Inglese/ExamLikeSpeech.canvas",
+    "informatica/Basi di dati.md",
+    "informatica/Sistemi informativi.md",
     "Inglese/Exam like speech.md",
+    "Inglese/ExamLikeSpeech.canvas",
+    "Inglese/ExamLikeSpeechExtended.canvas",
+    "Inglese/Totalitarian Language.md",
+    "Italiano/Poesie.md",
     "Mappe Esame/Italiano.canvas",
+    "Mappe Esame/Root.canvas",
     "Mappe Esame/Concetti Generali.canvas",
     "Mappe Esame/Storia.canvas",
-    "Mappe Esame/Root.canvas",
+    "Sistemi/Vlan commands.md",
+    "Sistemi/Signal Protocol.md",
+    "Sistemi/Firewall - Proxy - DMZ.md",
+    "Sistemi/Firewall - Iptables.md",
+    "Sistemi/Crittografia.md",
+    "Sistemi/Dns - Arp - Dhcp.md",
+    "Storia/Seconda Guerra Mondiale.md",
+    "Tecnologie/res/GraphViewActivity.png",
+    "Tecnologie/res/MainActivity.png",
+    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
+    "Tecnologie/Sistemi informativi - note 2.md",
+    "Tecnologie/Sistemi informativi - note 1.md",
+    "Educazione Civica/UE - Punti Contro.md",
+    "Educazione Civica/GDPR - Note.md",
+    "Gestione/~$PresentazionePcto.pptx",
     "Mappe Esame/S.md",
     "Mappe Esame/Italiano",
     "Untitled.md",
     "Mappe Esame",
-    "Italiano/Poesie.md",
-    "Sistemi/Signal Protocol.md",
     "Sistemi/pptA866.tmp",
     "Sistemi/ppt9A12.tmp",
     "Sistemi/pptA1B9.tmp",
     "Sistemi/~$SignalProtocol.pptx",
     "Sistemi/pptACE9.tmp",
     "Sistemi/pptDAD5.tmp",
-    "Sistemi/Crittografia.md",
-    "Tecnologie/Viciguerra Francesco - Calcolatrice.md",
-    "Tecnologie/Sistemi informativi - note 2.md",
-    "Tecnologie/Sistemi informativi - note 1.md",
-    "2023-04-26.md",
-    "Sistemi/Firewall - Iptables.md",
-    "Storia/Seconda Guerra Mondiale.md",
-    "Sistemi/Firewall - Proxy - DMZ.md",
-    "Sistemi/Vlan commands.md",
-    "Tecnologie/res/GraphViewActivity.png",
-    "Tecnologie/res/MainActivity.png",
     "Untitled.canvas"
   ]
 }

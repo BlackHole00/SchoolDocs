@@ -41,13 +41,11 @@ maggiore quantita'di merce al prezzo piu' basso possibile.
   - tutti i produttori devono essere piccoli. La merce prodotta da un singolo
 	  produttore non deve essere tale da influenzare l'offerta complessiva.
 
-- 8: NullPointerException: GraphDrawer is null.  
-Il prezzo di equilibrio e'il punto in un grafico nel quale la curva di domanda e
+- 8: Il prezzo di equilibrio e'il punto in un grafico nel quale la curva di domanda e
 la curva di domanda si incontrano. Indica quindi il prezzo ottimale, che 
 soddisfa al meglio sia il produttore, che il consumatore
 
-- 9: NullPointerException: GraphDrawer is null.  
-Per legge della domanda e dell'offerta si intende che se la curva della domanda
+- 9: Per legge della domanda e dell'offerta si intende che se la curva della domanda
 aumenta o diminuisce allora aumenta o diminuisce anche il prezzo di eqiolibrio e
 che se la curva dell'offerta aumenta allora diminuisce il prezzo dell'
 equilibrio, ma aumenta la quantita' e viceversa.

@@ -32,8 +32,8 @@ I target possono essere:
 - **queue**:
 - **redirect**: reindirizza il pacchetto alla macchina stessa, passando per il sistema un'ulteriore volta
 - **return**: ritorna alla catena da cui quest'ultima è stata chiamata
-- **dnat**: applica il nat dinamico
-- **snat**: applica il nat statico
+- **dnat**: specifica l'indirizzo di destinazione del nat
+- **snat**: specifica l'indirizzo sorgente del nat
 - **masquerade**: applica il nat overload. Richiede di specificare un `--to-ports`
 
 ## Comando
